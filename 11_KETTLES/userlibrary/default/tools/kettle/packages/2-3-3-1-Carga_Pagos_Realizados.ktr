@@ -1,0 +1,366 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<transformation>
+  <info>
+    <name>2-3-3-1-Carga_Pagos_Realizados</name>
+    <description/>
+    <extended_description/>
+    <trans_version/>
+    <trans_type>Normal</trans_type>
+    <trans_status>0</trans_status>
+    <directory>&#47;</directory>
+    <parameters>
+    </parameters>
+    <log>
+<trans-log-table><connection/>
+<schema/>
+<table/>
+<size_limit_lines/>
+<interval/>
+<timeout_days/>
+<field><id>ID_BATCH</id><enabled>Y</enabled><name>ID_BATCH</name></field><field><id>CHANNEL_ID</id><enabled>Y</enabled><name>CHANNEL_ID</name></field><field><id>TRANSNAME</id><enabled>Y</enabled><name>TRANSNAME</name></field><field><id>STATUS</id><enabled>Y</enabled><name>STATUS</name></field><field><id>LINES_READ</id><enabled>Y</enabled><name>LINES_READ</name><subject/></field><field><id>LINES_WRITTEN</id><enabled>Y</enabled><name>LINES_WRITTEN</name><subject/></field><field><id>LINES_UPDATED</id><enabled>Y</enabled><name>LINES_UPDATED</name><subject/></field><field><id>LINES_INPUT</id><enabled>Y</enabled><name>LINES_INPUT</name><subject/></field><field><id>LINES_OUTPUT</id><enabled>Y</enabled><name>LINES_OUTPUT</name><subject/></field><field><id>LINES_REJECTED</id><enabled>Y</enabled><name>LINES_REJECTED</name><subject/></field><field><id>ERRORS</id><enabled>Y</enabled><name>ERRORS</name></field><field><id>STARTDATE</id><enabled>Y</enabled><name>STARTDATE</name></field><field><id>ENDDATE</id><enabled>Y</enabled><name>ENDDATE</name></field><field><id>LOGDATE</id><enabled>Y</enabled><name>LOGDATE</name></field><field><id>DEPDATE</id><enabled>Y</enabled><name>DEPDATE</name></field><field><id>REPLAYDATE</id><enabled>Y</enabled><name>REPLAYDATE</name></field><field><id>LOG_FIELD</id><enabled>Y</enabled><name>LOG_FIELD</name></field></trans-log-table>
+<perf-log-table><connection/>
+<schema/>
+<table/>
+<interval/>
+<timeout_days/>
+<field><id>ID_BATCH</id><enabled>Y</enabled><name>ID_BATCH</name></field><field><id>SEQ_NR</id><enabled>Y</enabled><name>SEQ_NR</name></field><field><id>LOGDATE</id><enabled>Y</enabled><name>LOGDATE</name></field><field><id>TRANSNAME</id><enabled>Y</enabled><name>TRANSNAME</name></field><field><id>STEPNAME</id><enabled>Y</enabled><name>STEPNAME</name></field><field><id>STEP_COPY</id><enabled>Y</enabled><name>STEP_COPY</name></field><field><id>LINES_READ</id><enabled>Y</enabled><name>LINES_READ</name></field><field><id>LINES_WRITTEN</id><enabled>Y</enabled><name>LINES_WRITTEN</name></field><field><id>LINES_UPDATED</id><enabled>Y</enabled><name>LINES_UPDATED</name></field><field><id>LINES_INPUT</id><enabled>Y</enabled><name>LINES_INPUT</name></field><field><id>LINES_OUTPUT</id><enabled>Y</enabled><name>LINES_OUTPUT</name></field><field><id>LINES_REJECTED</id><enabled>Y</enabled><name>LINES_REJECTED</name></field><field><id>ERRORS</id><enabled>Y</enabled><name>ERRORS</name></field><field><id>INPUT_BUFFER_ROWS</id><enabled>Y</enabled><name>INPUT_BUFFER_ROWS</name></field><field><id>OUTPUT_BUFFER_ROWS</id><enabled>Y</enabled><name>OUTPUT_BUFFER_ROWS</name></field></perf-log-table>
+<channel-log-table><connection/>
+<schema/>
+<table/>
+<timeout_days/>
+<field><id>ID_BATCH</id><enabled>Y</enabled><name>ID_BATCH</name></field><field><id>CHANNEL_ID</id><enabled>Y</enabled><name>CHANNEL_ID</name></field><field><id>LOG_DATE</id><enabled>Y</enabled><name>LOG_DATE</name></field><field><id>LOGGING_OBJECT_TYPE</id><enabled>Y</enabled><name>LOGGING_OBJECT_TYPE</name></field><field><id>OBJECT_NAME</id><enabled>Y</enabled><name>OBJECT_NAME</name></field><field><id>OBJECT_COPY</id><enabled>Y</enabled><name>OBJECT_COPY</name></field><field><id>REPOSITORY_DIRECTORY</id><enabled>Y</enabled><name>REPOSITORY_DIRECTORY</name></field><field><id>FILENAME</id><enabled>Y</enabled><name>FILENAME</name></field><field><id>OBJECT_ID</id><enabled>Y</enabled><name>OBJECT_ID</name></field><field><id>OBJECT_REVISION</id><enabled>Y</enabled><name>OBJECT_REVISION</name></field><field><id>PARENT_CHANNEL_ID</id><enabled>Y</enabled><name>PARENT_CHANNEL_ID</name></field><field><id>ROOT_CHANNEL_ID</id><enabled>Y</enabled><name>ROOT_CHANNEL_ID</name></field></channel-log-table>
+<step-log-table><connection/>
+<schema/>
+<table/>
+<timeout_days/>
+<field><id>ID_BATCH</id><enabled>Y</enabled><name>ID_BATCH</name></field><field><id>CHANNEL_ID</id><enabled>Y</enabled><name>CHANNEL_ID</name></field><field><id>LOG_DATE</id><enabled>Y</enabled><name>LOG_DATE</name></field><field><id>TRANSNAME</id><enabled>Y</enabled><name>TRANSNAME</name></field><field><id>STEPNAME</id><enabled>Y</enabled><name>STEPNAME</name></field><field><id>STEP_COPY</id><enabled>Y</enabled><name>STEP_COPY</name></field><field><id>LINES_READ</id><enabled>Y</enabled><name>LINES_READ</name></field><field><id>LINES_WRITTEN</id><enabled>Y</enabled><name>LINES_WRITTEN</name></field><field><id>LINES_UPDATED</id><enabled>Y</enabled><name>LINES_UPDATED</name></field><field><id>LINES_INPUT</id><enabled>Y</enabled><name>LINES_INPUT</name></field><field><id>LINES_OUTPUT</id><enabled>Y</enabled><name>LINES_OUTPUT</name></field><field><id>LINES_REJECTED</id><enabled>Y</enabled><name>LINES_REJECTED</name></field><field><id>ERRORS</id><enabled>Y</enabled><name>ERRORS</name></field><field><id>LOG_FIELD</id><enabled>N</enabled><name>LOG_FIELD</name></field></step-log-table>
+    </log>
+    <maxdate>
+      <connection/>
+      <table/>
+      <field/>
+      <offset>0.0</offset>
+      <maxdiff>0.0</maxdiff>
+    </maxdate>
+    <size_rowset>10000</size_rowset>
+    <sleep_time_empty>50</sleep_time_empty>
+    <sleep_time_full>50</sleep_time_full>
+    <unique_connections>N</unique_connections>
+    <feedback_shown>Y</feedback_shown>
+    <feedback_size>50000</feedback_size>
+    <using_thread_priorities>Y</using_thread_priorities>
+    <shared_objects_file/>
+    <capture_step_performance>N</capture_step_performance>
+    <step_performance_capturing_delay>1000</step_performance_capturing_delay>
+    <step_performance_capturing_size_limit>100</step_performance_capturing_size_limit>
+    <dependencies>
+    </dependencies>
+    <partitionschemas>
+    </partitionschemas>
+    <slaveservers>
+    </slaveservers>
+    <clusterschemas>
+    </clusterschemas>
+  <created_user>-</created_user>
+  <created_date>2016&#47;01&#47;18 16:46:56.437</created_date>
+  <modified_user>-</modified_user>
+  <modified_date>2016&#47;01&#47;18 16:46:56.437</modified_date>
+  </info>
+  <notepads>
+  </notepads>
+  <connection>
+    <name>OdsStgDS</name>
+    <server/>
+    <type>ORACLE</type>
+    <access>JNDI</access>
+    <database>OdsStgDS</database>
+    <port>1521</port>
+    <username/>
+    <password>Encrypted </password>
+    <servername/>
+    <data_tablespace/>
+    <index_tablespace/>
+    <attributes>
+      <attribute><code>FORCE_IDENTIFIERS_TO_LOWERCASE</code><attribute>N</attribute></attribute>
+      <attribute><code>FORCE_IDENTIFIERS_TO_UPPERCASE</code><attribute>N</attribute></attribute>
+      <attribute><code>IS_CLUSTERED</code><attribute>N</attribute></attribute>
+      <attribute><code>PORT_NUMBER</code><attribute>1521</attribute></attribute>
+      <attribute><code>QUOTE_ALL_FIELDS</code><attribute>N</attribute></attribute>
+      <attribute><code>SUPPORTS_BOOLEAN_DATA_TYPE</code><attribute>N</attribute></attribute>
+      <attribute><code>USE_POOLING</code><attribute>N</attribute></attribute>
+    </attributes>
+  </connection>
+  <order>
+  <hop> <from>Leo T_BS_CHARGE_DETAIL y T_BS_PAYS_DETAIL</from><to>Cargo MD_PAGOS_REALIZADOS</to><enabled>Y</enabled> </hop>  </order>
+  <step>
+    <name>Cargo MD_PAGOS_REALIZADOS</name>
+    <type>TableOutput</type>
+    <description/>
+    <distribute>Y</distribute>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+    <connection>OdsStgDS</connection>
+    <schema>ODS</schema>
+    <table>MD_PAGOS_REALIZADOS</table>
+    <commit>2000</commit>
+    <truncate>N</truncate>
+    <ignore_errors>N</ignore_errors>
+    <use_batch>Y</use_batch>
+    <specify_fields>N</specify_fields>
+    <partitioning_enabled>N</partitioning_enabled>
+    <partitioning_field/>
+    <partitioning_daily>N</partitioning_daily>
+    <partitioning_monthly>Y</partitioning_monthly>
+    <tablename_in_field>N</tablename_in_field>
+    <tablename_field/>
+    <tablename_in_table>Y</tablename_in_table>
+    <return_keys>N</return_keys>
+    <return_field/>
+    <fields>
+    </fields>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>710</xloc>
+      <yloc>94</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>Leo T_BS_CHARGE_DETAIL y T_BS_PAYS_DETAIL</name>
+    <type>TableInput</type>
+    <description/>
+    <distribute>Y</distribute>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+    <connection>OdsStgDS</connection>
+    <sql>WITH CHARGES_DETAIL AS (
+SELECT 
+  cd.CUOTA AS NU_CUOTA,
+  s.CUENTA AS NU_CUENTA,
+  s.OPERACION AS NU_OPERACION,
+  s.C1803 AS CO_CLIENTE,
+  s.SUCURSAL AS CO_SUCURSAL,
+  s.MONEDA AS CO_MONEDA,
+  s.PRODUCTO AS CO_PRODUCTO,
+  hp.NROASIENTOMOV AS NU_ASIENTO,
+  hp.SUCURSALMOV AS CO_SUCU_MOVI,
+  hp.FECHAPROCESOMOV AS FE_ASIENTO,
+  hp.FECHAVALOR AS FE_VALO_PAGO,
+  s.C1670 AS CO_ANALISTA,
+  pp.C2302 AS FE_VENC_CUOT,
+  MAX( CASE WHEN (hp.FECHAVALOR &gt; pp.C2302) THEN (hp.FECHAVALOR - pp.C2302)
+     ELSE 0
+  END) AS NU_DIAS_ATRA,
+   sum( CASE WHEN c.TIPO_CARGO=1 THEN cd.TOTAL_PAGADO
+       ELSE 0
+    END) AS MO_COMI_PGDA,
+  sum(CASE WHEN c.TIPO_CARGO=2 THEN cd.TOTAL_PAGADO
+       ELSE 0
+    END) AS MO_IMPU_PGDO,
+  sum(CASE WHEN c.TIPO_CARGO=3 THEN cd.TOTAL_PAGADO
+       ELSE 0
+    END) AS MO_GAST_PGDO,
+  sum(CASE WHEN c.TIPO_CARGO=4 THEN cd.TOTAL_PAGADO
+       ELSE 0
+    END) AS MO_SEGU_RIES_PGDO,
+    sum(CASE WHEN c.TIPO_CARGO=5 THEN cd.TOTAL_PAGADO
+       ELSE 0
+    END) AS MO_SEGU_DEVG_PGDO,
+    sum(CASE WHEN c.TIPO_CARGO=6 THEN cd.TOTAL_PAGADO
+       ELSE 0
+    END) AS MO_OTRO_SEGU_PGDO,
+  sum(CASE WHEN c.TIPO_CARGO=0 THEN cd.TOTAL_PAGADO
+       ELSE 0
+    END) AS MO_OTRO_CARG_PGDO,
+  s.JTS_OID AS IN_SALD_JTS_OID,
+  CASE WHEN EXISTS (SELECT 1 FROM STG.T_CR_RECUPERCARTERA cr WHERE cr.NROPRESTAMO = s.CUENTA AND cr.FECHAOPER = hp.FECHAPROCESOMOV AND cr.TIPOOPER=&apos;C&apos;) THEN 1
+    ELSE 0
+  END AS IN_CONDONACION,
+  m.C6440 AS VL_TIPO_CAMB_OFIC
+FROM STG.T_BS_CHARGE_DETAIL cd
+   JOIN STG.T_SALDOS s
+     ON s.JTS_OID=cd.SALDO_JTS_OID
+   JOIN STG.T_BS_HISTORIA_PLAZO hp
+     ON cd.HP_JTS_OID=hp.JTS_OID
+   JOIN STG.T_BS_PLANPAGOS pp
+    ON pp.C2300=cd.CUOTA
+       AND  pp.SALDO_JTS_OID=cd.SALDO_JTS_OID
+   JOIN STG.T_CI_CARGOS c
+     ON cd.CARGO_ID=c.ID_CARGO
+   JOIN STG.T_CO_MONEDAS_01 m
+     ON s.MONEDA=m.C6399  
+WHERE
+  s.C1604&lt;0 
+GROUP BY 
+  cd.CUOTA,
+  s.CUENTA ,
+  s.OPERACION,
+  s.C1803 ,
+  s.SUCURSAL,
+  s.MONEDA ,
+  s.PRODUCTO,
+  hp.NROASIENTOMOV,
+  hp.SUCURSALMOV ,
+  hp.FECHAPROCESOMOV,
+  hp.FECHAVALOR,
+  s.C1670,
+  pp.C2302,
+  s.JTS_OID,
+  CASE WHEN EXISTS (SELECT 1 FROM STG.T_CR_RECUPERCARTERA cr WHERE cr.NROPRESTAMO = s.CUENTA AND cr.FECHAOPER = hp.FECHAPROCESOMOV AND cr.TIPOOPER=&apos;C&apos;) THEN 1
+    ELSE 0
+  END,
+  m.C6440
+)
+,PAYS_DETAIL AS(
+SELECT
+  pd.CUOTA AS NU_CUOTA,
+  s.CUENTA AS NU_CUENTA,
+  s.OPERACION AS NU_OPERACION,
+  s.C1803 AS CO_CLIENTE,
+  s.SUCURSAL AS CO_SUCURSAL,
+  s.MONEDA AS CO_MONEDA,
+  s.PRODUCTO AS CO_PRODUCTO,
+  pd.NROASIENTOMOV AS NU_ASIENTO,
+  pd.SUCURSALMVTO AS CO_SUCU_MOVI,
+  pd.FECHAPROCESOMOV AS FE_ASIENTO,
+  pd.FECHAVALOR AS FE_VALO_PAGO,
+  s.C1670 AS CO_ANALISTA,
+  MAX(pp.C2302) AS FE_VENC_CUOT,
+  MAX(CASE WHEN (pd.FECHAVALOR &gt; pp.C2302) THEN (pd.FECHAVALOR - pp.C2302)
+     ELSE 0
+  END) AS NU_DIAS_ATRA,
+  --SUM(pd.CAPITALPAGADO) AS MO_CAPI_PGDO,
+  SUM(pd.CAPITALPAGADO+ pd.CAPITALADELANTADO) AS MO_CAPI_PGDO,
+  SUM(pd.INTERESPAGADO) AS MO_INTE_PGDO,
+  --SUM(pd.MORAPAGADA) AS MO_MORA_PGDA,
+  SUM(pd.MORAPAGADA +pd.INTERES_COMP_MORA) AS MO_MORA_PGDA,
+  s.JTS_OID AS IN_SALD_JTS_OID,
+  SUM(pd.INTERES_COMP_MORA) AS MO_INTE_COMP_MORA,
+  a.INIUSR AS CO_USUA_TOPA,
+  a.HORAFIN AS TX_HORA_TERM_TRAN,
+  a.HORAINICIO AS TX_HORA_INIC_TRAN,
+  SUM(pd.MO_ITF_PAGA) AS MO_ITF_PAGA,
+  SUM(pd.MO_OTRO_PAGO) AS MO_OTRO_PAGO,
+  a.OPERACION AS CO_OPERATIVA,
+  m.C6440 AS VL_TIPO_CAMB_OFIC,
+  pd.TI_CANAL AS TI_CANAL,
+  pd.ID_CANAL AS ID_CANAL
+FROM STG.T_BS_PAYS_DETAIL pd
+   JOIN STG.T_SALDOS s
+     ON s.JTS_OID=pd.SALDOS_JTS_OID
+   JOIN STG.T_BS_PLANPAGOS pp
+     ON pp.C2300=pd.CUOTA
+     AND  pp.SALDO_JTS_OID=pd.SALDOS_JTS_OID
+   LEFT JOIN STG.T_ASIENTOS_03 a
+    ON a.ASIENTO = pd.NROASIENTOMOV
+      AND a.SUCURSAL = pd.SUCURSALMVTO
+      AND a.FECHAPROCESO = pd.FECHAPROCESOMOV
+   JOIN STG.T_CO_MONEDAS_01 m
+     ON s.MONEDA=m.C6399
+WHERE
+  s.C1604&lt;0
+GROUP BY
+  pd.CUOTA,
+  s.CUENTA,
+  s.OPERACION,
+  s.C1803,
+  s.SUCURSAL,
+  s.MONEDA,
+  s.PRODUCTO,
+  pd.NROASIENTOMOV,
+  pd.SUCURSALMVTO,
+  pd.FECHAPROCESOMOV,
+  pd.FECHAVALOR,
+  s.C1670,
+  s.JTS_OID,
+  --pd.INTERES_COMP_MORA,
+  a.INIUSR,
+  a.HORAINICIO,
+  a.HORAFIN,
+  --pd.MO_ITF_PAGA,
+  --pd.MO_OTRO_PAGO,  
+  a.OPERACION,
+  m.C6440,
+  pd.TI_CANAL,
+  pd.ID_CANAL)
+
+
+SELECT 
+  nvl(cd.NU_CUOTA,pd.NU_CUOTA) AS NU_CUOTA,
+  nvl(cd.NU_CUENTA,pd.NU_CUENTA) AS NU_PRESTAMO,
+  nvl(cd.NU_OPERACION,pd.NU_OPERACION) AS NU_OPERACION,
+  nvl(cd.CO_CLIENTE, pd.CO_CLIENTE) AS CO_CLIENTE,
+  nvl(cd.CO_SUCURSAL,pd.CO_SUCURSAL) AS CO_SUCURSAL,
+  nvl(cd.CO_MONEDA,pd.CO_MONEDA) AS CO_MONEDA,
+  nvl(cd.CO_PRODUCTO,pd.CO_PRODUCTO) AS CO_PRODUCTO,
+  nvl(cd.NU_ASIENTO,pd.NU_ASIENTO) AS NU_ASIENTO,
+  nvl(cd.CO_SUCU_MOVI,pd.CO_SUCU_MOVI) AS CO_SUCU_MOVI,
+  nvl(cd.FE_ASIENTO,pd.FE_ASIENTO) AS FE_ASIENTO,
+  nvl(cd.FE_VALO_PAGO,pd.FE_VALO_PAGO) AS FE_VALO_PAGO,
+  nvl(cd.CO_ANALISTA,pd.CO_ANALISTA) AS CO_ANALISTA,
+  nvl(cd.FE_VENC_CUOT,pd.FE_VENC_CUOT) AS FE_VENC_CUOT,
+  nvl(cd.NU_DIAS_ATRA,pd.NU_DIAS_ATRA) AS NU_DIAS_ATRA,
+  nvl(pd.MO_CAPI_PGDO,0) AS MO_CAPI_PGDO,
+  nvl(pd.MO_INTE_PGDO,0) AS MO_INTE_PGDO,
+  nvl(pd.MO_MORA_PGDA,0) AS MO_MORA_PGDA,
+  nvl(cd.MO_COMI_PGDA,0) AS MO_COMI_PGDA,
+  nvl(cd.MO_IMPU_PGDO,0) AS MO_IMPU_PGDO,
+  nvl(cd.MO_GAST_PGDO,0) AS MO_GAST_PGDO,
+  nvl(cd.MO_SEGU_RIES_PGDO,0) AS MO_SEGU_RIES_PGDO,
+  nvl(cd.MO_SEGU_DEVG_PGDO,0) AS MO_SEGU_DEVG_PGDO,
+  nvl(cd.MO_OTRO_SEGU_PGDO,0) AS MO_OTRO_SEGU_PGDO,
+  NVL(cd.MO_OTRO_CARG_PGDO,0) AS MO_OTRO_CARG_PGDO,
+  nvl(cd.IN_SALD_JTS_OID,pd.IN_SALD_JTS_OID) AS IN_SALD_JTS_OID,
+  nvl(pd.MO_INTE_COMP_MORA,0) AS MO_INTE_COMP_MORA,
+  nvl(pd.CO_USUA_TOPA,&apos; &apos;) AS CO_USUA_TOPA,
+  pd.TX_HORA_TERM_TRAN AS TX_HORA_TERM_TRAN,
+  pd.TX_HORA_INIC_TRAN AS TX_HORA_INIC_TRAN,
+  pd.MO_ITF_PAGA AS MO_ITF_PAGA,
+  pd.MO_OTRO_PAGO AS MO_OTRO_PAGO,  
+  nvl(pd.CO_OPERATIVA,0) AS CO_OPERATIVA,
+  nvl(cd.VL_TIPO_CAMB_OFIC,pd.VL_TIPO_CAMB_OFIC) AS VL_TIPO_CAMB_OFIC,
+  nvl(pd.TI_CANAL,&apos; &apos;) AS TI_CANAL,
+  nvl(pd.ID_CANAL,&apos; &apos;) AS ID_CANAL,
+  nvl(cd.IN_CONDONACION,0) AS IN_CONDONACION,
+  EXTRACT(YEAR FROM pd.FE_VALO_PAGO)*100 + EXTRACT(MONTH FROM pd.FE_VALO_PAGO) AS NU_PERI_VALO_MES,
+  EXTRACT(YEAR FROM pd.FE_ASIENTO)*100 + EXTRACT(MONTH FROM pd.FE_ASIENTO) AS NU_PERI_PROC_MES,
+  SYSDATE AS FE_ACTU_DIA
+FROM CHARGES_DETAIL cd 
+   FULL JOIN PAYS_DETAIL pd
+     ON cd.NU_CUOTA = pd.NU_CUOTA
+     AND cd.NU_CUENTA = pd.NU_CUENTA
+     AND cd.NU_OPERACION = pd.NU_OPERACION
+     AND cd.CO_CLIENTE = pd.CO_CLIENTE
+     AND cd.CO_SUCURSAL = pd.CO_SUCURSAL
+     AND cd.CO_MONEDA = pd.CO_MONEDA
+     AND cd.CO_PRODUCTO = pd.CO_PRODUCTO
+     AND cd.NU_ASIENTO = pd.NU_ASIENTO
+     AND cd.CO_SUCU_MOVI = pd.CO_SUCU_MOVI
+     AND cd.FE_ASIENTO = pd. FE_ASIENTO
+</sql>
+    <limit>0</limit>
+    <lookup/>
+    <execute_each_row>N</execute_each_row>
+    <variables_active>N</variables_active>
+    <lazy_conversion_active>N</lazy_conversion_active>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>217</xloc>
+      <yloc>94</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step_error_handling>
+  </step_error_handling>
+   <slave-step-copy-partition-distribution>
+</slave-step-copy-partition-distribution>
+   <slave_transformation>N</slave_transformation>
+</transformation>

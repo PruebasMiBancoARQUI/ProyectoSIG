@@ -1,0 +1,952 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<transformation>
+  <info>
+    <name>1-2-0-2-Carga_Tabla_Analistas</name>
+    <description/>
+    <extended_description/>
+    <trans_version/>
+    <trans_type>Normal</trans_type>
+    <trans_status>0</trans_status>
+    <directory>&#47;</directory>
+    <parameters>
+    </parameters>
+    <log>
+<trans-log-table><connection/>
+<schema/>
+<table/>
+<size_limit_lines/>
+<interval/>
+<timeout_days/>
+<field><id>ID_BATCH</id><enabled>Y</enabled><name>ID_BATCH</name></field><field><id>CHANNEL_ID</id><enabled>Y</enabled><name>CHANNEL_ID</name></field><field><id>TRANSNAME</id><enabled>Y</enabled><name>TRANSNAME</name></field><field><id>STATUS</id><enabled>Y</enabled><name>STATUS</name></field><field><id>LINES_READ</id><enabled>Y</enabled><name>LINES_READ</name><subject/></field><field><id>LINES_WRITTEN</id><enabled>Y</enabled><name>LINES_WRITTEN</name><subject/></field><field><id>LINES_UPDATED</id><enabled>Y</enabled><name>LINES_UPDATED</name><subject/></field><field><id>LINES_INPUT</id><enabled>Y</enabled><name>LINES_INPUT</name><subject/></field><field><id>LINES_OUTPUT</id><enabled>Y</enabled><name>LINES_OUTPUT</name><subject/></field><field><id>LINES_REJECTED</id><enabled>Y</enabled><name>LINES_REJECTED</name><subject/></field><field><id>ERRORS</id><enabled>Y</enabled><name>ERRORS</name></field><field><id>STARTDATE</id><enabled>Y</enabled><name>STARTDATE</name></field><field><id>ENDDATE</id><enabled>Y</enabled><name>ENDDATE</name></field><field><id>LOGDATE</id><enabled>Y</enabled><name>LOGDATE</name></field><field><id>DEPDATE</id><enabled>Y</enabled><name>DEPDATE</name></field><field><id>REPLAYDATE</id><enabled>Y</enabled><name>REPLAYDATE</name></field><field><id>LOG_FIELD</id><enabled>Y</enabled><name>LOG_FIELD</name></field></trans-log-table>
+<perf-log-table><connection/>
+<schema/>
+<table/>
+<interval/>
+<timeout_days/>
+<field><id>ID_BATCH</id><enabled>Y</enabled><name>ID_BATCH</name></field><field><id>SEQ_NR</id><enabled>Y</enabled><name>SEQ_NR</name></field><field><id>LOGDATE</id><enabled>Y</enabled><name>LOGDATE</name></field><field><id>TRANSNAME</id><enabled>Y</enabled><name>TRANSNAME</name></field><field><id>STEPNAME</id><enabled>Y</enabled><name>STEPNAME</name></field><field><id>STEP_COPY</id><enabled>Y</enabled><name>STEP_COPY</name></field><field><id>LINES_READ</id><enabled>Y</enabled><name>LINES_READ</name></field><field><id>LINES_WRITTEN</id><enabled>Y</enabled><name>LINES_WRITTEN</name></field><field><id>LINES_UPDATED</id><enabled>Y</enabled><name>LINES_UPDATED</name></field><field><id>LINES_INPUT</id><enabled>Y</enabled><name>LINES_INPUT</name></field><field><id>LINES_OUTPUT</id><enabled>Y</enabled><name>LINES_OUTPUT</name></field><field><id>LINES_REJECTED</id><enabled>Y</enabled><name>LINES_REJECTED</name></field><field><id>ERRORS</id><enabled>Y</enabled><name>ERRORS</name></field><field><id>INPUT_BUFFER_ROWS</id><enabled>Y</enabled><name>INPUT_BUFFER_ROWS</name></field><field><id>OUTPUT_BUFFER_ROWS</id><enabled>Y</enabled><name>OUTPUT_BUFFER_ROWS</name></field></perf-log-table>
+<channel-log-table><connection/>
+<schema/>
+<table/>
+<timeout_days/>
+<field><id>ID_BATCH</id><enabled>Y</enabled><name>ID_BATCH</name></field><field><id>CHANNEL_ID</id><enabled>Y</enabled><name>CHANNEL_ID</name></field><field><id>LOG_DATE</id><enabled>Y</enabled><name>LOG_DATE</name></field><field><id>LOGGING_OBJECT_TYPE</id><enabled>Y</enabled><name>LOGGING_OBJECT_TYPE</name></field><field><id>OBJECT_NAME</id><enabled>Y</enabled><name>OBJECT_NAME</name></field><field><id>OBJECT_COPY</id><enabled>Y</enabled><name>OBJECT_COPY</name></field><field><id>REPOSITORY_DIRECTORY</id><enabled>Y</enabled><name>REPOSITORY_DIRECTORY</name></field><field><id>FILENAME</id><enabled>Y</enabled><name>FILENAME</name></field><field><id>OBJECT_ID</id><enabled>Y</enabled><name>OBJECT_ID</name></field><field><id>OBJECT_REVISION</id><enabled>Y</enabled><name>OBJECT_REVISION</name></field><field><id>PARENT_CHANNEL_ID</id><enabled>Y</enabled><name>PARENT_CHANNEL_ID</name></field><field><id>ROOT_CHANNEL_ID</id><enabled>Y</enabled><name>ROOT_CHANNEL_ID</name></field></channel-log-table>
+<step-log-table><connection/>
+<schema/>
+<table/>
+<timeout_days/>
+<field><id>ID_BATCH</id><enabled>Y</enabled><name>ID_BATCH</name></field><field><id>CHANNEL_ID</id><enabled>Y</enabled><name>CHANNEL_ID</name></field><field><id>LOG_DATE</id><enabled>Y</enabled><name>LOG_DATE</name></field><field><id>TRANSNAME</id><enabled>Y</enabled><name>TRANSNAME</name></field><field><id>STEPNAME</id><enabled>Y</enabled><name>STEPNAME</name></field><field><id>STEP_COPY</id><enabled>Y</enabled><name>STEP_COPY</name></field><field><id>LINES_READ</id><enabled>Y</enabled><name>LINES_READ</name></field><field><id>LINES_WRITTEN</id><enabled>Y</enabled><name>LINES_WRITTEN</name></field><field><id>LINES_UPDATED</id><enabled>Y</enabled><name>LINES_UPDATED</name></field><field><id>LINES_INPUT</id><enabled>Y</enabled><name>LINES_INPUT</name></field><field><id>LINES_OUTPUT</id><enabled>Y</enabled><name>LINES_OUTPUT</name></field><field><id>LINES_REJECTED</id><enabled>Y</enabled><name>LINES_REJECTED</name></field><field><id>ERRORS</id><enabled>Y</enabled><name>ERRORS</name></field><field><id>LOG_FIELD</id><enabled>N</enabled><name>LOG_FIELD</name></field></step-log-table>
+    </log>
+    <maxdate>
+      <connection/>
+      <table/>
+      <field/>
+      <offset>0.0</offset>
+      <maxdiff>0.0</maxdiff>
+    </maxdate>
+    <size_rowset>10000</size_rowset>
+    <sleep_time_empty>50</sleep_time_empty>
+    <sleep_time_full>50</sleep_time_full>
+    <unique_connections>N</unique_connections>
+    <feedback_shown>Y</feedback_shown>
+    <feedback_size>50000</feedback_size>
+    <using_thread_priorities>Y</using_thread_priorities>
+    <shared_objects_file/>
+    <capture_step_performance>N</capture_step_performance>
+    <step_performance_capturing_delay>1000</step_performance_capturing_delay>
+    <step_performance_capturing_size_limit>100</step_performance_capturing_size_limit>
+    <dependencies>
+    </dependencies>
+    <partitionschemas>
+    </partitionschemas>
+    <slaveservers>
+    </slaveservers>
+    <clusterschemas>
+    </clusterschemas>
+  <created_user>-</created_user>
+  <created_date>2016&#47;01&#47;14 17:01:34.307</created_date>
+  <modified_user>-</modified_user>
+  <modified_date>2016&#47;01&#47;14 17:01:34.307</modified_date>
+  </info>
+  <notepads>
+    <notepad>
+      <note>Pasos Obsoletos</note>
+      <xloc>86</xloc>
+      <yloc>186</yloc>
+      <width>119</width>
+      <heigth>30</heigth>
+      <fontname>Segoe UI</fontname>
+      <fontsize>9</fontsize>
+      <fontbold>N</fontbold>
+      <fontitalic>N</fontitalic>
+      <fontcolorred>0</fontcolorred>
+      <fontcolorgreen>0</fontcolorgreen>
+      <fontcolorblue>0</fontcolorblue>
+      <backgroundcolorred>255</backgroundcolorred>
+      <backgroundcolorgreen>165</backgroundcolorgreen>
+      <backgroundcolorblue>0</backgroundcolorblue>
+      <bordercolorred>100</bordercolorred>
+      <bordercolorgreen>100</bordercolorgreen>
+      <bordercolorblue>100</bordercolorblue>
+      <drawshadow>Y</drawshadow>
+    </notepad>
+  </notepads>
+  <connection>
+    <name>AdryanDS</name>
+    <server/>
+    <type>ORACLE</type>
+    <access>JNDI</access>
+    <database>AdryanDS</database>
+    <port>1521</port>
+    <username/>
+    <password>Encrypted </password>
+    <servername/>
+    <data_tablespace/>
+    <index_tablespace/>
+    <attributes>
+      <attribute><code>FORCE_IDENTIFIERS_TO_LOWERCASE</code><attribute>N</attribute></attribute>
+      <attribute><code>FORCE_IDENTIFIERS_TO_UPPERCASE</code><attribute>N</attribute></attribute>
+      <attribute><code>IS_CLUSTERED</code><attribute>N</attribute></attribute>
+      <attribute><code>PORT_NUMBER</code><attribute>1521</attribute></attribute>
+      <attribute><code>QUOTE_ALL_FIELDS</code><attribute>N</attribute></attribute>
+      <attribute><code>SUPPORTS_BOOLEAN_DATA_TYPE</code><attribute>N</attribute></attribute>
+      <attribute><code>USE_POOLING</code><attribute>N</attribute></attribute>
+    </attributes>
+  </connection>
+  <connection>
+    <name>OdsStgDS</name>
+    <server/>
+    <type>ORACLE</type>
+    <access>JNDI</access>
+    <database>OdsStgDS</database>
+    <port>1521</port>
+    <username/>
+    <password>Encrypted </password>
+    <servername/>
+    <data_tablespace/>
+    <index_tablespace/>
+    <attributes>
+      <attribute><code>FORCE_IDENTIFIERS_TO_LOWERCASE</code><attribute>N</attribute></attribute>
+      <attribute><code>FORCE_IDENTIFIERS_TO_UPPERCASE</code><attribute>N</attribute></attribute>
+      <attribute><code>IS_CLUSTERED</code><attribute>N</attribute></attribute>
+      <attribute><code>PORT_NUMBER</code><attribute>1521</attribute></attribute>
+      <attribute><code>QUOTE_ALL_FIELDS</code><attribute>N</attribute></attribute>
+      <attribute><code>SUPPORTS_BOOLEAN_DATA_TYPE</code><attribute>N</attribute></attribute>
+      <attribute><code>USE_POOLING</code><attribute>N</attribute></attribute>
+    </attributes>
+  </connection>
+  <order>
+  <hop> <from>Mapeo de Valores</from><to>Actualizo MD_ANALISTA 2</to><enabled>Y</enabled> </hop>  <hop> <from>DB LOOK UP ADRYAN -&gt; DWH_PLANILLAS_VW</from><to>Mapeo de Valores</to><enabled>Y</enabled> </hop>  <hop> <from>DB LOOK UP ADRYAN -&gt; DWH_PLANILLAS_VW 3</from><to>Mapeo de Valores 2</to><enabled>N</enabled> </hop>  <hop> <from>Leo T_RH_FUNCIONARIO 2</from><to>Actualizo MD_ANALISTA 222</to><enabled>N</enabled> </hop>  <hop> <from>Leo T_RH_FUNCIONARIO 2</from><to>DB LOOK UP ADRYAN -&gt; DWH_PLANILLAS_VW 3</to><enabled>N</enabled> </hop>  <hop> <from>Mapeo de Valores 2</from><to>Actualizo MD_ANALISTA 222</to><enabled>N</enabled> </hop>  <hop> <from>Leo T_RH_FUNCIONARIO</from><to>Actualizo MD_ANALISTA 1</to><enabled>Y</enabled> </hop>  <hop> <from>Actualizo MD_ANALISTA 1</from><to>DB LOOK UP ADRYAN -&gt; DWH_PLANILLAS_VW</to><enabled>Y</enabled> </hop>  </order>
+  <step>
+    <name>Actualizo MD_ANALISTA 1</name>
+    <type>InsertUpdate</type>
+    <description/>
+    <distribute>Y</distribute>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+    <connection>OdsStgDS</connection>
+    <commit>0</commit>
+    <update_bypassed>N</update_bypassed>
+    <lookup>
+      <schema>ODS</schema>
+      <table>MD_ANALISTA</table>
+      <key>
+        <name>CO_ANALISTA</name>
+        <field>CO_ANALISTA</field>
+        <condition>=</condition>
+        <name2/>
+      </key>
+      <value>
+        <name>CO_ANALISTA</name>
+        <rename>CO_ANALISTA</rename>
+        <update>N</update>
+      </value>
+      <value>
+        <name>NO_ANALISTA</name>
+        <rename>NO_ANALISTA</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>CO_SUCURSAL</name>
+        <rename>CO_SUCURSAL</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>DE_SUCURSAL</name>
+        <rename>DE_SUCURSAL</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>CO_PUESTO</name>
+        <rename>CO_PUESTO</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>DE_PUESTO</name>
+        <rename>DE_PUESTO</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>CO_CARGO</name>
+        <rename>CO_CARGO</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>DE_CARGO</name>
+        <rename>DE_CARGO</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>FE_ACTU_DIA</name>
+        <rename>FE_ACTU_DIA</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>CO_ESTA_FUNC</name>
+        <rename>CO_ESTA_FUNC</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>CO_TIPO_TRAB</name>
+        <rename>CO_TIPO_TRAB</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>FE_CESE</name>
+        <rename>FE_CESE</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>FE_INGRESO</name>
+        <rename>FE_INGRESO</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>NU_DOCUMENTO</name>
+        <rename>NU_DOCUMENTO</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>TI_DOCUMENTO</name>
+        <rename>TI_DOCUMENTO</rename>
+        <update>Y</update>
+      </value>
+    </lookup>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>362</xloc>
+      <yloc>45</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>Actualizo MD_ANALISTA 2</name>
+    <type>InsertUpdate</type>
+    <description/>
+    <distribute>Y</distribute>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+    <connection>OdsStgDS</connection>
+    <commit>0</commit>
+    <update_bypassed>N</update_bypassed>
+    <lookup>
+      <schema>ODS</schema>
+      <table>MD_ANALISTA</table>
+      <key>
+        <name>CO_ANALISTA</name>
+        <field>CO_ANALISTA</field>
+        <condition>=</condition>
+        <name2/>
+      </key>
+      <value>
+        <name>CO_ANALISTA</name>
+        <rename>CO_ANALISTA</rename>
+        <update>N</update>
+      </value>
+      <value>
+        <name>NO_ANALISTA</name>
+        <rename>NO_ANALISTA</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>CO_SUCURSAL</name>
+        <rename>CO_SUCURSAL</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>DE_SUCURSAL</name>
+        <rename>DE_SUCURSAL</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>CO_PUESTO</name>
+        <rename>CO_PUESTO</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>DE_PUESTO</name>
+        <rename>DE_PUESTO</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>CO_CARGO</name>
+        <rename>CO_CARGO</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>DE_CARGO</name>
+        <rename>DE_CARGO</rename>
+        <update>N</update>
+      </value>
+      <value>
+        <name>FE_ACTU_DIA</name>
+        <rename>FE_ACTU_DIA</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>CO_ESTA_FUNC</name>
+        <rename>CO_ESTA_FUNC</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>TI_SEXO</name>
+        <rename>TI_SEXO</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>CO_TIPO_TRAB</name>
+        <rename>CO_TIPO_TRAB</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>FE_CESE</name>
+        <rename>FE_CESE</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>FE_INGRESO</name>
+        <rename>FE_INGRESO</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>FE_NACIMIENTO</name>
+        <rename>FE_NACIMIENTO</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>NU_CELULAR</name>
+        <rename>NU_CELULAR</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>NU_DOCUMENTO</name>
+        <rename>NU_DOCUMENTO</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>TI_DOCUMENTO</name>
+        <rename>TI_DOCUMENTO</rename>
+        <update>Y</update>
+      </value>
+    </lookup>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>1223</xloc>
+      <yloc>47</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>Actualizo MD_ANALISTA 222</name>
+    <type>InsertUpdate</type>
+    <description/>
+    <distribute>Y</distribute>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+    <connection>OdsStgDS</connection>
+    <commit>200</commit>
+    <update_bypassed>N</update_bypassed>
+    <lookup>
+      <schema>ODS</schema>
+      <table>MD_ANALISTA</table>
+      <key>
+        <name>CO_ANALISTA</name>
+        <field>CO_ANALISTA</field>
+        <condition>=</condition>
+        <name2/>
+      </key>
+      <value>
+        <name>CO_ANALISTA</name>
+        <rename>CO_ANALISTA</rename>
+        <update>N</update>
+      </value>
+      <value>
+        <name>NO_ANALISTA</name>
+        <rename>NO_ANALISTA</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>CO_SUCURSAL</name>
+        <rename>CO_SUCURSAL</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>DE_SUCURSAL</name>
+        <rename>DE_SUCURSAL</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>CO_PUESTO</name>
+        <rename>CO_PUESTO</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>DE_PUESTO</name>
+        <rename>DE_PUESTO</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>CO_CARGO</name>
+        <rename>CO_CARGO</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>DE_CARGO</name>
+        <rename>DE_CARGO</rename>
+        <update>N</update>
+      </value>
+      <value>
+        <name>FE_ACTU_DIA</name>
+        <rename>FE_ACTU_DIA</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>CO_ESTA_FUNC</name>
+        <rename>CO_ESTA_FUNC</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>TI_SEXO</name>
+        <rename>TI_SEXO</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>CO_TIPO_TRAB</name>
+        <rename>CO_TIPO_TRAB</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>FE_CESE</name>
+        <rename>FE_CESE</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>FE_INGRESO</name>
+        <rename>FE_INGRESO</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>FE_NACIMIENTO</name>
+        <rename>FE_NACIMIENTO</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>NU_CELULAR</name>
+        <rename>NU_CELULAR</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>NU_DOCUMENTO</name>
+        <rename>NU_DOCUMENTO</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>TI_DOCUMENTO</name>
+        <rename>TI_DOCUMENTO</rename>
+        <update>Y</update>
+      </value>
+    </lookup>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>823</xloc>
+      <yloc>291</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>Cargo T_TMP_HISTORIA_VISTA_EGD</name>
+    <type>TableOutput</type>
+    <description/>
+    <distribute>Y</distribute>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+    <connection/>
+    <schema/>
+    <table/>
+    <commit/>
+    <truncate>N</truncate>
+    <ignore_errors>N</ignore_errors>
+    <use_batch>Y</use_batch>
+    <specify_fields>N</specify_fields>
+    <partitioning_enabled>N</partitioning_enabled>
+    <partitioning_field/>
+    <partitioning_daily>N</partitioning_daily>
+    <partitioning_monthly>Y</partitioning_monthly>
+    <tablename_in_field>N</tablename_in_field>
+    <tablename_field/>
+    <tablename_in_table>Y</tablename_in_table>
+    <return_keys>N</return_keys>
+    <return_field/>
+    <fields>
+    </fields>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>825</xloc>
+      <yloc>285</yloc>
+      <draw>N</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>DB LOOK UP ADRYAN -&gt; DWH_PLANILLAS_VW</name>
+    <type>DBLookup</type>
+    <description/>
+    <distribute>Y</distribute>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+    <connection>AdryanDS</connection>
+    <cache>Y</cache>
+    <cache_load_all>Y</cache_load_all>
+    <cache_size>0</cache_size>
+    <lookup>
+      <schema>UBI</schema>
+      <table>DWH_PLANILLAS_VW</table>
+      <orderby/>
+      <fail_on_multiple>N</fail_on_multiple>
+      <eat_row_on_failure>Y</eat_row_on_failure>
+      <key>
+        <name>CO_ANALISTA</name>
+        <field>CO_FUNCIONARIO</field>
+        <condition>=</condition>
+        <name2/>
+      </key>
+      <value>
+        <name>DE_SEXO</name>
+        <rename>TI_SEXO</rename>
+        <default/>
+        <type>String</type>
+      </value>
+      <value>
+        <name>FE_NACIMIENTO</name>
+        <rename>FE_NACIMIENTO</rename>
+        <default/>
+        <type>Date</type>
+      </value>
+      <value>
+        <name>NU_CELULAR</name>
+        <rename>NU_CELULAR</rename>
+        <default/>
+        <type>String</type>
+      </value>
+    </lookup>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>674</xloc>
+      <yloc>45</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>DB LOOK UP ADRYAN -&gt; DWH_PLANILLAS_VW 2</name>
+    <type>DBJoin</type>
+    <description/>
+    <distribute>Y</distribute>
+    <copies>2</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+    <connection>OdsStgDS</connection>
+    <rowlimit>0</rowlimit>
+    <sql>SELECT
+	   va.DE_SEXO AS TI_SEXO,
+	   va.FE_NACIMIENTO AS FE_NACIMIENTO,
+	   va.NU_CELULAR AS NU_CELULAR
+FROM 
+	  UBI.DWH_PLANILLAS_VW va
+WHERE 
+	  TRIM(LEADING &apos;0&apos; FROM va.CO_FUNCIONARIO) = ?</sql>
+    <outer_join>N</outer_join>
+    <replace_vars>N</replace_vars>
+    <parameter>
+      <field>
+        <name>CO_ANALISTA</name>
+        <type>Integer</type>
+      </field>
+    </parameter>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>501</xloc>
+      <yloc>205</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>DB LOOK UP ADRYAN -&gt; DWH_PLANILLAS_VW 3</name>
+    <type>DBLookup</type>
+    <description/>
+    <distribute>Y</distribute>
+    <copies>2</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+    <connection>OdsStgDS</connection>
+    <cache>Y</cache>
+    <cache_load_all>Y</cache_load_all>
+    <cache_size>0</cache_size>
+    <lookup>
+      <schema>ODS</schema>
+      <table>DWH_PLANILLAS_VW</table>
+      <orderby/>
+      <fail_on_multiple>N</fail_on_multiple>
+      <eat_row_on_failure>Y</eat_row_on_failure>
+      <key>
+        <name>CO_ANALISTA</name>
+        <field>CO_FUNCIONARIO</field>
+        <condition>=</condition>
+        <name2/>
+      </key>
+      <value>
+        <name>DE_SEXO</name>
+        <rename>TI_SEXO</rename>
+        <default/>
+        <type>String</type>
+      </value>
+      <value>
+        <name>FE_NACIMIENTO</name>
+        <rename>FE_NACIMIENTO</rename>
+        <default/>
+        <type>Date</type>
+      </value>
+      <value>
+        <name>NU_CELULAR</name>
+        <rename>NU_CELULAR</rename>
+        <default/>
+        <type>String</type>
+      </value>
+    </lookup>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>403</xloc>
+      <yloc>345</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>Leo T_RH_FUNCIONARIO</name>
+    <type>TableInput</type>
+    <description/>
+    <distribute>Y</distribute>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+    <connection>OdsStgDS</connection>
+    <sql>SELECT
+  f.CODFUNCIONARIO AS CO_ANALISTA,
+  f.NOMBRE AS NO_ANALISTA,
+  f.CODAGENCIA AS CO_SUCURSAL,
+  s.C6020 AS DE_SUCURSAL,
+  f.PUESTO AS CO_PUESTO,
+  p.DESCRIPCION AS DE_PUESTO,
+  c.CODCARGO AS CO_CARGO,
+  c.DESCRIPCION AS DE_CARGO,
+  f.FUNCESTADO AS CO_ESTA_FUNC,
+  f.TIPO_TRAB AS CO_TIPO_TRAB,
+  f.FEC_SAL_COM AS FE_CESE,
+  f.FEC_ING_COM AS FE_INGRESO,
+  f.NUMERODOCUMENTO AS NU_DOCUMENTO,
+  f.TIPODOCUMENTO AS TI_DOCUMENTO,
+  SYSDATE AS FE_ACTU_DIA
+FROM STG.T_RH_FUNCIONARIO f
+   JOIN STG.T_TC_SUCURSALES s
+     ON TRIM(s.C6021)=TRIM(f.CODAGENCIA)
+    LEFT JOIN STG.T_ADR_PUESTOS p
+         ON TRIM(p.PUESTo)=TRIM(f.PUESTO)
+    LEFT JOIN STG.T_ADR_CAR_PUE acp
+         ON TRIM(acp.PUESTO)=TRIM(f.PUESTO)
+    LEFT JOIN STG.T_RH_CARGOS c
+         ON TRIM(c.CODCARGO)=TRIM(acp.CARGO)
+</sql>
+    <limit>0</limit>
+    <lookup/>
+    <execute_each_row>N</execute_each_row>
+    <variables_active>N</variables_active>
+    <lazy_conversion_active>N</lazy_conversion_active>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>143</xloc>
+      <yloc>45</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>Leo T_RH_FUNCIONARIO 2</name>
+    <type>TableInput</type>
+    <description/>
+    <distribute>Y</distribute>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+    <connection>OdsStgDS</connection>
+    <sql>SELECT
+  f.CODFUNCIONARIO AS CO_ANALISTA,
+  f.NOMBRE AS NO_ANALISTA,
+  f.CODAGENCIA AS CO_SUCURSAL,
+  s.C6020 AS DE_SUCURSAL,
+  f.PUESTO AS CO_PUESTO,
+  p.DESCRIPCION AS DE_PUESTO,
+  c.CODCARGO AS CO_CARGO,
+  c.DESCRIPCION AS DE_CARGO,
+  f.FUNCESTADO AS CO_ESTA_FUNC,
+  f.TIPO_TRAB AS CO_TIPO_TRAB,
+  f.FEC_SAL_COM AS FE_CESE,
+  f.FEC_ING_COM AS FE_INGRESO,
+  f.NUMERODOCUMENTO AS NU_DOCUMENTO,
+  f.TIPODOCUMENTO AS TI_DOCUMENTO,
+  SYSDATE AS FE_ACTU_DIA
+FROM STG.T_RH_FUNCIONARIO f
+   JOIN STG.T_TC_SUCURSALES s
+     ON TRIM(s.C6021)=TRIM(f.CODAGENCIA)
+    LEFT JOIN STG.T_ADR_PUESTOS p
+         ON TRIM(p.PUESTo)=TRIM(f.PUESTO)
+    LEFT JOIN STG.T_ADR_CAR_PUE acp
+         ON TRIM(acp.PUESTO)=TRIM(f.PUESTO)
+    LEFT JOIN STG.T_RH_CARGOS c
+         ON TRIM(c.CODCARGO)=TRIM(acp.CARGO)
+</sql>
+    <limit>0</limit>
+    <lookup/>
+    <execute_each_row>N</execute_each_row>
+    <variables_active>N</variables_active>
+    <lazy_conversion_active>N</lazy_conversion_active>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>168</xloc>
+      <yloc>291</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>Mapeo de Valores</name>
+    <type>SelectValues</type>
+    <description/>
+    <distribute>Y</distribute>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+    <fields>      <field>        <name>CO_ANALISTA</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>NO_ANALISTA</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>CO_SUCURSAL</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>DE_SUCURSAL</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>CO_PUESTO</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>DE_PUESTO</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>CO_CARGO</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>DE_CARGO</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>FE_ACTU_DIA</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>CO_ESTA_FUNC</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>TI_SEXO</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>CO_TIPO_TRAB</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>FE_CESE</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>FE_INGRESO</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>FE_NACIMIENTO</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>NU_CELULAR</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>NU_DOCUMENTO</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>TI_DOCUMENTO</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>        <select_unspecified>N</select_unspecified>
+    </fields>     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>978</xloc>
+      <yloc>46</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>Mapeo de Valores 2</name>
+    <type>SelectValues</type>
+    <description/>
+    <distribute>Y</distribute>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+    <fields>      <field>        <name>CO_ANALISTA</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>NO_ANALISTA</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>CO_SUCURSAL</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>DE_SUCURSAL</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>CO_PUESTO</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>DE_PUESTO</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>CO_CARGO</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>DE_CARGO</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>FE_ACTU_DIA</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>CO_ESTA_FUNC</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>TI_SEXO</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>CO_TIPO_TRAB</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>FE_CESE</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>FE_INGRESO</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>FE_NACIMIENTO</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>NU_CELULAR</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>NU_DOCUMENTO</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>TI_DOCUMENTO</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>        <select_unspecified>N</select_unspecified>
+    </fields>     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>656</xloc>
+      <yloc>345</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step_error_handling>
+  </step_error_handling>
+   <slave-step-copy-partition-distribution>
+</slave-step-copy-partition-distribution>
+   <slave_transformation>N</slave_transformation>
+</transformation>

@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<transformation>
+  <info>
+    <name>100-2-7-1-Carga_T_Rie_Admision_Creditos</name>
+    <description/>
+    <extended_description/>
+    <trans_version/>
+    <trans_type>Normal</trans_type>
+    <trans_status>0</trans_status>
+    <directory>&#47;</directory>
+    <parameters>
+    </parameters>
+    <log>
+<trans-log-table><connection/>
+<schema/>
+<table/>
+<size_limit_lines/>
+<interval/>
+<timeout_days/>
+<field><id>ID_BATCH</id><enabled>Y</enabled><name>ID_BATCH</name></field><field><id>CHANNEL_ID</id><enabled>Y</enabled><name>CHANNEL_ID</name></field><field><id>TRANSNAME</id><enabled>Y</enabled><name>TRANSNAME</name></field><field><id>STATUS</id><enabled>Y</enabled><name>STATUS</name></field><field><id>LINES_READ</id><enabled>Y</enabled><name>LINES_READ</name><subject/></field><field><id>LINES_WRITTEN</id><enabled>Y</enabled><name>LINES_WRITTEN</name><subject/></field><field><id>LINES_UPDATED</id><enabled>Y</enabled><name>LINES_UPDATED</name><subject/></field><field><id>LINES_INPUT</id><enabled>Y</enabled><name>LINES_INPUT</name><subject/></field><field><id>LINES_OUTPUT</id><enabled>Y</enabled><name>LINES_OUTPUT</name><subject/></field><field><id>LINES_REJECTED</id><enabled>Y</enabled><name>LINES_REJECTED</name><subject/></field><field><id>ERRORS</id><enabled>Y</enabled><name>ERRORS</name></field><field><id>STARTDATE</id><enabled>Y</enabled><name>STARTDATE</name></field><field><id>ENDDATE</id><enabled>Y</enabled><name>ENDDATE</name></field><field><id>LOGDATE</id><enabled>Y</enabled><name>LOGDATE</name></field><field><id>DEPDATE</id><enabled>Y</enabled><name>DEPDATE</name></field><field><id>REPLAYDATE</id><enabled>Y</enabled><name>REPLAYDATE</name></field><field><id>LOG_FIELD</id><enabled>Y</enabled><name>LOG_FIELD</name></field></trans-log-table>
+<perf-log-table><connection/>
+<schema/>
+<table/>
+<interval/>
+<timeout_days/>
+<field><id>ID_BATCH</id><enabled>Y</enabled><name>ID_BATCH</name></field><field><id>SEQ_NR</id><enabled>Y</enabled><name>SEQ_NR</name></field><field><id>LOGDATE</id><enabled>Y</enabled><name>LOGDATE</name></field><field><id>TRANSNAME</id><enabled>Y</enabled><name>TRANSNAME</name></field><field><id>STEPNAME</id><enabled>Y</enabled><name>STEPNAME</name></field><field><id>STEP_COPY</id><enabled>Y</enabled><name>STEP_COPY</name></field><field><id>LINES_READ</id><enabled>Y</enabled><name>LINES_READ</name></field><field><id>LINES_WRITTEN</id><enabled>Y</enabled><name>LINES_WRITTEN</name></field><field><id>LINES_UPDATED</id><enabled>Y</enabled><name>LINES_UPDATED</name></field><field><id>LINES_INPUT</id><enabled>Y</enabled><name>LINES_INPUT</name></field><field><id>LINES_OUTPUT</id><enabled>Y</enabled><name>LINES_OUTPUT</name></field><field><id>LINES_REJECTED</id><enabled>Y</enabled><name>LINES_REJECTED</name></field><field><id>ERRORS</id><enabled>Y</enabled><name>ERRORS</name></field><field><id>INPUT_BUFFER_ROWS</id><enabled>Y</enabled><name>INPUT_BUFFER_ROWS</name></field><field><id>OUTPUT_BUFFER_ROWS</id><enabled>Y</enabled><name>OUTPUT_BUFFER_ROWS</name></field></perf-log-table>
+<channel-log-table><connection/>
+<schema/>
+<table/>
+<timeout_days/>
+<field><id>ID_BATCH</id><enabled>Y</enabled><name>ID_BATCH</name></field><field><id>CHANNEL_ID</id><enabled>Y</enabled><name>CHANNEL_ID</name></field><field><id>LOG_DATE</id><enabled>Y</enabled><name>LOG_DATE</name></field><field><id>LOGGING_OBJECT_TYPE</id><enabled>Y</enabled><name>LOGGING_OBJECT_TYPE</name></field><field><id>OBJECT_NAME</id><enabled>Y</enabled><name>OBJECT_NAME</name></field><field><id>OBJECT_COPY</id><enabled>Y</enabled><name>OBJECT_COPY</name></field><field><id>REPOSITORY_DIRECTORY</id><enabled>Y</enabled><name>REPOSITORY_DIRECTORY</name></field><field><id>FILENAME</id><enabled>Y</enabled><name>FILENAME</name></field><field><id>OBJECT_ID</id><enabled>Y</enabled><name>OBJECT_ID</name></field><field><id>OBJECT_REVISION</id><enabled>Y</enabled><name>OBJECT_REVISION</name></field><field><id>PARENT_CHANNEL_ID</id><enabled>Y</enabled><name>PARENT_CHANNEL_ID</name></field><field><id>ROOT_CHANNEL_ID</id><enabled>Y</enabled><name>ROOT_CHANNEL_ID</name></field></channel-log-table>
+<step-log-table><connection/>
+<schema/>
+<table/>
+<timeout_days/>
+<field><id>ID_BATCH</id><enabled>Y</enabled><name>ID_BATCH</name></field><field><id>CHANNEL_ID</id><enabled>Y</enabled><name>CHANNEL_ID</name></field><field><id>LOG_DATE</id><enabled>Y</enabled><name>LOG_DATE</name></field><field><id>TRANSNAME</id><enabled>Y</enabled><name>TRANSNAME</name></field><field><id>STEPNAME</id><enabled>Y</enabled><name>STEPNAME</name></field><field><id>STEP_COPY</id><enabled>Y</enabled><name>STEP_COPY</name></field><field><id>LINES_READ</id><enabled>Y</enabled><name>LINES_READ</name></field><field><id>LINES_WRITTEN</id><enabled>Y</enabled><name>LINES_WRITTEN</name></field><field><id>LINES_UPDATED</id><enabled>Y</enabled><name>LINES_UPDATED</name></field><field><id>LINES_INPUT</id><enabled>Y</enabled><name>LINES_INPUT</name></field><field><id>LINES_OUTPUT</id><enabled>Y</enabled><name>LINES_OUTPUT</name></field><field><id>LINES_REJECTED</id><enabled>Y</enabled><name>LINES_REJECTED</name></field><field><id>ERRORS</id><enabled>Y</enabled><name>ERRORS</name></field><field><id>LOG_FIELD</id><enabled>N</enabled><name>LOG_FIELD</name></field></step-log-table>
+    </log>
+    <maxdate>
+      <connection/>
+      <table/>
+      <field/>
+      <offset>0.0</offset>
+      <maxdiff>0.0</maxdiff>
+    </maxdate>
+    <size_rowset>10000</size_rowset>
+    <sleep_time_empty>50</sleep_time_empty>
+    <sleep_time_full>50</sleep_time_full>
+    <unique_connections>N</unique_connections>
+    <feedback_shown>Y</feedback_shown>
+    <feedback_size>50000</feedback_size>
+    <using_thread_priorities>Y</using_thread_priorities>
+    <shared_objects_file/>
+    <capture_step_performance>N</capture_step_performance>
+    <step_performance_capturing_delay>1000</step_performance_capturing_delay>
+    <step_performance_capturing_size_limit>100</step_performance_capturing_size_limit>
+    <dependencies>
+    </dependencies>
+    <partitionschemas>
+    </partitionschemas>
+    <slaveservers>
+    </slaveservers>
+    <clusterschemas>
+    </clusterschemas>
+  <created_user>-</created_user>
+  <created_date>2020&#47;02&#47;12 14:57:12.067</created_date>
+  <modified_user>-</modified_user>
+  <modified_date>2020&#47;02&#47;12 14:57:12.067</modified_date>
+  </info>
+  <notepads>
+  </notepads>
+  <connection>
+    <name>OdsStgDS</name>
+    <server/>
+    <type>ORACLE</type>
+    <access>JNDI</access>
+    <database>OdsStgDS</database>
+    <port>1521</port>
+    <username/>
+    <password>Encrypted </password>
+    <servername/>
+    <data_tablespace/>
+    <index_tablespace/>
+    <attributes>
+      <attribute><code>FORCE_IDENTIFIERS_TO_LOWERCASE</code><attribute>N</attribute></attribute>
+      <attribute><code>FORCE_IDENTIFIERS_TO_UPPERCASE</code><attribute>N</attribute></attribute>
+      <attribute><code>IS_CLUSTERED</code><attribute>N</attribute></attribute>
+      <attribute><code>PORT_NUMBER</code><attribute>1521</attribute></attribute>
+      <attribute><code>QUOTE_ALL_FIELDS</code><attribute>N</attribute></attribute>
+      <attribute><code>SUPPORTS_BOOLEAN_DATA_TYPE</code><attribute>N</attribute></attribute>
+      <attribute><code>USE_POOLING</code><attribute>N</attribute></attribute>
+    </attributes>
+  </connection>
+  <order>
+  <hop> <from>Leo F_RIE_ADMISION_CREDITOS</from><to>Insert T_RIE_ADMISION_CREDITOS</to><enabled>Y</enabled> </hop>  </order>
+  <step>
+    <name>Insert T_RIE_ADMISION_CREDITOS</name>
+    <type>TableOutput</type>
+    <description/>
+    <distribute>Y</distribute>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+    <connection>OdsStgDS</connection>
+    <schema>BDS</schema>
+    <table>T_RIE_ADMISION_CREDITOS</table>
+    <commit>5000</commit>
+    <truncate>N</truncate>
+    <ignore_errors>N</ignore_errors>
+    <use_batch>Y</use_batch>
+    <specify_fields>N</specify_fields>
+    <partitioning_enabled>N</partitioning_enabled>
+    <partitioning_field/>
+    <partitioning_daily>N</partitioning_daily>
+    <partitioning_monthly>Y</partitioning_monthly>
+    <tablename_in_field>N</tablename_in_field>
+    <tablename_field/>
+    <tablename_in_table>Y</tablename_in_table>
+    <return_keys>N</return_keys>
+    <return_field/>
+    <fields>
+    </fields>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>679</xloc>
+      <yloc>116</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>Leo F_RIE_ADMISION_CREDITOS</name>
+    <type>TableInput</type>
+    <description/>
+    <distribute>Y</distribute>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+    <connection>OdsStgDS</connection>
+    <sql>--@001 DMR CASO-22417 [Proyecto SIG] Incidencias Fact de Admisión: Corrección de duplicidad de Registros
+
+ WITH
+     SUBQ1 AS
+     (
+      SELECT NU_SOLICITUD, NU_PRESTAMO, SUM(MO_CRED_INDI_CANC) AS MO_CANCELADO
+      FROM ODS.HD_PRESTAMOS_REFINANCIADOS
+      GROUP BY NU_SOLICITUD, NU_PRESTAMO
+     ),
+     SUBQ2 AS
+     (
+      SELECT NU_SOLICITUD, COUNT(1) AS NU_CANT_GARA 
+      FROM ODS.MD_PERSONAS_SOLICITUD
+      WHERE CO_ROL_PERS = &apos;G&apos;
+      GROUP BY NU_SOLICITUD
+     ),
+     SUBQ3 AS
+     (
+      SELECT NU_SOLICITUD, COUNT(1) AS NU_CANT_CODE 
+      FROM ODS.MD_PERSONAS_SOLICITUD
+      WHERE CO_ROL_PERS = &apos;O&apos;
+      GROUP BY NU_SOLICITUD
+     )
+SELECT w.NU_SOLICITUD,
+       DECODE(a.NU_SOLICITUD,NULL,w.NU_PRESTAMO,b.NU_PRESTAMO) AS NU_PRESTAMO,
+       DECODE(a.NU_SOLICITUD,NULL,w.NU_PERI_MES,NVL(TO_NUMBER(TO_CHAR(a.FE_REGI_SOLI,&apos;YYYYMM&apos;)),0)) AS NU_PERI_MES,
+       DECODE(a.NU_SOLICITUD,NULL,w.FE_INGR_SOLI,a.FE_REGI_SOLI) AS FE_INGR_SOLI, 
+       DECODE(a.NU_SOLICITUD,NULL,w.FE_EVAL_SOLI,NVL(a.FE_EVAL_SOLI, k.FE_EVAL_SOLI)) AS FE_EVAL_SOLI, 
+       DECODE(a.NU_SOLICITUD,NULL,w.FE_APRO_SOLI,NVL(a.FE_APRO_SOLI, k.FE_APRO_SOLI)) AS FE_APRO_SOLI, 
+       DECODE(a.NU_SOLICITUD,NULL,w.FE_DESEMBOLSO,b.FE_DESEMBOLSO) AS FE_DESEMBOLSO, 
+       DECODE(a.NU_SOLICITUD,NULL,w.FE_APER_CUEN,b.FE_APER_CUEN) AS FE_APER_CUEN, 
+       DECODE(a.NU_SOLICITUD,NULL,w.IN_EVALUACION,DECODE(NVL(a.FE_EVAL_SOLI, k.FE_EVAL_SOLI),NULL,0,1)) AS IN_EVALUACION,
+       DECODE(a.NU_SOLICITUD,NULL,w.IN_APROBACION,DECODE(NVL(a.FE_APRO_SOLI, k.FE_APRO_SOLI),NULL,0,1)) AS IN_APROBACION,
+       DECODE(a.NU_SOLICITUD,NULL,w.IN_DESEMBOLSO,DECODE(b.FE_DESEMBOLSO,NULL,0,1)) AS IN_DESEMBOLSO, 
+       DECODE(a.NU_SOLICITUD,NULL,w.IN_REFINANCIADO,DECODE(TRIM(a.CO_TIPO_PRES),&apos;REFINANCIADO&apos;,1,0)) AS IN_REFINANCIADO,
+       CASE
+          WHEN a.NU_SOLICITUD IS NULL THEN w.IN_GARANTIA
+          WHEN f.NU_CANT_GARA &gt; 0 THEN 1 
+          ELSE 0
+       END AS IN_GARANTIA,
+       CASE
+          WHEN a.NU_SOLICITUD IS NULL THEN w.IN_PRES_PREP
+          WHEN b.CO_REFINANCIACION NOT IN (&apos;R&apos;,&apos;P&apos;) AND UPPER(h.DE_PRODUCTO) LIKE &apos;%PRE%PAG%&apos; THEN 1 
+          ELSE 0 
+       END AS IN_PRES_PREP,
+       CASE
+          WHEN a.NU_SOLICITUD IS NULL THEN w.IN_CODEUDORES
+          WHEN g.NU_CANT_CODE &gt; 0 THEN 1
+          ELSE 0 
+       END AS IN_CODEUDORES,
+       DECODE(a.NU_SOLICITUD,NULL,w.CO_CLIENTE,a.CO_CLIENTE) AS CO_CLIENTE,
+       DECODE(a.NU_SOLICITUD,NULL,w.CO_ESTA_SOLI,a.CO_ESTA_SOLI) AS CO_ESTA_SOLI,
+       DECODE(a.NU_SOLICITUD,NULL,w.CO_MONEDA,a.CO_MONEDA) AS CO_MONEDA,
+       DECODE(a.NU_SOLICITUD,NULL,w.CO_TIPO_SOLI,a.CO_TIPO_SOLI) AS CO_TIPO_SOLI,
+       DECODE(a.NU_SOLICITUD,NULL,w.CO_TIPO_PRES,a.CO_TIPO_PRES) AS CO_TIPO_PRES,
+       DECODE(a.NU_SOLICITUD,NULL,w.CO_TIPO_GRAC,a.CO_TIPO_GRAC) AS CO_TIPO_GRAC,
+       DECODE(a.NU_SOLICITUD,NULL,w.CO_TIPO_CRED,a.CO_TIPO_CRED) AS CO_TIPO_CRED,
+       DECODE(a.NU_SOLICITUD,NULL,w.CO_PRODUCTO,a.CO_PRODUCTO) AS CO_PRODUCTO,
+       DECODE(a.NU_SOLICITUD,NULL,w.IN_PRES_MIGR,0) AS IN_PRES_MIGR,
+       DECODE(a.NU_SOLICITUD,NULL,w.NU_LINE_CRED,b.NU_LINE_CRED) AS NU_LINE_CRED,     
+       DECODE(a.NU_SOLICITUD,NULL,w.NU_SOLI_LINE_CRED,e.NU_SOLICITUD) AS NU_SOLI_LINE_CRED,
+       DECODE(a.NU_SOLICITUD,NULL,w.CO_FORM_DESE,a.CO_FORM_DESE) AS CO_FORM_DESE,     
+       DECODE(a.NU_SOLICITUD,NULL,w.CO_AGENCIA,a.CO_SUCURSAL) AS CO_AGENCIA,       
+       DECODE(a.NU_SOLICITUD,NULL,w.CO_ACTI_INTE,c.CO_ACTIVIDAD) AS CO_ACTI_INTE,     
+       DECODE(a.NU_SOLICITUD,NULL,w.CO_GRUP_EXCE,b.CO_GRUP_EXCE) AS CO_GRUP_EXCE,     
+       DECODE(a.NU_SOLICITUD,NULL,w.NU_PERI_GRAC,a.NU_CUOT_GRAC) AS NU_PERI_GRAC,     
+       DECODE(a.NU_SOLICITUD,NULL,w.VL_TASA_DESE,a.VL_TASA) AS VL_TASA_DESE,     
+       DECODE(a.NU_SOLICITUD,NULL,w.MO_SOLICITADO,a.MO_SOLICITADO) AS MO_SOLICITADO,    
+       DECODE(a.NU_SOLICITUD,NULL,w.MO_APROBADO,a.MO_APROBADO) AS MO_APROBADO,      
+       DECODE(a.NU_SOLICITUD,NULL,w.MO_DESEMBOLSADO,b.MO_DESEMBOLSADO) AS MO_DESEMBOLSADO,  
+       DECODE(a.NU_SOLICITUD,NULL,w.MO_DEUD_SOLI,a.MO_DEUD_SOLI) AS MO_DEUD_SOLI,     
+       DECODE(a.NU_SOLICITUD,NULL,w.MO_CUOTA,b.MO_CUOTA) AS MO_CUOTA,
+       DECODE(a.NU_SOLICITUD,NULL,w.MO_SALD_CRED_CANC,d.MO_CANCELADO) AS MO_SALD_CRED_CANC,
+       DECODE(a.NU_SOLICITUD,NULL,w.NU_PLAZ_SOLI,a.NU_PLAZ_SOLI) AS NU_PLAZ_SOLI,
+       DECODE(a.NU_SOLICITUD,NULL,w.NU_PLAZ_APRO,a.NU_PLAZ_APROB) AS NU_PLAZ_APRO,
+       DECODE(a.NU_SOLICITUD,NULL,w.NU_CUOTAS,b.NU_CUOTAS) AS NU_CUOTAS,
+       w.NU_DISP_LINE_CRED,  -- El número de disposición de línea de crédito no será actualizado
+       DECODE(a.NU_SOLICITUD,NULL,w.NU_CANT_GARA,f.NU_CANT_GARA) AS NU_CANT_GARA,
+       DECODE(a.NU_SOLICITUD,NULL,w.NU_CANT_CODE,g.NU_CANT_CODE) AS NU_CANT_CODE,
+       DECODE(a.NU_SOLICITUD,NULL,w.NU_CANT_ENTI_ACRE,NULL) AS NU_CANT_ENTI_ACRE,
+       DECODE(a.NU_SOLICITUD,NULL,w.NU_DIAS_MORA_RCC,NULL) AS NU_DIAS_MORA_RCC,
+       DECODE(a.NU_SOLICITUD,NULL,w.MO_DEUD_SIST_FINA,NULL) AS MO_DEUD_SIST_FINA,
+       CASE
+          WHEN a.NU_SOLICITUD IS NULL THEN w.NU_DIAS_PROC_EVAL
+          WHEN a.FE_EVAL_SOLI IS NOT NULL THEN TRUNC(a.FE_EVAL_SOLI) - TRUNC(a.FE_REGI_SOLI)
+          WHEN k.FE_EVAL_SOLI IS NOT NULL THEN TRUNC(k.FE_EVAL_SOLI) - TRUNC(k.FE_REGI_SOLI)
+          ELSE NULL
+       END AS NU_DIAS_PROC_EVAL,
+       CASE
+          WHEN a.NU_SOLICITUD IS NULL THEN w.NU_DIAS_PROC_APRO
+          WHEN a.FE_APRO_SOLI IS NOT NULL AND a.FE_EVAL_SOLI IS NOT NULL THEN TRUNC(a.FE_APRO_SOLI) - TRUNC(a.FE_EVAL_SOLI)
+          WHEN k.FE_APRO_SOLI IS NOT NULL AND k.FE_EVAL_SOLI IS NOT NULL THEN TRUNC(k.FE_APRO_SOLI) - TRUNC(k.FE_EVAL_SOLI)
+          ELSE NULL
+       END AS NU_DIAS_PROC_APRO,      
+       CASE
+          WHEN a.NU_SOLICITUD IS NULL THEN w.NU_DIAS_PROC_APRO
+          WHEN b.FE_DESEMBOLSO IS NOT NULL AND a.FE_APRO_SOLI IS NOT NULL THEN TRUNC(b.FE_DESEMBOLSO) - TRUNC(a.FE_APRO_SOLI)
+          WHEN b.FE_DESEMBOLSO IS NOT NULL AND a.FE_REGI_SOLI IS NOT NULL THEN TRUNC(b.FE_DESEMBOLSO) - TRUNC(a.FE_REGI_SOLI)
+          ELSE NULL
+       END AS NU_DIAS_PROC_DESE,     
+       DECODE(a.NU_SOLICITUD,NULL,w.CO_CONV_SOLI,j.CO_MEDI_ORIG) AS CO_CONV_SOLI,
+       w.FE_ACTU_DIA
+FROM BDS.F_RIE_ADMISION_CREDITOS w
+     LEFT JOIN ODS.HD_SOLICITUDES PARTITION (P_SOLICITUDES_${FECHAPROCESOEDY_S_P}) a ON a.NU_SOLICITUD = w.NU_SOLICITUD	 
+--@001 Ini
+--   LEFT JOIN ODS.HD_DESEMBOLSO b ON b.NU_SOLICITUD = a.NU_SOLICITUD
+     LEFT JOIN ODS.HD_DESEMBOLSO b ON b.NU_SOLICITUD = a.NU_SOLICITUD AND a.CO_ESTA_SOLI=88 AND b.FE_APER_CUEN=a.FE_PROCESO
+--@001 Fin
+     LEFT JOIN ODS.MD_CLIENTES c ON c.CO_CLIENTE = a.CO_CLIENTE
+     LEFT JOIN SUBQ1 d ON d.NU_SOLICITUD = a.NU_SOLICITUD AND d.NU_PRESTAMO = b.NU_PRESTAMO
+     LEFT JOIN ODS.MD_LINEA_CREDITO e ON e.NU_LINE_CRED = b.NU_LINE_CRED
+     LEFT JOIN SUBQ2 f ON ((f.NU_SOLICITUD = a.NU_SOLICITUD AND b.NU_LINE_CRED = 0) OR (f.NU_SOLICITUD = e.NU_SOLICITUD AND b.NU_LINE_CRED &lt;&gt; 0))
+     LEFT JOIN SUBQ3 g ON ((g.NU_SOLICITUD = a.NU_SOLICITUD AND b.NU_LINE_CRED = 0) OR (g.NU_SOLICITUD = e.NU_SOLICITUD AND b.NU_LINE_CRED &lt;&gt; 0))
+     LEFT JOIN ODS.MD_PRODUCTO_01 h ON h.CO_PRODUCTO = a.CO_PRODUCTO
+     LEFT JOIN ODS.MD_LINEA_CREDITO i ON i.NU_SOLICITUD = a.NU_SOLICITUD
+     LEFT JOIN ODS.MD_APERTURA_PRESOLICITUD j ON j.NU_SOLICITUD = a.NU_SOLICITUD
+     LEFT JOIN ODS.MD_SOLICITUDES k ON k.NU_SOLICITUD = e.NU_SOLICITUD</sql>
+    <limit>0</limit>
+    <lookup/>
+    <execute_each_row>N</execute_each_row>
+    <variables_active>Y</variables_active>
+    <lazy_conversion_active>N</lazy_conversion_active>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>257</xloc>
+      <yloc>116</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step_error_handling>
+  </step_error_handling>
+   <slave-step-copy-partition-distribution>
+</slave-step-copy-partition-distribution>
+   <slave_transformation>N</slave_transformation>
+</transformation>

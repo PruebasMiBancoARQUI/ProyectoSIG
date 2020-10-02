@@ -1,0 +1,312 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<transformation>
+  <info>
+    <name>5-2-2-1-Carga_HM_EGP</name>
+    <description/>
+    <extended_description/>
+    <trans_version/>
+    <trans_type>Normal</trans_type>
+    <trans_status>0</trans_status>
+    <directory>&#47;</directory>
+    <parameters>
+    </parameters>
+    <log>
+<trans-log-table><connection/>
+<schema/>
+<table/>
+<size_limit_lines/>
+<interval/>
+<timeout_days/>
+<field><id>ID_BATCH</id><enabled>Y</enabled><name>ID_BATCH</name></field><field><id>CHANNEL_ID</id><enabled>Y</enabled><name>CHANNEL_ID</name></field><field><id>TRANSNAME</id><enabled>Y</enabled><name>TRANSNAME</name></field><field><id>STATUS</id><enabled>Y</enabled><name>STATUS</name></field><field><id>LINES_READ</id><enabled>Y</enabled><name>LINES_READ</name><subject/></field><field><id>LINES_WRITTEN</id><enabled>Y</enabled><name>LINES_WRITTEN</name><subject/></field><field><id>LINES_UPDATED</id><enabled>Y</enabled><name>LINES_UPDATED</name><subject/></field><field><id>LINES_INPUT</id><enabled>Y</enabled><name>LINES_INPUT</name><subject/></field><field><id>LINES_OUTPUT</id><enabled>Y</enabled><name>LINES_OUTPUT</name><subject/></field><field><id>LINES_REJECTED</id><enabled>Y</enabled><name>LINES_REJECTED</name><subject/></field><field><id>ERRORS</id><enabled>Y</enabled><name>ERRORS</name></field><field><id>STARTDATE</id><enabled>Y</enabled><name>STARTDATE</name></field><field><id>ENDDATE</id><enabled>Y</enabled><name>ENDDATE</name></field><field><id>LOGDATE</id><enabled>Y</enabled><name>LOGDATE</name></field><field><id>DEPDATE</id><enabled>Y</enabled><name>DEPDATE</name></field><field><id>REPLAYDATE</id><enabled>Y</enabled><name>REPLAYDATE</name></field><field><id>LOG_FIELD</id><enabled>Y</enabled><name>LOG_FIELD</name></field></trans-log-table>
+<perf-log-table><connection/>
+<schema/>
+<table/>
+<interval/>
+<timeout_days/>
+<field><id>ID_BATCH</id><enabled>Y</enabled><name>ID_BATCH</name></field><field><id>SEQ_NR</id><enabled>Y</enabled><name>SEQ_NR</name></field><field><id>LOGDATE</id><enabled>Y</enabled><name>LOGDATE</name></field><field><id>TRANSNAME</id><enabled>Y</enabled><name>TRANSNAME</name></field><field><id>STEPNAME</id><enabled>Y</enabled><name>STEPNAME</name></field><field><id>STEP_COPY</id><enabled>Y</enabled><name>STEP_COPY</name></field><field><id>LINES_READ</id><enabled>Y</enabled><name>LINES_READ</name></field><field><id>LINES_WRITTEN</id><enabled>Y</enabled><name>LINES_WRITTEN</name></field><field><id>LINES_UPDATED</id><enabled>Y</enabled><name>LINES_UPDATED</name></field><field><id>LINES_INPUT</id><enabled>Y</enabled><name>LINES_INPUT</name></field><field><id>LINES_OUTPUT</id><enabled>Y</enabled><name>LINES_OUTPUT</name></field><field><id>LINES_REJECTED</id><enabled>Y</enabled><name>LINES_REJECTED</name></field><field><id>ERRORS</id><enabled>Y</enabled><name>ERRORS</name></field><field><id>INPUT_BUFFER_ROWS</id><enabled>Y</enabled><name>INPUT_BUFFER_ROWS</name></field><field><id>OUTPUT_BUFFER_ROWS</id><enabled>Y</enabled><name>OUTPUT_BUFFER_ROWS</name></field></perf-log-table>
+<channel-log-table><connection/>
+<schema/>
+<table/>
+<timeout_days/>
+<field><id>ID_BATCH</id><enabled>Y</enabled><name>ID_BATCH</name></field><field><id>CHANNEL_ID</id><enabled>Y</enabled><name>CHANNEL_ID</name></field><field><id>LOG_DATE</id><enabled>Y</enabled><name>LOG_DATE</name></field><field><id>LOGGING_OBJECT_TYPE</id><enabled>Y</enabled><name>LOGGING_OBJECT_TYPE</name></field><field><id>OBJECT_NAME</id><enabled>Y</enabled><name>OBJECT_NAME</name></field><field><id>OBJECT_COPY</id><enabled>Y</enabled><name>OBJECT_COPY</name></field><field><id>REPOSITORY_DIRECTORY</id><enabled>Y</enabled><name>REPOSITORY_DIRECTORY</name></field><field><id>FILENAME</id><enabled>Y</enabled><name>FILENAME</name></field><field><id>OBJECT_ID</id><enabled>Y</enabled><name>OBJECT_ID</name></field><field><id>OBJECT_REVISION</id><enabled>Y</enabled><name>OBJECT_REVISION</name></field><field><id>PARENT_CHANNEL_ID</id><enabled>Y</enabled><name>PARENT_CHANNEL_ID</name></field><field><id>ROOT_CHANNEL_ID</id><enabled>Y</enabled><name>ROOT_CHANNEL_ID</name></field></channel-log-table>
+<step-log-table><connection/>
+<schema/>
+<table/>
+<timeout_days/>
+<field><id>ID_BATCH</id><enabled>Y</enabled><name>ID_BATCH</name></field><field><id>CHANNEL_ID</id><enabled>Y</enabled><name>CHANNEL_ID</name></field><field><id>LOG_DATE</id><enabled>Y</enabled><name>LOG_DATE</name></field><field><id>TRANSNAME</id><enabled>Y</enabled><name>TRANSNAME</name></field><field><id>STEPNAME</id><enabled>Y</enabled><name>STEPNAME</name></field><field><id>STEP_COPY</id><enabled>Y</enabled><name>STEP_COPY</name></field><field><id>LINES_READ</id><enabled>Y</enabled><name>LINES_READ</name></field><field><id>LINES_WRITTEN</id><enabled>Y</enabled><name>LINES_WRITTEN</name></field><field><id>LINES_UPDATED</id><enabled>Y</enabled><name>LINES_UPDATED</name></field><field><id>LINES_INPUT</id><enabled>Y</enabled><name>LINES_INPUT</name></field><field><id>LINES_OUTPUT</id><enabled>Y</enabled><name>LINES_OUTPUT</name></field><field><id>LINES_REJECTED</id><enabled>Y</enabled><name>LINES_REJECTED</name></field><field><id>ERRORS</id><enabled>Y</enabled><name>ERRORS</name></field><field><id>LOG_FIELD</id><enabled>N</enabled><name>LOG_FIELD</name></field></step-log-table>
+    </log>
+    <maxdate>
+      <connection/>
+      <table/>
+      <field/>
+      <offset>0.0</offset>
+      <maxdiff>0.0</maxdiff>
+    </maxdate>
+    <size_rowset>10000</size_rowset>
+    <sleep_time_empty>50</sleep_time_empty>
+    <sleep_time_full>50</sleep_time_full>
+    <unique_connections>N</unique_connections>
+    <feedback_shown>Y</feedback_shown>
+    <feedback_size>50000</feedback_size>
+    <using_thread_priorities>Y</using_thread_priorities>
+    <shared_objects_file/>
+    <capture_step_performance>N</capture_step_performance>
+    <step_performance_capturing_delay>1000</step_performance_capturing_delay>
+    <step_performance_capturing_size_limit>100</step_performance_capturing_size_limit>
+    <dependencies>
+    </dependencies>
+    <partitionschemas>
+    </partitionschemas>
+    <slaveservers>
+    </slaveservers>
+    <clusterschemas>
+    </clusterschemas>
+  <created_user>-</created_user>
+  <created_date>2016&#47;03&#47;10 13:10:46.334</created_date>
+  <modified_user>-</modified_user>
+  <modified_date>2016&#47;03&#47;10 13:10:46.334</modified_date>
+  </info>
+  <notepads>
+  </notepads>
+  <connection>
+    <name>OdsStgDS</name>
+    <server/>
+    <type>ORACLE</type>
+    <access>JNDI</access>
+    <database>OdsStgDS</database>
+    <port>1521</port>
+    <username/>
+    <password>Encrypted </password>
+    <servername/>
+    <data_tablespace/>
+    <index_tablespace/>
+    <attributes>
+      <attribute><code>FORCE_IDENTIFIERS_TO_LOWERCASE</code><attribute>N</attribute></attribute>
+      <attribute><code>FORCE_IDENTIFIERS_TO_UPPERCASE</code><attribute>N</attribute></attribute>
+      <attribute><code>IS_CLUSTERED</code><attribute>N</attribute></attribute>
+      <attribute><code>PORT_NUMBER</code><attribute>1521</attribute></attribute>
+      <attribute><code>QUOTE_ALL_FIELDS</code><attribute>N</attribute></attribute>
+      <attribute><code>SUPPORTS_BOOLEAN_DATA_TYPE</code><attribute>N</attribute></attribute>
+      <attribute><code>USE_POOLING</code><attribute>N</attribute></attribute>
+    </attributes>
+  </connection>
+  <order>
+  <hop> <from>Leo de ODS.UD_EGP</from><to>Cargo en ODS.HM_EGP</to><enabled>Y</enabled> </hop>  </order>
+  <step>
+    <name>Cargo T_TMP_HISTORIA_VISTA_EGD</name>
+    <type>TableOutput</type>
+    <description/>
+    <distribute>Y</distribute>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+    <connection/>
+    <schema/>
+    <table/>
+    <commit/>
+    <truncate>N</truncate>
+    <ignore_errors>N</ignore_errors>
+    <use_batch>Y</use_batch>
+    <specify_fields>N</specify_fields>
+    <partitioning_enabled>N</partitioning_enabled>
+    <partitioning_field/>
+    <partitioning_daily>N</partitioning_daily>
+    <partitioning_monthly>Y</partitioning_monthly>
+    <tablename_in_field>N</tablename_in_field>
+    <tablename_field/>
+    <tablename_in_table>Y</tablename_in_table>
+    <return_keys>N</return_keys>
+    <return_field/>
+    <fields>
+    </fields>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>751</xloc>
+      <yloc>16</yloc>
+      <draw>N</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>Cargo en ODS.HM_EGP</name>
+    <type>TableOutput</type>
+    <description/>
+    <distribute>Y</distribute>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+    <connection>OdsStgDS</connection>
+    <schema>ODS</schema>
+    <table>HM_EGP</table>
+    <commit>2000</commit>
+    <truncate>N</truncate>
+    <ignore_errors>N</ignore_errors>
+    <use_batch>Y</use_batch>
+    <specify_fields>N</specify_fields>
+    <partitioning_enabled>N</partitioning_enabled>
+    <partitioning_field/>
+    <partitioning_daily>N</partitioning_daily>
+    <partitioning_monthly>Y</partitioning_monthly>
+    <tablename_in_field>N</tablename_in_field>
+    <tablename_field/>
+    <tablename_in_table>Y</tablename_in_table>
+    <return_keys>N</return_keys>
+    <return_field/>
+    <fields>
+    </fields>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>722</xloc>
+      <yloc>136</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>Leo de ODS.UD_EGP</name>
+    <type>TableInput</type>
+    <description/>
+    <distribute>Y</distribute>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+    <connection>OdsStgDS</connection>
+    <sql>------------------------------------------------------------------------------------------------------------
+-- Modificaciones
+-- Responsable : Adrian Huamani Bonilla
+-- Fecha       : 08&#47;07&#47;2020
+-- Descripción : Se agregan 2 campos que serán utilizados en el Datamart de Riesgos
+------------------------------------------------------------------------------------------------------------
+--@001 AHB CASO-21672: Se agrega los campos TMP3.INTE_COMP y TMP3.MORA_CONT
+
+SELECT
+  egp.NU_PERI_MES AS NU_PERI_MES,
+  egp.FE_SALDO AS FE_SALDO,
+  egp.FE_PROCESO AS FE_PROCESO,
+  egp.NU_PRESTAMO AS NU_PRESTAMO,
+  egp.CO_CLIENTE AS CO_CLIENTE,
+  egp.IN_SIN_HIPO_INSC AS IN_SIN_HIPO_INSC,
+  egp.NU_PLAZ_DIAS AS NU_PLAZ_DIAS,
+  egp.VL_TEA AS VL_TEA,
+  egp.FE_VENCIMIENTO AS FE_VENCIMIENTO,
+  egp.FE_DESEMBOLSO AS FE_DESEMBOLSO,
+  egp.FE_ULTI_PAGO AS FE_ULTI_PAGO,
+  egp.FE_CASTIGO AS FE_CASTIGO,
+  egp.NU_DIAS_ATRA AS NU_DIAS_ATRA,
+  egp.MO_DESEMBOLSO AS MO_DESEMBOLSO,
+  egp.MO_SALD_VENC AS MO_SALD_VENC,
+  egp.MO_SALD_VIGE AS MO_SALD_VIGE,
+  egp.MO_SALD_ACTU AS MO_SALD_ACTU,
+  egp.MO_INTE_DEVE_VIGE AS MO_INTE_DEVE_VIGE,
+  egp.MO_INTE_DEVE_SUST AS MO_INTE_DEVE_SUST,
+  egp.NU_CUOT_PAGA AS NU_CUOT_PAGA,
+  egp.MO_SALD_CAPI_MN AS MO_SALD_CAPI_MN,
+  egp.NU_LINE_CRED AS NU_LINE_CRED,
+  egp.MO_SALD_DISP_LINE AS MO_SALD_DISP_LINE,
+  egp.FE_VENC_LINE AS FE_VENC_LINE,
+  egp.TI_PRESTAMO AS TI_PRESTAMO,
+  egp.CO_MONEDA AS CO_MONEDA,
+  egp.CO_ESTA_OPER AS CO_ESTA_OPER,
+  egp.CO_SUCURSAL AS CO_SUCURSAL,
+  egp.CO_ANALISTA AS CO_ANALISTA,
+  egp.CO_USUA_TOPA AS CO_USUA_TOPA,
+  egp.CO_CARG_ANAL AS CO_CARG_ANAL,
+  egp.CO_PUES_ANAL AS CO_PUES_ANAL,
+  egp.CO_SUCU_ANAL AS CO_SUCU_ANAL,
+  egp.CO_PRODUCTO AS CO_PRODUCTO,
+  egp.CO_CRITERIO AS CO_CRITERIO,
+  egp.NU_SOLICITUD AS NU_SOLICITUD,
+  egp.NU_GRUP_SOLI AS NU_GRUP_SOLI,
+  egp.CO_SUCU_PADR AS CO_SUCU_PADR,
+  egp.CO_ANAL_ORIG AS CO_ANAL_ORIG,
+  egp.CO_CARG_ANAL_ORIG AS CO_CARG_ANAL_ORIG,
+  egp.CO_PUES_ANAL_ORIG AS CO_PUES_ANAL_ORIG,
+  egp.CO_SUCU_ANAL_ORIG AS CO_SUCU_ANAL_ORIG,
+  egp.TI_CLIENTE AS TI_CLIENTE,
+  egp.NU_CANT_EMPR AS NU_CANT_EMPR,
+  egp.MO_SALD_SIST_FINA AS MO_SALD_SIST_FINA,
+  egp.NU_PORC_EXCL AS NU_PORC_EXCL,
+  egp.NU_PERI_GRAC AS NU_PERI_GRAC,
+  egp.CO_TIPO_GRAC AS CO_TIPO_GRAC,
+  egp.TI_EXCEPCION AS TI_EXCEPCION,
+  egp.VL_TCEA AS VL_TCEA,
+  egp.VL_TASA_MINI AS VL_TASA_MINI,
+  egp.VL_TASA_MAXI AS VL_TASA_MAXI,
+  egp.NU_DIAS_TOTA_ATRA AS NU_DIAS_TOTA_ATRA,
+  egp.NU_MAXI_DIAS_ATRA AS NU_MAXI_DIAS_ATRA,
+  egp.NU_CUOT_PACT AS NU_CUOT_PACT,
+  egp.CO_USUA_APRO_SOLI AS CO_USUA_APRO_SOLI,
+  egp.IN_FOGAPI AS IN_FOGAPI,
+  egp.ST_FOGAPI AS ST_FOGAPI,
+  egp.IN_SALD_JTS_OID AS IN_SALD_JTS_OID,
+  egp.IN_GARA_ACTI AS IN_GARA_ACTI,
+  egp.IN_PAGO_PARC AS IN_PAGO_PARC,
+  egp.MO_DEUD_VENC AS MO_DEUD_VENC,
+  egp.MO_TOTA_DEUD AS MO_TOTA_DEUD,
+  egp.NU_CUOT_VENC AS NU_CUOT_VENC,
+  egp.FE_VENC_CUOT AS FE_VENC_CUOT,
+  egp.NU_DIAS_MORA_MES AS NU_DIAS_MORA_MES,
+  egp.MO_PAGO_TOTA_MES AS MO_PAGO_TOTA_MES,
+  egp.MO_PAGO_CAPI_MES AS MO_PAGO_CAPI_MES,
+  egp.MO_PAGO_COND_CAPI AS MO_PAGO_COND_CAPI,
+  egp.MO_PAGO_COND_TOTA AS MO_PAGO_COND_TOTA,
+  egp.IN_CONDONACION AS IN_CONDONACION,
+  egp.MO_SALD_CUEN_INTE AS MO_SALD_CUEN_INTE,
+  egp.IN_GARA_REAL AS IN_GARA_REAL,
+  egp.MO_SALD_RESU AS MO_SALD_RESU,
+  egp.VL_TASA_ICM AS VL_TASA_ICM,
+  egp.VL_TASA_INTE_MOR AS VL_TASA_INTE_MOR,
+  egp.MO_TOTA_GAST AS MO_TOTA_GAST,
+  egp.VL_TIPO_CAMB_OFIC AS VL_TIPO_CAMB_OFIC,
+  egp.CO_ACTI_ECON_INTE AS CO_ACTI_ECON_INTE,
+  egp.CO_SECT_ECON_ALTE AS CO_SECT_ECON_ALTE,
+  egp.CO_ACTIVIDAD AS CO_ACTIVIDAD,
+  egp.CO_ACTI_CIIU AS CO_ACTI_CIIU,
+  egp.CO_SECT_ECON_INTE AS CO_SECT_ECON_INTE,
+  egp.IN_EMPLEADO AS IN_EMPLEADO,
+  egp.NU_EMPR_REPO AS NU_EMPR_REPO,
+  egp.MO_TOTA_SIST_FINA AS MO_TOTA_SIST_FINA,
+  egp.FE_PROC_ULTI_PAGO AS FE_PROC_ULTI_PAGO,
+  egp.FE_PSJE_JUDI AS FE_PSJE_JUDI,
+  egp.FE_PSJE_VENC AS FE_PSJE_VENC,
+  NVL(egp.IN_MIGRADO,0) AS IN_MIGRADO,
+  egp.IN_REFINANCIADO AS IN_REFINANCIADO,
+  NVL(egp.IN_SINIESTRO,0) AS IN_SINIESTRO,
+  NVL(egp.MO_CUOTA,0) AS MO_CUOTA,
+  NVL(egp.VL_DESGRAVAMEN,0) AS VL_DESGRAVAMEN,
+  NVL(egp.VL_TASA_OPTI,0) AS VL_TASA_OPTI,
+  NVL(egp.CO_PROD_ORIG,0) AS CO_PROD_ORIG,
+  NVL(egp.IN_AHORRO,0) AS IN_AHORRO,
+  egp.CO_DESTINO AS CO_DESTINO,
+  SYSDATE AS FE_ACTU_DIA,
+  egp.CO_REFINANCIADO AS CO_REFINANCIADO,
+--@001 Ini: Se agrega los campos TMP3.INTE_COMP y TMP3.MORA_CONT
+  egp.MO_INTE_COMP_ATRA AS MO_INTE_COMP_ATRA,
+  egp.MO_INTE_MORA_PEND AS MO_INTE_MORA_PEND 
+--@001 Fin
+FROM ODS.UD_EGP egp</sql>
+    <limit>0</limit>
+    <lookup/>
+    <execute_each_row>N</execute_each_row>
+    <variables_active>Y</variables_active>
+    <lazy_conversion_active>N</lazy_conversion_active>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>192</xloc>
+      <yloc>136</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step_error_handling>
+  </step_error_handling>
+   <slave-step-copy-partition-distribution>
+</slave-step-copy-partition-distribution>
+   <slave_transformation>N</slave_transformation>
+</transformation>

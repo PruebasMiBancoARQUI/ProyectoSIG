@@ -1,0 +1,84 @@
+DECLARE
+    ln_ind_existe    NUMBER(1);
+BEGIN
+    BEGIN
+	    SELECT 1
+	    INTO ln_ind_existe
+	    FROM ALL_TABLES
+        WHERE owner = 'ODS'
+          AND table_name = 'TG_BITACORA_PRE_PRESTAMO';
+			  
+        EXECUTE IMMEDIATE 'DROP TABLE ODS.TG_BITACORA_PRE_PRESTAMO PURGE';
+	EXCEPTION
+	    WHEN NO_DATA_FOUND THEN NULL;
+    END;
+END;
+/
+
+DECLARE
+    ln_ind_existe    NUMBER(1);
+BEGIN
+    BEGIN
+	    SELECT 1
+	    INTO ln_ind_existe
+	    FROM ALL_TABLES
+        WHERE owner = 'ODS'
+          AND table_name = 'TM_HD_DESEMBOLSO_CARGA_INICIAL';
+			  
+        EXECUTE IMMEDIATE 'DROP TABLE ODS.TM_HD_DESEMBOLSO_CARGA_INICIAL PURGE';
+	EXCEPTION
+	    WHEN NO_DATA_FOUND THEN NULL;
+    END;
+END;
+/
+
+DECLARE
+    ln_ind_existe    NUMBER(1);
+BEGIN
+    BEGIN
+	    SELECT 1
+	    INTO ln_ind_existe
+	    FROM ALL_OBJECTS
+        WHERE owner = 'DWHADM'
+          AND object_name = 'SP_CARGA_INICIAL_HD_DESEMBOLSO';
+		  
+        EXECUTE IMMEDIATE 'DROP PROCEDURE DWHADM.SP_CARGA_INICIAL_HD_DESEMBOLSO';
+	EXCEPTION
+	    WHEN NO_DATA_FOUND THEN NULL;
+    END;
+END;
+/
+
+DECLARE
+    ln_ind_existe    NUMBER(1);
+BEGIN
+    BEGIN
+	    SELECT 1
+	    INTO ln_ind_existe
+	    FROM ALL_OBJECTS
+        WHERE owner = 'DWHADM'
+          AND object_name = 'SP_CARGA_FINAL_HD_DESEMBOLSO';
+		  
+        EXECUTE IMMEDIATE 'DROP PROCEDURE DWHADM.SP_CARGA_FINAL_HD_DESEMBOLSO';
+	EXCEPTION
+	    WHEN NO_DATA_FOUND THEN NULL;
+    END;
+END;
+/
+
+DECLARE
+    ln_ind_existe    NUMBER(1);
+BEGIN
+    BEGIN
+	    SELECT 1
+	    INTO ln_ind_existe
+	    FROM ALL_OBJECTS
+        WHERE owner = 'DWHADM'
+          AND object_name = 'SP_CARGA_BITACORA_PRE_PRESTAMO';
+		  
+        EXECUTE IMMEDIATE 'DROP PROCEDURE DWHADM.SP_CARGA_BITACORA_PRE_PRESTAMO';
+	EXCEPTION
+	    WHEN NO_DATA_FOUND THEN NULL;
+    END;
+END;
+/

@@ -1,0 +1,947 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<transformation>
+  <info>
+    <name>1-2-2-1-Carga_Tablas_Direcciones</name>
+    <description/>
+    <extended_description/>
+    <trans_version/>
+    <trans_type>Normal</trans_type>
+    <trans_status>0</trans_status>
+    <directory>&#47;</directory>
+    <parameters>
+    </parameters>
+    <log>
+<trans-log-table><connection/>
+<schema/>
+<table/>
+<size_limit_lines/>
+<interval/>
+<timeout_days/>
+<field><id>ID_BATCH</id><enabled>Y</enabled><name>ID_BATCH</name></field><field><id>CHANNEL_ID</id><enabled>Y</enabled><name>CHANNEL_ID</name></field><field><id>TRANSNAME</id><enabled>Y</enabled><name>TRANSNAME</name></field><field><id>STATUS</id><enabled>Y</enabled><name>STATUS</name></field><field><id>LINES_READ</id><enabled>Y</enabled><name>LINES_READ</name><subject/></field><field><id>LINES_WRITTEN</id><enabled>Y</enabled><name>LINES_WRITTEN</name><subject/></field><field><id>LINES_UPDATED</id><enabled>Y</enabled><name>LINES_UPDATED</name><subject/></field><field><id>LINES_INPUT</id><enabled>Y</enabled><name>LINES_INPUT</name><subject/></field><field><id>LINES_OUTPUT</id><enabled>Y</enabled><name>LINES_OUTPUT</name><subject/></field><field><id>LINES_REJECTED</id><enabled>Y</enabled><name>LINES_REJECTED</name><subject/></field><field><id>ERRORS</id><enabled>Y</enabled><name>ERRORS</name></field><field><id>STARTDATE</id><enabled>Y</enabled><name>STARTDATE</name></field><field><id>ENDDATE</id><enabled>Y</enabled><name>ENDDATE</name></field><field><id>LOGDATE</id><enabled>Y</enabled><name>LOGDATE</name></field><field><id>DEPDATE</id><enabled>Y</enabled><name>DEPDATE</name></field><field><id>REPLAYDATE</id><enabled>Y</enabled><name>REPLAYDATE</name></field><field><id>LOG_FIELD</id><enabled>Y</enabled><name>LOG_FIELD</name></field></trans-log-table>
+<perf-log-table><connection/>
+<schema/>
+<table/>
+<interval/>
+<timeout_days/>
+<field><id>ID_BATCH</id><enabled>Y</enabled><name>ID_BATCH</name></field><field><id>SEQ_NR</id><enabled>Y</enabled><name>SEQ_NR</name></field><field><id>LOGDATE</id><enabled>Y</enabled><name>LOGDATE</name></field><field><id>TRANSNAME</id><enabled>Y</enabled><name>TRANSNAME</name></field><field><id>STEPNAME</id><enabled>Y</enabled><name>STEPNAME</name></field><field><id>STEP_COPY</id><enabled>Y</enabled><name>STEP_COPY</name></field><field><id>LINES_READ</id><enabled>Y</enabled><name>LINES_READ</name></field><field><id>LINES_WRITTEN</id><enabled>Y</enabled><name>LINES_WRITTEN</name></field><field><id>LINES_UPDATED</id><enabled>Y</enabled><name>LINES_UPDATED</name></field><field><id>LINES_INPUT</id><enabled>Y</enabled><name>LINES_INPUT</name></field><field><id>LINES_OUTPUT</id><enabled>Y</enabled><name>LINES_OUTPUT</name></field><field><id>LINES_REJECTED</id><enabled>Y</enabled><name>LINES_REJECTED</name></field><field><id>ERRORS</id><enabled>Y</enabled><name>ERRORS</name></field><field><id>INPUT_BUFFER_ROWS</id><enabled>Y</enabled><name>INPUT_BUFFER_ROWS</name></field><field><id>OUTPUT_BUFFER_ROWS</id><enabled>Y</enabled><name>OUTPUT_BUFFER_ROWS</name></field></perf-log-table>
+<channel-log-table><connection/>
+<schema/>
+<table/>
+<timeout_days/>
+<field><id>ID_BATCH</id><enabled>Y</enabled><name>ID_BATCH</name></field><field><id>CHANNEL_ID</id><enabled>Y</enabled><name>CHANNEL_ID</name></field><field><id>LOG_DATE</id><enabled>Y</enabled><name>LOG_DATE</name></field><field><id>LOGGING_OBJECT_TYPE</id><enabled>Y</enabled><name>LOGGING_OBJECT_TYPE</name></field><field><id>OBJECT_NAME</id><enabled>Y</enabled><name>OBJECT_NAME</name></field><field><id>OBJECT_COPY</id><enabled>Y</enabled><name>OBJECT_COPY</name></field><field><id>REPOSITORY_DIRECTORY</id><enabled>Y</enabled><name>REPOSITORY_DIRECTORY</name></field><field><id>FILENAME</id><enabled>Y</enabled><name>FILENAME</name></field><field><id>OBJECT_ID</id><enabled>Y</enabled><name>OBJECT_ID</name></field><field><id>OBJECT_REVISION</id><enabled>Y</enabled><name>OBJECT_REVISION</name></field><field><id>PARENT_CHANNEL_ID</id><enabled>Y</enabled><name>PARENT_CHANNEL_ID</name></field><field><id>ROOT_CHANNEL_ID</id><enabled>Y</enabled><name>ROOT_CHANNEL_ID</name></field></channel-log-table>
+<step-log-table><connection/>
+<schema/>
+<table/>
+<timeout_days/>
+<field><id>ID_BATCH</id><enabled>Y</enabled><name>ID_BATCH</name></field><field><id>CHANNEL_ID</id><enabled>Y</enabled><name>CHANNEL_ID</name></field><field><id>LOG_DATE</id><enabled>Y</enabled><name>LOG_DATE</name></field><field><id>TRANSNAME</id><enabled>Y</enabled><name>TRANSNAME</name></field><field><id>STEPNAME</id><enabled>Y</enabled><name>STEPNAME</name></field><field><id>STEP_COPY</id><enabled>Y</enabled><name>STEP_COPY</name></field><field><id>LINES_READ</id><enabled>Y</enabled><name>LINES_READ</name></field><field><id>LINES_WRITTEN</id><enabled>Y</enabled><name>LINES_WRITTEN</name></field><field><id>LINES_UPDATED</id><enabled>Y</enabled><name>LINES_UPDATED</name></field><field><id>LINES_INPUT</id><enabled>Y</enabled><name>LINES_INPUT</name></field><field><id>LINES_OUTPUT</id><enabled>Y</enabled><name>LINES_OUTPUT</name></field><field><id>LINES_REJECTED</id><enabled>Y</enabled><name>LINES_REJECTED</name></field><field><id>ERRORS</id><enabled>Y</enabled><name>ERRORS</name></field><field><id>LOG_FIELD</id><enabled>N</enabled><name>LOG_FIELD</name></field></step-log-table>
+    </log>
+    <maxdate>
+      <connection/>
+      <table/>
+      <field/>
+      <offset>0.0</offset>
+      <maxdiff>0.0</maxdiff>
+    </maxdate>
+    <size_rowset>10000</size_rowset>
+    <sleep_time_empty>50</sleep_time_empty>
+    <sleep_time_full>50</sleep_time_full>
+    <unique_connections>N</unique_connections>
+    <feedback_shown>Y</feedback_shown>
+    <feedback_size>50000</feedback_size>
+    <using_thread_priorities>Y</using_thread_priorities>
+    <shared_objects_file/>
+    <capture_step_performance>N</capture_step_performance>
+    <step_performance_capturing_delay>1000</step_performance_capturing_delay>
+    <step_performance_capturing_size_limit>100</step_performance_capturing_size_limit>
+    <dependencies>
+    </dependencies>
+    <partitionschemas>
+    </partitionschemas>
+    <slaveservers>
+    </slaveservers>
+    <clusterschemas>
+    </clusterschemas>
+  <created_user>-</created_user>
+  <created_date>2016&#47;01&#47;15 10:31:55.609</created_date>
+  <modified_user>-</modified_user>
+  <modified_date>2016&#47;01&#47;15 10:31:55.609</modified_date>
+  </info>
+  <notepads>
+  </notepads>
+  <connection>
+    <name>OdsStgDS</name>
+    <server/>
+    <type>ORACLE</type>
+    <access>JNDI</access>
+    <database>OdsStgDS</database>
+    <port>1521</port>
+    <username/>
+    <password>Encrypted </password>
+    <servername/>
+    <data_tablespace/>
+    <index_tablespace/>
+    <attributes>
+      <attribute><code>FORCE_IDENTIFIERS_TO_LOWERCASE</code><attribute>N</attribute></attribute>
+      <attribute><code>FORCE_IDENTIFIERS_TO_UPPERCASE</code><attribute>N</attribute></attribute>
+      <attribute><code>IS_CLUSTERED</code><attribute>N</attribute></attribute>
+      <attribute><code>PORT_NUMBER</code><attribute>1521</attribute></attribute>
+      <attribute><code>QUOTE_ALL_FIELDS</code><attribute>N</attribute></attribute>
+      <attribute><code>SUPPORTS_BOOLEAN_DATA_TYPE</code><attribute>N</attribute></attribute>
+      <attribute><code>USE_POOLING</code><attribute>N</attribute></attribute>
+    </attributes>
+  </connection>
+  <order>
+  <hop> <from>Leo Dimensiones de UBIGEO</from><to>Actualizo MD_UBIGEO</to><enabled>Y</enabled> </hop>  <hop> <from>Leo T_TC_DIRECCIONES_NATURAL</from><to>Chequeo Dir Valida</to><enabled>Y</enabled> </hop>  <hop> <from>Chequeo Dir Valida</from><to>Saco Campo DIR_VALIDA</to><enabled>Y</enabled> </hop>  <hop> <from>Saco Campo DIR_VALIDA</from><to>Cargo MD_DIRECCIONES_CLIENTE Natural</to><enabled>Y</enabled> </hop>  <hop> <from>Chequeo Dir Valida</from><to>Caso Dir Invalida</to><enabled>Y</enabled> </hop>  <hop> <from>Chequeo Dir Valida 2</from><to>Saco Campo DIR_VALIDA 2</to><enabled>Y</enabled> </hop>  <hop> <from>Chequeo Dir Valida 2</from><to>Caso Dir Invalida 2</to><enabled>Y</enabled> </hop>  <hop> <from>Leo T_TC_DIRECCIONES_JURIDICA</from><to>Chequeo Dir Valida 2</to><enabled>Y</enabled> </hop>  <hop> <from>Saco Campo DIR_VALIDA 2</from><to>Cargo MD_DIRECCIONES_CLIENTE Juridica</to><enabled>Y</enabled> </hop>  <hop> <from>Chequeo Dir Valida 3</from><to>Saco Campo DIR_VALIDA 3</to><enabled>Y</enabled> </hop>  <hop> <from>Chequeo Dir Valida 3</from><to>Caso Dir Invalida 3</to><enabled>Y</enabled> </hop>  <hop> <from>Leo T_TC_DIR_NEGOCIO</from><to>Chequeo Dir Valida 3</to><enabled>Y</enabled> </hop>  <hop> <from>Saco Campo DIR_VALIDA 3</from><to>Cargo MD_DIRECCIONES_CLIENTE Negocio</to><enabled>Y</enabled> </hop>  <hop> <from>Chequeo Dir Valida 4</from><to>Caso Dir Invalida 4</to><enabled>Y</enabled> </hop>  <hop> <from>Chequeo Dir Valida 4</from><to>Saco Campo DIR_VALIDA 4</to><enabled>Y</enabled> </hop>  <hop> <from>Leo T_TC_DIRECCIONES_CLIENTE</from><to>Chequeo Dir Valida 4</to><enabled>Y</enabled> </hop>  <hop> <from>Saco Campo DIR_VALIDA 4</from><to>Cargo MD_DIRECCIONES_CLIENTE Dir. Clientes</to><enabled>Y</enabled> </hop>  <hop> <from>Leo T_TC_PAISES</from><to>Actualizo MD_PAIS</to><enabled>Y</enabled> </hop>  </order>
+  <step>
+    <name>Actualizo MD_PAIS</name>
+    <type>InsertUpdate</type>
+    <description/>
+    <distribute>Y</distribute>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+    <connection>OdsStgDS</connection>
+    <commit>1000</commit>
+    <update_bypassed>N</update_bypassed>
+    <lookup>
+      <schema>ODS</schema>
+      <table>MD_PAIS</table>
+      <key>
+        <name>CO_PAIS</name>
+        <field>CO_PAIS</field>
+        <condition>=</condition>
+        <name2/>
+      </key>
+      <value>
+        <name>CO_PAIS</name>
+        <rename>CO_PAIS</rename>
+        <update>N</update>
+      </value>
+      <value>
+        <name>DE_PAIS</name>
+        <rename>DE_PAIS</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>FE_ACTU_DIA</name>
+        <rename>FE_ACTU_DIA</rename>
+        <update>Y</update>
+      </value>
+    </lookup>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>760</xloc>
+      <yloc>903</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>Actualizo MD_UBIGEO</name>
+    <type>InsertUpdate</type>
+    <description/>
+    <distribute>Y</distribute>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+    <connection>OdsStgDS</connection>
+    <commit>100</commit>
+    <update_bypassed>N</update_bypassed>
+    <lookup>
+      <schema>ODS</schema>
+      <table>MD_UBIGEO</table>
+      <key>
+        <name>CO_UBIGEO</name>
+        <field>CO_UBIGEO</field>
+        <condition>=</condition>
+        <name2/>
+      </key>
+      <value>
+        <name>CO_UBIGEO</name>
+        <rename>CO_UBIGEO</rename>
+        <update>N</update>
+      </value>
+      <value>
+        <name>CO_DEPARTAMENTO</name>
+        <rename>CO_DEPARTAMENTO</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>DE_DEPARTAMENTO</name>
+        <rename>DE_DEPARTAMENTO</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>CO_PROVINCIA</name>
+        <rename>CO_PROVINCIA</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>DE_PROVINCIA</name>
+        <rename>DE_PROVINCIA</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>CO_DISTRITO</name>
+        <rename>CO_DISTRITO</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>DE_DISTRITO</name>
+        <rename>DE_DISTRITO</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>FE_ACTU_DIA</name>
+        <rename>FE_ACTU_DIA</rename>
+        <update>Y</update>
+      </value>
+    </lookup>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>760</xloc>
+      <yloc>797</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>Cargo MD_DIRECCIONES_CLIENTE Dir. Clientes</name>
+    <type>TableOutput</type>
+    <description/>
+    <distribute>Y</distribute>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+    <connection>OdsStgDS</connection>
+    <schema>ODS</schema>
+    <table>MD_DIRECCIONES_CLIENTE</table>
+    <commit>1000</commit>
+    <truncate>N</truncate>
+    <ignore_errors>N</ignore_errors>
+    <use_batch>Y</use_batch>
+    <specify_fields>N</specify_fields>
+    <partitioning_enabled>N</partitioning_enabled>
+    <partitioning_field/>
+    <partitioning_daily>N</partitioning_daily>
+    <partitioning_monthly>Y</partitioning_monthly>
+    <tablename_in_field>N</tablename_in_field>
+    <tablename_field/>
+    <tablename_in_table>Y</tablename_in_table>
+    <return_keys>N</return_keys>
+    <return_field/>
+    <fields>
+    </fields>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>760</xloc>
+      <yloc>611</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>Cargo MD_DIRECCIONES_CLIENTE Juridica</name>
+    <type>TableOutput</type>
+    <description/>
+    <distribute>Y</distribute>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+    <connection>OdsStgDS</connection>
+    <schema>ODS</schema>
+    <table>MD_DIRECCIONES_CLIENTE</table>
+    <commit>1000</commit>
+    <truncate>N</truncate>
+    <ignore_errors>N</ignore_errors>
+    <use_batch>Y</use_batch>
+    <specify_fields>N</specify_fields>
+    <partitioning_enabled>N</partitioning_enabled>
+    <partitioning_field/>
+    <partitioning_daily>N</partitioning_daily>
+    <partitioning_monthly>Y</partitioning_monthly>
+    <tablename_in_field>N</tablename_in_field>
+    <tablename_field/>
+    <tablename_in_table>Y</tablename_in_table>
+    <return_keys>N</return_keys>
+    <return_field/>
+    <fields>
+    </fields>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>760</xloc>
+      <yloc>227</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>Cargo MD_DIRECCIONES_CLIENTE Natural</name>
+    <type>TableOutput</type>
+    <description/>
+    <distribute>Y</distribute>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+    <connection>OdsStgDS</connection>
+    <schema>ODS</schema>
+    <table>MD_DIRECCIONES_CLIENTE</table>
+    <commit>1000</commit>
+    <truncate>N</truncate>
+    <ignore_errors>N</ignore_errors>
+    <use_batch>Y</use_batch>
+    <specify_fields>N</specify_fields>
+    <partitioning_enabled>N</partitioning_enabled>
+    <partitioning_field/>
+    <partitioning_daily>N</partitioning_daily>
+    <partitioning_monthly>Y</partitioning_monthly>
+    <tablename_in_field>N</tablename_in_field>
+    <tablename_field/>
+    <tablename_in_table>Y</tablename_in_table>
+    <return_keys>N</return_keys>
+    <return_field/>
+    <fields>
+    </fields>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>760</xloc>
+      <yloc>29</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>Cargo MD_DIRECCIONES_CLIENTE Negocio</name>
+    <type>TableOutput</type>
+    <description/>
+    <distribute>Y</distribute>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+    <connection>OdsStgDS</connection>
+    <schema>ODS</schema>
+    <table>MD_DIRECCIONES_CLIENTE</table>
+    <commit>1000</commit>
+    <truncate>N</truncate>
+    <ignore_errors>N</ignore_errors>
+    <use_batch>Y</use_batch>
+    <specify_fields>N</specify_fields>
+    <partitioning_enabled>N</partitioning_enabled>
+    <partitioning_field/>
+    <partitioning_daily>N</partitioning_daily>
+    <partitioning_monthly>Y</partitioning_monthly>
+    <tablename_in_field>N</tablename_in_field>
+    <tablename_field/>
+    <tablename_in_table>Y</tablename_in_table>
+    <return_keys>N</return_keys>
+    <return_field/>
+    <fields>
+    </fields>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>760</xloc>
+      <yloc>409</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>Caso Dir Invalida</name>
+    <type>Dummy</type>
+    <description/>
+    <distribute>Y</distribute>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>311</xloc>
+      <yloc>133</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>Caso Dir Invalida 2</name>
+    <type>Dummy</type>
+    <description/>
+    <distribute>Y</distribute>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>311</xloc>
+      <yloc>331</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>Caso Dir Invalida 3</name>
+    <type>Dummy</type>
+    <description/>
+    <distribute>Y</distribute>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>311</xloc>
+      <yloc>520</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>Caso Dir Invalida 4</name>
+    <type>Dummy</type>
+    <description/>
+    <distribute>Y</distribute>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>311</xloc>
+      <yloc>722</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>Chequeo Dir Valida</name>
+    <type>SwitchCase</type>
+    <description/>
+    <distribute>Y</distribute>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+<fieldname>DIR_VALIDA</fieldname>
+<use_contains>N</use_contains>
+<case_value_type>Number</case_value_type>
+<case_value_format/>
+<case_value_decimal/>
+<case_value_group/>
+<default_target_step/>
+<cases><case><value>1</value>
+<target_step>Saco Campo DIR_VALIDA</target_step>
+</case><case><value>0</value>
+<target_step>Caso Dir Invalida</target_step>
+</case></cases>     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>311</xloc>
+      <yloc>29</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>Chequeo Dir Valida 2</name>
+    <type>SwitchCase</type>
+    <description/>
+    <distribute>Y</distribute>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+<fieldname>DIR_VALIDA</fieldname>
+<use_contains>N</use_contains>
+<case_value_type>Number</case_value_type>
+<case_value_format/>
+<case_value_decimal/>
+<case_value_group/>
+<default_target_step/>
+<cases><case><value>1</value>
+<target_step>Saco Campo DIR_VALIDA 2</target_step>
+</case><case><value>0</value>
+<target_step>Caso Dir Invalida 2</target_step>
+</case></cases>     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>311</xloc>
+      <yloc>227</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>Chequeo Dir Valida 3</name>
+    <type>SwitchCase</type>
+    <description/>
+    <distribute>Y</distribute>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+<fieldname>DIR_VALIDA</fieldname>
+<use_contains>N</use_contains>
+<case_value_type>Number</case_value_type>
+<case_value_format/>
+<case_value_decimal/>
+<case_value_group/>
+<default_target_step/>
+<cases><case><value>1</value>
+<target_step>Saco Campo DIR_VALIDA 3</target_step>
+</case><case><value>0</value>
+<target_step>Caso Dir Invalida 3</target_step>
+</case></cases>     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>311</xloc>
+      <yloc>409</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>Chequeo Dir Valida 4</name>
+    <type>SwitchCase</type>
+    <description/>
+    <distribute>Y</distribute>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+<fieldname>DIR_VALIDA</fieldname>
+<use_contains>N</use_contains>
+<case_value_type>Number</case_value_type>
+<case_value_format/>
+<case_value_decimal/>
+<case_value_group/>
+<default_target_step/>
+<cases><case><value>1</value>
+<target_step>Saco Campo DIR_VALIDA 4</target_step>
+</case><case><value>0</value>
+<target_step>Caso Dir Invalida 4</target_step>
+</case></cases>     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>311</xloc>
+      <yloc>611</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>Leo Dimensiones de UBIGEO</name>
+    <type>TableInput</type>
+    <description/>
+    <distribute>Y</distribute>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+    <connection>OdsStgDS</connection>
+    <sql>SELECT
+	LPAD(TO_CHAR(b.C1212*10000+b.C1214*100+b.C1215),6,&apos;0&apos;) AS CO_UBIGEO,
+	b.C1212 AS CO_DEPARTAMENTO,
+	UPPER(d.C1481) AS DE_DEPARTAMENTO,
+	b.C1214 AS CO_PROVINCIA,
+	UPPER(m.C1207) AS DE_PROVINCIA,
+	b.C1215 AS CO_DISTRITO,
+	UPPER(b.C1216) AS DE_DISTRITO,
+	SYSDATE AS FE_ACTU_DIA 
+FROM STG.T_TC_BARRIOS b
+	 JOIN STG.T_TC_MUNICIPIOS m
+	 	ON b.C1212 =m.C1205 --Codigo Departamento
+	 	AND b.C1214=m.C1206	--Codigo Provincia
+	 JOIN STG.T_TC_DEPARTAMENTOS d
+	 	ON d.C1480=b.C1212 --Codigo Departamento</sql>
+    <limit>0</limit>
+    <lookup/>
+    <execute_each_row>N</execute_each_row>
+    <variables_active>N</variables_active>
+    <lazy_conversion_active>N</lazy_conversion_active>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>99</xloc>
+      <yloc>797</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>Leo T_TC_DIRECCIONES_CLIENTE</name>
+    <type>TableInput</type>
+    <description/>
+    <distribute>Y</distribute>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+    <connection>OdsStgDS</connection>
+    <sql>SELECT
+   d.C0902 AS CO_CLIENTE,
+   d.FORMATO AS CO_FORMATO,
+   UPPER(o1.DESCRIPCION) AS DE_FORMATO,
+   d.TIPODIRECCION AS CO_TIPO_DIRE,
+   UPPER(o2.DESCRIPCION) AS DE_TIPO_DIRE,
+   UPPER(d.DES_DIR_COM) AS DE_DIRECCION,
+   LPAD(d.UBIGEO,6,&apos;0&apos;) AS CO_UBIGEO,
+   d.TEL1 AS NU_TELE_1,
+   d.TEL2 AS NU_TELE_2,
+   d.CELULAR AS NU_CELULAR,
+   d.TIPOVIVIENDA AS TI_VIVIENDA,
+   UPPER(o3.DESCRIPCION) AS DE_VIVIENDA,
+   0 AS CO_NEGOCIO,
+   &apos; &apos; AS DE_NEGOCIO,
+   &apos;.&apos; AS TI_DOCUMENTO,
+   &apos;.&apos; AS NU_DOCUMENTO,
+   &apos;.&apos; AS CO_PAIS_DOCU,
+   CASE WHEN NVL( LENGTH(d.DES_DIR_COM),0) &gt; 4 THEN 1 ELSE 0 END AS DIR_VALIDA,
+   d.TIPOZONA AS CO_TIPO_NUCL_URBA,
+   d.EMAIL AS DE_EMAIL,
+   d.REFERENCIA AS DE_REFERENCIA,
+   d.NOMZONA AS DE_NUCL_URBA,
+   d.FEC_REG AS FE_REGISTRO,
+   SYSDATE AS FE_ACTU_DIA 
+FROM STG.T_TC_DIRECCIONES_CLIENTE d
+	 JOIN STG.T_OPCIONES o1 
+	 	ON d.FORMATO=o1.OPCIONINTERNA
+	 	AND o1.NUMERODECAMPO=6161
+	 JOIN STG.T_OPCIONES o2
+	 	ON d.TIPODIRECCION=o2.OPCIONINTERNA
+	 	AND o2.NUMERODECAMPO=6162
+     LEFT JOIN STG.T_OPCIONES o3
+		ON d.TIPOVIVIENDA=o3.OPCIONINTERNA
+		AND o3.NUMERODECAMPO=6185
+</sql>
+    <limit>0</limit>
+    <lookup/>
+    <execute_each_row>N</execute_each_row>
+    <variables_active>N</variables_active>
+    <lazy_conversion_active>N</lazy_conversion_active>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>99</xloc>
+      <yloc>611</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>Leo T_TC_DIRECCIONES_JURIDICA</name>
+    <type>TableInput</type>
+    <description/>
+    <distribute>Y</distribute>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+    <connection>OdsStgDS</connection>
+    <sql>SELECT
+   d.C0902 AS CO_CLIENTE,
+   d.FORMATO AS CO_FORMATO,
+   UPPER(o1.DESCRIPCION) AS DE_FORMATO,
+   d.TIPODIRECCION AS CO_TIPO_DIRE,
+   UPPER(o2.DESCRIPCION) AS DE_TIPO_DIRE,
+   UPPER(d.DES_DIR_COM) AS DE_DIRECCION,
+   LPAD(d.UBIGEO,6,&apos;0&apos;) AS CO_UBIGEO,
+   d.TEL1 AS NU_TELE_1,
+   d.TEL2 AS NU_TELE_2,
+   d.CELULAR AS NU_CELULAR,
+   d.TIPOVIVIENDA AS TI_VIVIENDA,
+   UPPER(o3.DESCRIPCION) AS DE_VIVIENDA,
+   0 AS CO_NEGOCIO,
+   &apos; &apos; AS DE_NEGOCIO,
+   d.C1431 AS TI_DOCUMENTO,
+   d.C1432 AS NU_DOCUMENTO,
+   d.C1435 AS CO_PAIS_DOCU,
+   CASE WHEN NVL( LENGTH(d.DES_DIR_COM),0) &gt; 4 THEN 1 ELSE 0 END AS DIR_VALIDA,
+   d.TIPOZONA AS CO_TIPO_NUCL_URBA,
+   d.EMAIL AS DE_EMAIL,
+   d.REFERENCIA AS DE_REFERENCIA,
+   d.NOMZONA AS DE_NUCL_URBA,
+   d.FEC_REG AS FE_REGISTRO,
+   SYSDATE AS FE_ACTU_DIA 
+FROM STG.T_TC_DIRECCIONES_JURIDICA d
+	 JOIN STG.T_OPCIONES o1 
+	 	ON d.FORMATO=o1.OPCIONINTERNA
+	 	AND o1.NUMERODECAMPO=6161
+	 JOIN STG.T_OPCIONES o2
+	 	ON d.TIPODIRECCION=o2.OPCIONINTERNA
+	 	AND o2.NUMERODECAMPO=6162
+     LEFT JOIN STG.T_OPCIONES o3
+		ON d.TIPOVIVIENDA=o3.OPCIONINTERNA
+		AND o3.NUMERODECAMPO=6185
+
+</sql>
+    <limit>0</limit>
+    <lookup/>
+    <execute_each_row>N</execute_each_row>
+    <variables_active>N</variables_active>
+    <lazy_conversion_active>N</lazy_conversion_active>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>99</xloc>
+      <yloc>227</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>Leo T_TC_DIRECCIONES_NATURAL</name>
+    <type>TableInput</type>
+    <description/>
+    <distribute>Y</distribute>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+    <connection>OdsStgDS</connection>
+    <sql>SELECT
+   d.C0902 AS CO_CLIENTE,
+   d.FORMATO AS CO_FORMATO,
+   UPPER(o1.DESCRIPCION) AS DE_FORMATO,
+   d.TIPODIRECCION AS CO_TIPO_DIRE,
+   UPPER(o2.DESCRIPCION) AS DE_TIPO_DIRE,
+   UPPER(d.DES_DIR_COM) AS DE_DIRECCION,
+   LPAD(d.UBIGEO,6,&apos;0&apos;) AS CO_UBIGEO,
+   d.TEL1 AS NU_TELE_1,
+   d.TEL2 AS NU_TELE_2,
+   d.CELULAR AS NU_CELULAR,
+   d.TIPOVIVIENDA AS TI_VIVIENDA,
+   UPPER(o3.DESCRIPCION) AS DE_VIVIENDA,
+   0 AS CO_NEGOCIO,
+   &apos; &apos; AS DE_NEGOCIO,
+   d.C1431 AS TI_DOCUMENTO,
+   d.C1432 AS NU_DOCUMENTO,
+   d.C1435 AS CO_PAIS_DOCU,
+   CASE WHEN NVL( LENGTH(d.DES_DIR_COM),0) &gt; 4 THEN 1 ELSE 0 END AS DIR_VALIDA,
+   d.TIPOZONA AS CO_TIPO_NUCL_URBA,
+   d.EMAIL AS DE_EMAIL,
+   d.REFERENCIA AS DE_REFERENCIA,
+   d.NOMZONA AS DE_NUCL_URBA,
+   d.FEC_REG AS FE_REGISTRO,
+   SYSDATE AS FE_ACTU_DIA 
+FROM STG.T_TC_DIRECCIONES_NATURAL d
+	 JOIN STG.T_OPCIONES o1 
+	 	ON d.FORMATO=o1.OPCIONINTERNA
+	 	AND o1.NUMERODECAMPO=6161
+	 JOIN STG.T_OPCIONES o2
+	 	ON d.TIPODIRECCION=o2.OPCIONINTERNA
+	 	AND o2.NUMERODECAMPO=6162
+     LEFT JOIN STG.T_OPCIONES o3
+		ON d.TIPOVIVIENDA=o3.OPCIONINTERNA
+		AND o3.NUMERODECAMPO=6185
+</sql>
+    <limit>0</limit>
+    <lookup/>
+    <execute_each_row>N</execute_each_row>
+    <variables_active>N</variables_active>
+    <lazy_conversion_active>N</lazy_conversion_active>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>99</xloc>
+      <yloc>29</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>Leo T_TC_DIR_NEGOCIO</name>
+    <type>TableInput</type>
+    <description/>
+    <distribute>Y</distribute>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+    <connection>OdsStgDS</connection>
+    <sql>SELECT
+   cp.C1430 AS CO_CLIENTE,
+   d.FORMATO AS CO_FORMATO,
+   UPPER(o1.DESCRIPCION) AS DE_FORMATO,
+   d.TIPODIRECCION AS CO_TIPO_DIRE,
+   UPPER(o2.DESCRIPCION) AS DE_TIPO_DIRE,
+   UPPER(d.DES_DIR_COM) AS DE_DIRECCION,
+   LPAD(d.UBIGEO,6,&apos;0&apos;) AS CO_UBIGEO,
+   d.TEL1 AS NU_TELE_1,
+   d.TEL2 AS NU_TELE_2,
+   d.CELULAR AS NU_CELULAR,
+   d.TIPOVIVIENDA AS TI_VIVIENDA,
+   UPPER(o3.DESCRIPCION) AS DE_VIVIENDA,
+   d.CODIGONEGOCIO AS CO_NEGOCIO,
+   UPPER(d.NOMBRENEGOCIO) AS DE_NEGOCIO,
+   d.TIPODOCUMENTO AS TI_DOCUMENTO,
+   d.NUMERODOCUMENTO AS NU_DOCUMENTO,
+   d.PAISDOCUMENTO AS CO_PAIS_DOCU,
+   CASE WHEN NVL( LENGTH(d.DES_DIR_COM),0) &gt; 4 THEN 1 ELSE 0 END AS DIR_VALIDA,
+   d.TIPOZONA AS CO_TIPO_NUCL_URBA,
+   d.EMAIL AS DE_EMAIL,
+   d.REFERENCIA AS DE_REFERENCIA,
+   d.NOMZONA AS DE_NUCL_URBA,
+   d.FEC_REG AS FE_REGISTRO,
+   SYSDATE AS FE_ACTU_DIA 
+FROM STG.T_TC_DIR_NEGOCIO d
+	 JOIN STG.T_CL_CLIENTPERSONA cp
+	 	ON cp.C1431=d.TIPODOCUMENTO
+	 	AND cp.C1432=d.NUMERODOCUMENTO
+	 	AND cp.C1435=d.PAISDOCUMENTO
+	 JOIN STG.T_OPCIONES o1 
+	 	ON d.FORMATO=o1.OPCIONINTERNA
+	 	AND o1.NUMERODECAMPO=6161
+	 JOIN STG.T_OPCIONES o2
+	 	ON d.TIPODIRECCION=o2.OPCIONINTERNA
+	 	AND o2.NUMERODECAMPO=6162
+	LEFT JOIN STG.T_OPCIONES o3
+		ON d.TIPOVIVIENDA=o3.OPCIONINTERNA
+		AND o3.NUMERODECAMPO=6185
+</sql>
+    <limit>0</limit>
+    <lookup/>
+    <execute_each_row>N</execute_each_row>
+    <variables_active>N</variables_active>
+    <lazy_conversion_active>N</lazy_conversion_active>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>99</xloc>
+      <yloc>409</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>Leo T_TC_PAISES</name>
+    <type>TableInput</type>
+    <description/>
+    <distribute>Y</distribute>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+    <connection>OdsStgDS</connection>
+    <sql>SELECT 
+     p.C1937 AS CO_PAIS,
+     p.C1936 AS DE_PAIS,
+     SYSDATE AS FE_ACTU_DIA
+FROM STG.T_TC_PAISES p
+</sql>
+    <limit>0</limit>
+    <lookup/>
+    <execute_each_row>N</execute_each_row>
+    <variables_active>N</variables_active>
+    <lazy_conversion_active>N</lazy_conversion_active>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>99</xloc>
+      <yloc>903</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>Saco Campo DIR_VALIDA</name>
+    <type>SelectValues</type>
+    <description/>
+    <distribute>Y</distribute>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+    <fields>        <select_unspecified>N</select_unspecified>
+      <remove>        <name>DIR_VALIDA</name>
+      </remove>    </fields>     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>491</xloc>
+      <yloc>29</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>Saco Campo DIR_VALIDA 2</name>
+    <type>SelectValues</type>
+    <description/>
+    <distribute>Y</distribute>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+    <fields>        <select_unspecified>N</select_unspecified>
+      <remove>        <name>DIR_VALIDA</name>
+      </remove>    </fields>     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>491</xloc>
+      <yloc>227</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>Saco Campo DIR_VALIDA 3</name>
+    <type>SelectValues</type>
+    <description/>
+    <distribute>Y</distribute>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+    <fields>        <select_unspecified>N</select_unspecified>
+      <remove>        <name>DIR_VALIDA</name>
+      </remove>    </fields>     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>491</xloc>
+      <yloc>409</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>Saco Campo DIR_VALIDA 4</name>
+    <type>SelectValues</type>
+    <description/>
+    <distribute>Y</distribute>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+    <fields>        <select_unspecified>N</select_unspecified>
+      <remove>        <name>DIR_VALIDA</name>
+      </remove>    </fields>     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>491</xloc>
+      <yloc>611</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step_error_handling>
+  </step_error_handling>
+   <slave-step-copy-partition-distribution>
+</slave-step-copy-partition-distribution>
+   <slave_transformation>N</slave_transformation>
+</transformation>

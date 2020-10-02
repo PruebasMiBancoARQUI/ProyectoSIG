@@ -1,0 +1,316 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<transformation>
+  <info>
+    <name>12-4-4-1-Carga_HD_Prestamos_Refinanciados</name>
+    <description/>
+    <extended_description/>
+    <trans_version/>
+    <trans_type>Normal</trans_type>
+    <trans_status>0</trans_status>
+    <directory>&#47;</directory>
+    <parameters>
+    </parameters>
+    <log>
+<trans-log-table><connection/>
+<schema/>
+<table/>
+<size_limit_lines/>
+<interval/>
+<timeout_days/>
+<field><id>ID_BATCH</id><enabled>Y</enabled><name>ID_BATCH</name></field><field><id>CHANNEL_ID</id><enabled>Y</enabled><name>CHANNEL_ID</name></field><field><id>TRANSNAME</id><enabled>Y</enabled><name>TRANSNAME</name></field><field><id>STATUS</id><enabled>Y</enabled><name>STATUS</name></field><field><id>LINES_READ</id><enabled>Y</enabled><name>LINES_READ</name><subject/></field><field><id>LINES_WRITTEN</id><enabled>Y</enabled><name>LINES_WRITTEN</name><subject/></field><field><id>LINES_UPDATED</id><enabled>Y</enabled><name>LINES_UPDATED</name><subject/></field><field><id>LINES_INPUT</id><enabled>Y</enabled><name>LINES_INPUT</name><subject/></field><field><id>LINES_OUTPUT</id><enabled>Y</enabled><name>LINES_OUTPUT</name><subject/></field><field><id>LINES_REJECTED</id><enabled>Y</enabled><name>LINES_REJECTED</name><subject/></field><field><id>ERRORS</id><enabled>Y</enabled><name>ERRORS</name></field><field><id>STARTDATE</id><enabled>Y</enabled><name>STARTDATE</name></field><field><id>ENDDATE</id><enabled>Y</enabled><name>ENDDATE</name></field><field><id>LOGDATE</id><enabled>Y</enabled><name>LOGDATE</name></field><field><id>DEPDATE</id><enabled>Y</enabled><name>DEPDATE</name></field><field><id>REPLAYDATE</id><enabled>Y</enabled><name>REPLAYDATE</name></field><field><id>LOG_FIELD</id><enabled>Y</enabled><name>LOG_FIELD</name></field></trans-log-table>
+<perf-log-table><connection/>
+<schema/>
+<table/>
+<interval/>
+<timeout_days/>
+<field><id>ID_BATCH</id><enabled>Y</enabled><name>ID_BATCH</name></field><field><id>SEQ_NR</id><enabled>Y</enabled><name>SEQ_NR</name></field><field><id>LOGDATE</id><enabled>Y</enabled><name>LOGDATE</name></field><field><id>TRANSNAME</id><enabled>Y</enabled><name>TRANSNAME</name></field><field><id>STEPNAME</id><enabled>Y</enabled><name>STEPNAME</name></field><field><id>STEP_COPY</id><enabled>Y</enabled><name>STEP_COPY</name></field><field><id>LINES_READ</id><enabled>Y</enabled><name>LINES_READ</name></field><field><id>LINES_WRITTEN</id><enabled>Y</enabled><name>LINES_WRITTEN</name></field><field><id>LINES_UPDATED</id><enabled>Y</enabled><name>LINES_UPDATED</name></field><field><id>LINES_INPUT</id><enabled>Y</enabled><name>LINES_INPUT</name></field><field><id>LINES_OUTPUT</id><enabled>Y</enabled><name>LINES_OUTPUT</name></field><field><id>LINES_REJECTED</id><enabled>Y</enabled><name>LINES_REJECTED</name></field><field><id>ERRORS</id><enabled>Y</enabled><name>ERRORS</name></field><field><id>INPUT_BUFFER_ROWS</id><enabled>Y</enabled><name>INPUT_BUFFER_ROWS</name></field><field><id>OUTPUT_BUFFER_ROWS</id><enabled>Y</enabled><name>OUTPUT_BUFFER_ROWS</name></field></perf-log-table>
+<channel-log-table><connection/>
+<schema/>
+<table/>
+<timeout_days/>
+<field><id>ID_BATCH</id><enabled>Y</enabled><name>ID_BATCH</name></field><field><id>CHANNEL_ID</id><enabled>Y</enabled><name>CHANNEL_ID</name></field><field><id>LOG_DATE</id><enabled>Y</enabled><name>LOG_DATE</name></field><field><id>LOGGING_OBJECT_TYPE</id><enabled>Y</enabled><name>LOGGING_OBJECT_TYPE</name></field><field><id>OBJECT_NAME</id><enabled>Y</enabled><name>OBJECT_NAME</name></field><field><id>OBJECT_COPY</id><enabled>Y</enabled><name>OBJECT_COPY</name></field><field><id>REPOSITORY_DIRECTORY</id><enabled>Y</enabled><name>REPOSITORY_DIRECTORY</name></field><field><id>FILENAME</id><enabled>Y</enabled><name>FILENAME</name></field><field><id>OBJECT_ID</id><enabled>Y</enabled><name>OBJECT_ID</name></field><field><id>OBJECT_REVISION</id><enabled>Y</enabled><name>OBJECT_REVISION</name></field><field><id>PARENT_CHANNEL_ID</id><enabled>Y</enabled><name>PARENT_CHANNEL_ID</name></field><field><id>ROOT_CHANNEL_ID</id><enabled>Y</enabled><name>ROOT_CHANNEL_ID</name></field></channel-log-table>
+<step-log-table><connection/>
+<schema/>
+<table/>
+<timeout_days/>
+<field><id>ID_BATCH</id><enabled>Y</enabled><name>ID_BATCH</name></field><field><id>CHANNEL_ID</id><enabled>Y</enabled><name>CHANNEL_ID</name></field><field><id>LOG_DATE</id><enabled>Y</enabled><name>LOG_DATE</name></field><field><id>TRANSNAME</id><enabled>Y</enabled><name>TRANSNAME</name></field><field><id>STEPNAME</id><enabled>Y</enabled><name>STEPNAME</name></field><field><id>STEP_COPY</id><enabled>Y</enabled><name>STEP_COPY</name></field><field><id>LINES_READ</id><enabled>Y</enabled><name>LINES_READ</name></field><field><id>LINES_WRITTEN</id><enabled>Y</enabled><name>LINES_WRITTEN</name></field><field><id>LINES_UPDATED</id><enabled>Y</enabled><name>LINES_UPDATED</name></field><field><id>LINES_INPUT</id><enabled>Y</enabled><name>LINES_INPUT</name></field><field><id>LINES_OUTPUT</id><enabled>Y</enabled><name>LINES_OUTPUT</name></field><field><id>LINES_REJECTED</id><enabled>Y</enabled><name>LINES_REJECTED</name></field><field><id>ERRORS</id><enabled>Y</enabled><name>ERRORS</name></field><field><id>LOG_FIELD</id><enabled>N</enabled><name>LOG_FIELD</name></field></step-log-table>
+    </log>
+    <maxdate>
+      <connection/>
+      <table/>
+      <field/>
+      <offset>0.0</offset>
+      <maxdiff>0.0</maxdiff>
+    </maxdate>
+    <size_rowset>10000</size_rowset>
+    <sleep_time_empty>50</sleep_time_empty>
+    <sleep_time_full>50</sleep_time_full>
+    <unique_connections>N</unique_connections>
+    <feedback_shown>Y</feedback_shown>
+    <feedback_size>50000</feedback_size>
+    <using_thread_priorities>Y</using_thread_priorities>
+    <shared_objects_file/>
+    <capture_step_performance>N</capture_step_performance>
+    <step_performance_capturing_delay>1000</step_performance_capturing_delay>
+    <step_performance_capturing_size_limit>100</step_performance_capturing_size_limit>
+    <dependencies>
+    </dependencies>
+    <partitionschemas>
+    </partitionschemas>
+    <slaveservers>
+    </slaveservers>
+    <clusterschemas>
+    </clusterschemas>
+  <created_user>-</created_user>
+  <created_date>2016&#47;02&#47;02 13:58:11.269</created_date>
+  <modified_user>-</modified_user>
+  <modified_date>2016&#47;02&#47;02 13:58:11.269</modified_date>
+  </info>
+  <notepads>
+  </notepads>
+  <connection>
+    <name>OdsStgDS</name>
+    <server/>
+    <type>ORACLE</type>
+    <access>JNDI</access>
+    <database>OdsStgDS</database>
+    <port>1521</port>
+    <username/>
+    <password>Encrypted </password>
+    <servername/>
+    <data_tablespace/>
+    <index_tablespace/>
+    <attributes>
+      <attribute><code>FORCE_IDENTIFIERS_TO_LOWERCASE</code><attribute>N</attribute></attribute>
+      <attribute><code>FORCE_IDENTIFIERS_TO_UPPERCASE</code><attribute>N</attribute></attribute>
+      <attribute><code>IS_CLUSTERED</code><attribute>N</attribute></attribute>
+      <attribute><code>PORT_NUMBER</code><attribute>1521</attribute></attribute>
+      <attribute><code>QUOTE_ALL_FIELDS</code><attribute>N</attribute></attribute>
+      <attribute><code>SUPPORTS_BOOLEAN_DATA_TYPE</code><attribute>N</attribute></attribute>
+      <attribute><code>USE_POOLING</code><attribute>N</attribute></attribute>
+    </attributes>
+  </connection>
+  <order>
+  <hop> <from>Leo T_SL_SOLICITUDCREDCANCELA</from><to>I&#47;U HD_PRESTAMOS_REFINANCIADOS</to><enabled>Y</enabled> </hop>  </order>
+  <step>
+    <name>I&#47;U HD_PRESTAMOS_REFINANCIADOS</name>
+    <type>InsertUpdate</type>
+    <description/>
+    <distribute>Y</distribute>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+    <connection>OdsStgDS</connection>
+    <commit>2000</commit>
+    <update_bypassed>N</update_bypassed>
+    <lookup>
+      <schema>ODS</schema>
+      <table>HD_PRESTAMOS_REFINANCIADOS</table>
+      <key>
+        <name>NU_SOLICITUD</name>
+        <field>NU_SOLICITUD</field>
+        <condition>=</condition>
+        <name2/>
+      </key>
+      <key>
+        <name>NU_PRESTAMO</name>
+        <field>NU_PRESTAMO</field>
+        <condition>=</condition>
+        <name2/>
+      </key>
+      <key>
+        <name>NU_PRES_CANC</name>
+        <field>NU_PRES_CANC</field>
+        <condition>=</condition>
+        <name2/>
+      </key>
+      <value>
+        <name>NU_SOLICITUD</name>
+        <rename>NU_SOLICITUD</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>NU_PRESTAMO</name>
+        <rename>NU_PRESTAMO</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>CO_CLIENTE</name>
+        <rename>CO_CLIENTE</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>FE_DESEMBOLSO</name>
+        <rename>FE_DESEMBOLSO</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>CO_REFINANCIADO</name>
+        <rename>CO_REFINANCIADO</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>NU_PRES_CANC</name>
+        <rename>NU_PRES_CANC</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>NU_SOLI_CANC</name>
+        <rename>NU_SOLI_CANC</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>CO_MONE_CANC</name>
+        <rename>CO_MONE_CANC</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>CO_PROD_CANC</name>
+        <rename>CO_PROD_CANC</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>CO_CLIE_CANC</name>
+        <rename>CO_CLIE_CANC</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>MO_CRED_CANC</name>
+        <rename>MO_CRED_CANC</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>MO_CRED_INDI_CANC</name>
+        <rename>MO_CRED_INDI_CANC</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>CO_MOTI_CANC</name>
+        <rename>CO_MOTI_CANC</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>NU_ORDE_PRES_CANC</name>
+        <rename>NU_ORDE_PRES_CANC</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>VL_PORC_PRES_CANC</name>
+        <rename>VL_PORC_PRES_CANC</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>FE_ACTU_DIA</name>
+        <rename>FE_ACTU_DIA</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>FE_PROCESO</name>
+        <rename>FE_PROCESO</rename>
+        <update>Y</update>
+      </value>
+    </lookup>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>722</xloc>
+      <yloc>86</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>Leo T_SL_SOLICITUDCREDCANCELA</name>
+    <type>TableInput</type>
+    <description/>
+    <distribute>N</distribute>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+    <connection>OdsStgDS</connection>
+    <sql>--Caso Modelo de Admisión-Riesgos
+--@001 CHC CASO-21670 Incidencias Despliegue de Admisión. 
+WITH DESEMBOLSO_REF AS
+ (SELECT NU_SOLICITUD,
+         NU_PRESTAMO,
+         CO_CLIENTE,
+         FE_DESEMBOLSO,
+         CO_REFINANCIACION
+    FROM STG.T_DESEMBOLSO
+   WHERE FE_DESEMBOLSO = TO_DATE(&apos;${FECHAPROCESOEDY_S}&apos;, &apos;DD&#47;MM&#47;YYYY&apos;)
+     AND CO_REFINANCIACION IN (&apos;R&apos;, &apos;P&apos;))
+SELECT r0.CRE_NUMSOLICITUD AS NU_SOLICITUD,
+       fin.NU_PRESTAMO AS NU_PRESTAMO,
+       fin.CO_CLIENTE AS CO_CLIENTE,
+       fin.FE_DESEMBOLSO AS FE_DESEMBOLSO,
+--@001       fin.CO_REFINANCIACION AS CO_TIPO_REFI,
+       fin.CO_REFINANCIACION AS CO_REFINANCIADO, 
+--@001 FIN           
+       ini.NU_PRESTAMO AS NU_PRES_CANC,
+       ini.NU_SOLICITUD AS NU_SOLI_CANC,
+       r0.CRE_MONEDA AS CO_MONE_CANC,
+       r0.CRE_PRODUCTO AS CO_PROD_CANC,
+       ini.CO_CLIENTE AS CO_CLIE_CANC,
+       r0.CRE_MONTOCANC AS MO_CRED_CANC,
+--@001       NVL((r0.CRE_MONTOCANC - r1.CRE_MONTOCANC), r0.CRE_MONTOCANC) AS MO_CRED_IND_CANC,
+       NVL((r0.CRE_MONTOCANC - r1.CRE_MONTOCANC), r0.CRE_MONTOCANC) AS MO_CRED_INDI_CANC,
+--@001 FIN
+       r0.CRE_MOTIVOCANC AS CO_MOTI_CANC,
+--@001        
+--      (SELECT DESCRIPCION
+--          FROM STG.T_OPCIONES
+--         WHERE NUMERODECAMPO = 1977
+--           AND OPCIONINTERNA = r0.CRE_MOTIVOCANC) AS DE_MOTI_CANC,
+--@001 FIN           
+       r0.ORDEN AS NU_ORDE_PRES_CANC,
+       NVL((r0.CRE_MONTOCANC - r1.CRE_MONTOCANC), r0.CRE_MONTOCANC) &#47; MO_CRED_TOT_CANC AS VL_PORC_PRES_CANC,
+       SYSDATE AS FE_ACTU_DIA,
+       TO_DATE(&apos;${FECHAPROCESOEDY_S}&apos;, &apos;DD&#47;MM&#47;YYYY&apos;) AS FE_PROCESO
+  FROM DESEMBOLSO_REF fin
+ INNER JOIN (SELECT a.CRE_NUMSOLICITUD,
+                    a.CRE_MONEDA,
+                    a.CRE_PRODUCTO,
+                    a.CRE_MONTOCANC,
+                    CRE_CUENTA,
+                    CRE_MOTIVOCANC,
+                    (ROW_NUMBER() OVER(PARTITION BY a.CRE_NUMSOLICITUD ORDER BY
+                                       a.CRE_MONTOCANC)) ORDEN,
+                    LAST_VALUE(a.CRE_MONTOCANC) OVER(PARTITION BY a.CRE_NUMSOLICITUD ORDER BY a.CRE_MONTOCANC RANGE BETWEEN UNBOUNDED PRECEDING AND UNBOUNDED FOLLOWING) MO_CRED_TOT_CANC
+               FROM STG.T_SL_SOLICITUDCREDCANCELA a
+              INNER JOIN DESEMBOLSO_REF f
+                 ON a.CRE_NUMSOLICITUD = f.NU_SOLICITUD) r0
+    ON r0.CRE_NUMSOLICITUD = fin.NU_SOLICITUD
+  LEFT JOIN (SELECT CRE_NUMSOLICITUD,
+                    CRE_MONTOCANC,
+                    (ROW_NUMBER() OVER(PARTITION BY CRE_NUMSOLICITUD ORDER BY
+                                       CRE_MONTOCANC)) + 1 ORDEN_SIG
+               FROM STG.T_SL_SOLICITUDCREDCANCELA
+              INNER JOIN DESEMBOLSO_REF f
+                 ON CRE_NUMSOLICITUD = f.NU_SOLICITUD) r1
+    ON r0.CRE_NUMSOLICITUD = r1.CRE_NUMSOLICITUD
+   AND r0.ORDEN = r1.ORDEN_SIG
+  INNER JOIN ODS.HD_DESEMBOLSO ini
+    ON r0.CRE_CUENTA = ini.NU_PRESTAMO
+</sql>
+    <limit>0</limit>
+    <lookup/>
+    <execute_each_row>N</execute_each_row>
+    <variables_active>Y</variables_active>
+    <lazy_conversion_active>N</lazy_conversion_active>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>248</xloc>
+      <yloc>84</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step_error_handling>
+  </step_error_handling>
+   <slave-step-copy-partition-distribution>
+</slave-step-copy-partition-distribution>
+   <slave_transformation>N</slave_transformation>
+</transformation>
