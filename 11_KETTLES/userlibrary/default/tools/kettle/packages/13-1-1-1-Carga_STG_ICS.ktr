@@ -1,0 +1,972 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<transformation>
+  <info>
+    <name>13-1-1-1-Carga_STG_ICS</name>
+    <description/>
+    <extended_description/>
+    <trans_version/>
+    <trans_type>Normal</trans_type>
+    <trans_status>0</trans_status>
+    <directory>&#47;</directory>
+    <parameters>
+    </parameters>
+    <log>
+<trans-log-table><connection/>
+<schema/>
+<table/>
+<size_limit_lines/>
+<interval/>
+<timeout_days/>
+<field><id>ID_BATCH</id><enabled>Y</enabled><name>ID_BATCH</name></field><field><id>CHANNEL_ID</id><enabled>Y</enabled><name>CHANNEL_ID</name></field><field><id>TRANSNAME</id><enabled>Y</enabled><name>TRANSNAME</name></field><field><id>STATUS</id><enabled>Y</enabled><name>STATUS</name></field><field><id>LINES_READ</id><enabled>Y</enabled><name>LINES_READ</name><subject/></field><field><id>LINES_WRITTEN</id><enabled>Y</enabled><name>LINES_WRITTEN</name><subject/></field><field><id>LINES_UPDATED</id><enabled>Y</enabled><name>LINES_UPDATED</name><subject/></field><field><id>LINES_INPUT</id><enabled>Y</enabled><name>LINES_INPUT</name><subject/></field><field><id>LINES_OUTPUT</id><enabled>Y</enabled><name>LINES_OUTPUT</name><subject/></field><field><id>LINES_REJECTED</id><enabled>Y</enabled><name>LINES_REJECTED</name><subject/></field><field><id>ERRORS</id><enabled>Y</enabled><name>ERRORS</name></field><field><id>STARTDATE</id><enabled>Y</enabled><name>STARTDATE</name></field><field><id>ENDDATE</id><enabled>Y</enabled><name>ENDDATE</name></field><field><id>LOGDATE</id><enabled>Y</enabled><name>LOGDATE</name></field><field><id>DEPDATE</id><enabled>Y</enabled><name>DEPDATE</name></field><field><id>REPLAYDATE</id><enabled>Y</enabled><name>REPLAYDATE</name></field><field><id>LOG_FIELD</id><enabled>Y</enabled><name>LOG_FIELD</name></field></trans-log-table>
+<perf-log-table><connection/>
+<schema/>
+<table/>
+<interval/>
+<timeout_days/>
+<field><id>ID_BATCH</id><enabled>Y</enabled><name>ID_BATCH</name></field><field><id>SEQ_NR</id><enabled>Y</enabled><name>SEQ_NR</name></field><field><id>LOGDATE</id><enabled>Y</enabled><name>LOGDATE</name></field><field><id>TRANSNAME</id><enabled>Y</enabled><name>TRANSNAME</name></field><field><id>STEPNAME</id><enabled>Y</enabled><name>STEPNAME</name></field><field><id>STEP_COPY</id><enabled>Y</enabled><name>STEP_COPY</name></field><field><id>LINES_READ</id><enabled>Y</enabled><name>LINES_READ</name></field><field><id>LINES_WRITTEN</id><enabled>Y</enabled><name>LINES_WRITTEN</name></field><field><id>LINES_UPDATED</id><enabled>Y</enabled><name>LINES_UPDATED</name></field><field><id>LINES_INPUT</id><enabled>Y</enabled><name>LINES_INPUT</name></field><field><id>LINES_OUTPUT</id><enabled>Y</enabled><name>LINES_OUTPUT</name></field><field><id>LINES_REJECTED</id><enabled>Y</enabled><name>LINES_REJECTED</name></field><field><id>ERRORS</id><enabled>Y</enabled><name>ERRORS</name></field><field><id>INPUT_BUFFER_ROWS</id><enabled>Y</enabled><name>INPUT_BUFFER_ROWS</name></field><field><id>OUTPUT_BUFFER_ROWS</id><enabled>Y</enabled><name>OUTPUT_BUFFER_ROWS</name></field></perf-log-table>
+<channel-log-table><connection/>
+<schema/>
+<table/>
+<timeout_days/>
+<field><id>ID_BATCH</id><enabled>Y</enabled><name>ID_BATCH</name></field><field><id>CHANNEL_ID</id><enabled>Y</enabled><name>CHANNEL_ID</name></field><field><id>LOG_DATE</id><enabled>Y</enabled><name>LOG_DATE</name></field><field><id>LOGGING_OBJECT_TYPE</id><enabled>Y</enabled><name>LOGGING_OBJECT_TYPE</name></field><field><id>OBJECT_NAME</id><enabled>Y</enabled><name>OBJECT_NAME</name></field><field><id>OBJECT_COPY</id><enabled>Y</enabled><name>OBJECT_COPY</name></field><field><id>REPOSITORY_DIRECTORY</id><enabled>Y</enabled><name>REPOSITORY_DIRECTORY</name></field><field><id>FILENAME</id><enabled>Y</enabled><name>FILENAME</name></field><field><id>OBJECT_ID</id><enabled>Y</enabled><name>OBJECT_ID</name></field><field><id>OBJECT_REVISION</id><enabled>Y</enabled><name>OBJECT_REVISION</name></field><field><id>PARENT_CHANNEL_ID</id><enabled>Y</enabled><name>PARENT_CHANNEL_ID</name></field><field><id>ROOT_CHANNEL_ID</id><enabled>Y</enabled><name>ROOT_CHANNEL_ID</name></field></channel-log-table>
+<step-log-table><connection/>
+<schema/>
+<table/>
+<timeout_days/>
+<field><id>ID_BATCH</id><enabled>Y</enabled><name>ID_BATCH</name></field><field><id>CHANNEL_ID</id><enabled>Y</enabled><name>CHANNEL_ID</name></field><field><id>LOG_DATE</id><enabled>Y</enabled><name>LOG_DATE</name></field><field><id>TRANSNAME</id><enabled>Y</enabled><name>TRANSNAME</name></field><field><id>STEPNAME</id><enabled>Y</enabled><name>STEPNAME</name></field><field><id>STEP_COPY</id><enabled>Y</enabled><name>STEP_COPY</name></field><field><id>LINES_READ</id><enabled>Y</enabled><name>LINES_READ</name></field><field><id>LINES_WRITTEN</id><enabled>Y</enabled><name>LINES_WRITTEN</name></field><field><id>LINES_UPDATED</id><enabled>Y</enabled><name>LINES_UPDATED</name></field><field><id>LINES_INPUT</id><enabled>Y</enabled><name>LINES_INPUT</name></field><field><id>LINES_OUTPUT</id><enabled>Y</enabled><name>LINES_OUTPUT</name></field><field><id>LINES_REJECTED</id><enabled>Y</enabled><name>LINES_REJECTED</name></field><field><id>ERRORS</id><enabled>Y</enabled><name>ERRORS</name></field><field><id>LOG_FIELD</id><enabled>N</enabled><name>LOG_FIELD</name></field></step-log-table>
+    </log>
+    <maxdate>
+      <connection/>
+      <table/>
+      <field/>
+      <offset>0.0</offset>
+      <maxdiff>0.0</maxdiff>
+    </maxdate>
+    <size_rowset>10000</size_rowset>
+    <sleep_time_empty>50</sleep_time_empty>
+    <sleep_time_full>50</sleep_time_full>
+    <unique_connections>N</unique_connections>
+    <feedback_shown>Y</feedback_shown>
+    <feedback_size>50000</feedback_size>
+    <using_thread_priorities>Y</using_thread_priorities>
+    <shared_objects_file/>
+    <capture_step_performance>N</capture_step_performance>
+    <step_performance_capturing_delay>1000</step_performance_capturing_delay>
+    <step_performance_capturing_size_limit>100</step_performance_capturing_size_limit>
+    <dependencies>
+    </dependencies>
+    <partitionschemas>
+    </partitionschemas>
+    <slaveservers>
+    </slaveservers>
+    <clusterschemas>
+    </clusterschemas>
+  <created_user>-</created_user>
+  <created_date>2017&#47;10&#47;27 12:53:18.684</created_date>
+  <modified_user>-</modified_user>
+  <modified_date>2017&#47;10&#47;27 12:53:18.684</modified_date>
+  </info>
+  <notepads>
+  </notepads>
+  <connection>
+    <name>IcsRepDS</name>
+    <server/>
+    <type>ORACLE</type>
+    <access>JNDI</access>
+    <database>IcsRepDS</database>
+    <port>1521</port>
+    <username/>
+    <password>Encrypted </password>
+    <servername/>
+    <data_tablespace/>
+    <index_tablespace/>
+    <attributes>
+      <attribute><code>FORCE_IDENTIFIERS_TO_LOWERCASE</code><attribute>N</attribute></attribute>
+      <attribute><code>FORCE_IDENTIFIERS_TO_UPPERCASE</code><attribute>N</attribute></attribute>
+      <attribute><code>IS_CLUSTERED</code><attribute>N</attribute></attribute>
+      <attribute><code>PORT_NUMBER</code><attribute>1521</attribute></attribute>
+      <attribute><code>QUOTE_ALL_FIELDS</code><attribute>N</attribute></attribute>
+      <attribute><code>SUPPORTS_BOOLEAN_DATA_TYPE</code><attribute>N</attribute></attribute>
+      <attribute><code>USE_POOLING</code><attribute>N</attribute></attribute>
+    </attributes>
+  </connection>
+  <connection>
+    <name>OdsStgDS</name>
+    <server/>
+    <type>ORACLE</type>
+    <access>JNDI</access>
+    <database>OdsStgDS</database>
+    <port>1521</port>
+    <username/>
+    <password>Encrypted </password>
+    <servername/>
+    <data_tablespace/>
+    <index_tablespace/>
+    <attributes>
+      <attribute><code>FORCE_IDENTIFIERS_TO_LOWERCASE</code><attribute>N</attribute></attribute>
+      <attribute><code>FORCE_IDENTIFIERS_TO_UPPERCASE</code><attribute>N</attribute></attribute>
+      <attribute><code>IS_CLUSTERED</code><attribute>N</attribute></attribute>
+      <attribute><code>PORT_NUMBER</code><attribute>1521</attribute></attribute>
+      <attribute><code>QUOTE_ALL_FIELDS</code><attribute>N</attribute></attribute>
+      <attribute><code>SUPPORTS_BOOLEAN_DATA_TYPE</code><attribute>N</attribute></attribute>
+      <attribute><code>USE_POOLING</code><attribute>N</attribute></attribute>
+    </attributes>
+  </connection>
+  <connection>
+    <name>TopazRepDS</name>
+    <server/>
+    <type>ORACLE</type>
+    <access>JNDI</access>
+    <database>TopazRepDS</database>
+    <port>1521</port>
+    <username/>
+    <password>Encrypted </password>
+    <servername/>
+    <data_tablespace/>
+    <index_tablespace/>
+    <attributes>
+      <attribute><code>FORCE_IDENTIFIERS_TO_LOWERCASE</code><attribute>N</attribute></attribute>
+      <attribute><code>FORCE_IDENTIFIERS_TO_UPPERCASE</code><attribute>N</attribute></attribute>
+      <attribute><code>IS_CLUSTERED</code><attribute>N</attribute></attribute>
+      <attribute><code>PORT_NUMBER</code><attribute>1521</attribute></attribute>
+      <attribute><code>QUOTE_ALL_FIELDS</code><attribute>N</attribute></attribute>
+      <attribute><code>SUPPORTS_BOOLEAN_DATA_TYPE</code><attribute>N</attribute></attribute>
+      <attribute><code>USE_POOLING</code><attribute>N</attribute></attribute>
+    </attributes>
+  </connection>
+  <order>
+  <hop> <from>Leo T_ACTION</from><to>cargo T_ACTION</to><enabled>Y</enabled> </hop>  <hop> <from>Leo T_CONTACT</from><to>cargo T_CONTACT</to><enabled>Y</enabled> </hop>  <hop> <from>Leo T_CUSTOM_PEOPLE</from><to>cargo T_CUSTOM_PEOPLE</to><enabled>Y</enabled> </hop>  <hop> <from>Leo T_HISTORY</from><to>cargo T_HISTORY</to><enabled>Y</enabled> </hop>  <hop> <from>Leo T_PEOPLE</from><to>cargo T_PEOPLE</to><enabled>Y</enabled> </hop>  <hop> <from>Leo T_RESPONSE</from><to>cargo T_RESPONSE</to><enabled>Y</enabled> </hop>  <hop> <from>Leo T_USER_CSCS</from><to>cargo T_USER_CSCS</to><enabled>Y</enabled> </hop>  </order>
+  <step>
+    <name>Cargo T_TMP_HISTORIA_VISTA_EGD</name>
+    <type>TableOutput</type>
+    <description/>
+    <distribute>Y</distribute>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+    <connection/>
+    <schema/>
+    <table/>
+    <commit/>
+    <truncate>N</truncate>
+    <ignore_errors>N</ignore_errors>
+    <use_batch>Y</use_batch>
+    <specify_fields>N</specify_fields>
+    <partitioning_enabled>N</partitioning_enabled>
+    <partitioning_field/>
+    <partitioning_daily>N</partitioning_daily>
+    <partitioning_monthly>Y</partitioning_monthly>
+    <tablename_in_field>N</tablename_in_field>
+    <tablename_field/>
+    <tablename_in_table>Y</tablename_in_table>
+    <return_keys>N</return_keys>
+    <return_field/>
+    <fields>
+    </fields>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>751</xloc>
+      <yloc>16</yloc>
+      <draw>N</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>Leo T_ACTION</name>
+    <type>TableInput</type>
+    <description/>
+    <distribute>Y</distribute>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+    <connection>IcsRepDS</connection>
+    <sql>WITH
+T_HISTORY AS
+(SELECT B.RESPONSE_ID, B.CUSTOMER_ID, B.ACTION_ID
+FROM COBRA.HISTORY B 
+WHERE B.USER_ID &lt;&gt; &apos;SYSTEM&apos;
+         AND B.CUSTOMER_ID = &apos;MIBANCO&apos;
+         AND B.ACTION_ID NOT IN (&apos;ENTER TO CSCS&apos;,
+                                 &apos;CHANGE STATE&apos;,
+                                 &apos;IDENTITY CHANGE&apos;,
+                                 &apos;CHANGE STATE&apos;,
+                                 &apos;CHANGE DATA&apos;,
+                                 &apos;CHANGE STRATEGY&apos;,
+                                 &apos;CHANGE USER&apos;,
+                                 &apos;DEMOGRAPHIC CHANGE&apos;)
+   AND LENGTH(TRIM(TRANSLATE(B.USER_ID, &apos; 0123456789&apos;, &apos; &apos;))) IS NULL
+         AND TRUNC(B.RECORD_DATE) = TO_DATE(&apos;${FECHAPROCESOEDY_S}&apos;,&apos;DD&#47;MM&#47;YYYY&apos;))
+         
+SELECT
+    ACTION_ID,
+    CUSTOMER_ID,
+    LANGUAGE_ID,
+    BLOCK,
+    DESCRIPTION,
+    PRIORITY,
+    REPORT_DESCRIPTION,
+    USER_NAME
+FROM COBRA.ACTION A
+    WHERE CUSTOMER_ID = &apos;MIBANCO&apos;
+     AND LANGUAGE_ID = &apos;ESPANOL&apos;
+     AND EXISTS (SELECT B.ACTION_ID
+            FROM T_HISTORY B
+           WHERE A.ACTION_ID = B.ACTION_ID
+             AND B.CUSTOMER_ID = A.CUSTOMER_ID)
+</sql>
+    <limit>0</limit>
+    <lookup/>
+    <execute_each_row>N</execute_each_row>
+    <variables_active>Y</variables_active>
+    <lazy_conversion_active>N</lazy_conversion_active>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>278</xloc>
+      <yloc>130</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>Leo T_CONTACT</name>
+    <type>TableInput</type>
+    <description/>
+    <distribute>Y</distribute>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+    <connection>IcsRepDS</connection>
+    <sql>WITH
+T_HISTORY AS
+(SELECT B.RESPONSE_ID, B.CUSTOMER_ID, B.ACTION_ID, B.CONTACT_ID
+FROM COBRA.HISTORY B 
+WHERE B.USER_ID &lt;&gt; &apos;SYSTEM&apos;
+         AND B.CUSTOMER_ID = &apos;MIBANCO&apos;
+         AND B.ACTION_ID NOT IN (&apos;ENTER TO CSCS&apos;,
+                                 &apos;CHANGE STATE&apos;,
+                                 &apos;IDENTITY CHANGE&apos;,
+                                 &apos;CHANGE STATE&apos;,
+                                 &apos;CHANGE DATA&apos;,
+                                 &apos;CHANGE STRATEGY&apos;,
+                                 &apos;CHANGE USER&apos;,
+                                 &apos;DEMOGRAPHIC CHANGE&apos;)
+   AND LENGTH(TRIM(TRANSLATE(B.USER_ID, &apos; 0123456789&apos;, &apos; &apos;))) IS NULL
+         AND TRUNC(B.RECORD_DATE) = TO_DATE(&apos;${FECHAPROCESOEDY_S}&apos;,&apos;DD&#47;MM&#47;YYYY&apos;))
+         
+SELECT
+       CONTACT_ID,
+       LANGUAGE_ID,
+       CUSTOMER_ID,
+       DESCRIPTION,
+       REPORT_DESCRIPTION,
+       USER_NAME
+        FROM COBRA.CONTACT A
+       WHERE CUSTOMER_ID = &apos;MIBANCO&apos;
+         AND LANGUAGE_ID = &apos;ESPANOL&apos;
+         AND EXISTS (SELECT B.CONTACT_ID
+                FROM T_HISTORY B
+               WHERE A.CONTACT_ID = B.CONTACT_ID
+                 AND B.CUSTOMER_ID = A.CUSTOMER_ID)
+</sql>
+    <limit>0</limit>
+    <lookup/>
+    <execute_each_row>N</execute_each_row>
+    <variables_active>Y</variables_active>
+    <lazy_conversion_active>N</lazy_conversion_active>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>285</xloc>
+      <yloc>290</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>Leo T_CUSTOM_PEOPLE</name>
+    <type>TableInput</type>
+    <description/>
+    <distribute>Y</distribute>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+    <connection>IcsRepDS</connection>
+    <sql>WITH
+T_HISTORY AS
+(SELECT B.RESPONSE_ID, B.CUSTOMER_ID, B.ACTION_ID, B.IDENTITY_CODE
+FROM COBRA.HISTORY B 
+WHERE B.USER_ID &lt;&gt; &apos;SYSTEM&apos;
+         AND B.CUSTOMER_ID = &apos;MIBANCO&apos;
+         AND B.ACTION_ID NOT IN (&apos;ENTER TO CSCS&apos;,
+                                 &apos;CHANGE STATE&apos;,
+                                 &apos;IDENTITY CHANGE&apos;,
+                                 &apos;CHANGE STATE&apos;,
+                                 &apos;CHANGE DATA&apos;,
+                                 &apos;CHANGE STRATEGY&apos;,
+                                 &apos;CHANGE USER&apos;,
+                                 &apos;DEMOGRAPHIC CHANGE&apos;)
+   AND LENGTH(TRIM(TRANSLATE(B.USER_ID, &apos; 0123456789&apos;, &apos; &apos;))) IS NULL
+         AND TRUNC(B.RECORD_DATE) = TO_DATE(&apos;${FECHAPROCESOEDY_S}&apos;,&apos;DD&#47;MM&#47;YYYY&apos;))
+         
+SELECT
+       B.IDENTITY_CODE,
+       B.CUSTOMER_ID,
+       B.CHAR_DEFINED1,
+       B.CHAR_DEFINED2,
+       B.CHAR_DEFINED3,
+       B.CHAR_DEFINED4,
+       B.CHAR_DEFINED5,
+       B.CHAR_DEFINED6,
+       B.CHAR_DEFINED7,
+       B.CHAR_DEFINED8,
+       B.CHAR_DEFINED9,
+       B.CHAR_DEFINED10,
+       B.NUMBER_DEFINED1,
+       B.NUMBER_DEFINED2,
+       B.NUMBER_DEFINED3,
+       B.NUMBER_DEFINED4,
+       B.NUMBER_DEFINED5,
+       B.NUMBER_DEFINED6,
+       B.NUMBER_DEFINED7,
+       B.NUMBER_DEFINED8,
+       B.NUMBER_DEFINED9,
+       B.NUMBER_DEFINED10,
+       B.DATE_DEFINED1,
+       B.DATE_DEFINED2,
+       B.DATE_DEFINED3,
+       B.DATE_DEFINED4,
+       B.DATE_DEFINED5,
+       B.DATE_DEFINED6,
+       B.DATE_DEFINED7,
+       B.DATE_DEFINED8,
+       B.DATE_DEFINED9,
+       B.DATE_DEFINED10,
+       B.UPDATE_OPERATION,
+       B.UPDATE_DATE
+        FROM COBRA.CUSTOM_PEOPLE B
+       WHERE B.CUSTOMER_ID = &apos;MIBANCO&apos;
+         AND EXISTS (SELECT A.IDENTITY_CODE
+                FROM T_HISTORY A
+               WHERE A.IDENTITY_CODE = B.IDENTITY_CODE)</sql>
+    <limit>0</limit>
+    <lookup/>
+    <execute_each_row>N</execute_each_row>
+    <variables_active>Y</variables_active>
+    <lazy_conversion_active>N</lazy_conversion_active>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>286</xloc>
+      <yloc>363</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>Leo T_HISTORY</name>
+    <type>TableInput</type>
+    <description/>
+    <distribute>Y</distribute>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+    <connection>IcsRepDS</connection>
+    <sql>WITH DUPLICADOS AS (SELECT &#47;*+ PARALLEL(8) *&#47; IDENTITY_CODE, FECHA
+  FROM (SELECT COUNT(1), IDENTITY_CODE, TO_CHAR(RECORD_DATE,&apos;DD&#47;MM&#47;YYYY HH24:MI:SS.FF3&apos;) FECHA
+          FROM COBRA.HISTORY A 
+         WHERE A.USER_ID &lt;&gt; &apos;SYSTEM&apos;
+           AND A.CUSTOMER_ID = &apos;MIBANCO&apos;
+           AND A.ACTION_ID NOT IN (&apos;ENTER TO CSCS&apos;,
+                                         &apos;CHANGE STATE&apos;,
+                                         &apos;IDENTITY CHANGE&apos;,
+                                         &apos;CHANGE STATE&apos;,
+                                         &apos;CHANGE DATA&apos;,
+                                         &apos;CHANGE STRATEGY&apos;,
+                                         &apos;CHANGE USER&apos;,
+                                         &apos;DEMOGRAPHIC CHANGE&apos;)
+           AND TO_DATE(TO_CHAR(A.RECORD_DATE,&apos;DD&#47;MM&#47;YYYY&apos;),&apos;DD&#47;MM&#47;YYYY&apos;) = TO_DATE(&apos;${FECHAPROCESOEDY_S}&apos;,&apos;DD&#47;MM&#47;YYYY&apos;)
+         GROUP BY IDENTITY_CODE, TO_CHAR(RECORD_DATE,&apos;DD&#47;MM&#47;YYYY HH24:MI:SS.FF3&apos;)
+        HAVING COUNT(1) &gt; 1))
+SELECT
+       IDENTITY_CODE,
+       HISTORY_DATE,
+       USER_ID,
+       CUSTOMER_ID,
+       ACTION_ID,
+       GROUP_ID,
+       SEQUENCE,
+       RESPONSE_ID,
+       CONTACT_ID,
+       OBSERVATIONS,
+       NEXT_ACTIVITY_DATE,
+       DURATION,
+       TELEPHONE_NUMBER,
+       STRATEGY,
+       PROCESS_TYPE,
+       ACC_CUSTOMER_ID,
+       ACCOUNT_NUMBER,
+       PRODUCT_ID,
+       REASON_ID,
+       RESPONSE_WEIGHT,
+       CONTACT_TYPE,
+       RECORD_DATE,
+       LATITUDE,
+       LONGITUDE,
+       MOBILE_STATUS_BATTERY,
+       TO_DATE(TO_CHAR(A.HISTORY_DATE, &apos;DD&#47;MM&#47;YYYY&apos;), &apos;DD&#47;MM&#47;YYYY&apos;) AS FE_REGISTRO,
+--       TO_DATE(SUBSTR(A.HISTORY_DATE,1, 6) || &apos;20&apos; || SUBSTR(A.HISTORY_DATE,7, 2),&apos;DD&#47;MM&#47;YYYY&apos;) AS FE_REGISTRO,
+     SYSDATE AS FE_ACTU_DIA
+FROM COBRA.HISTORY A
+        WHERE A.USER_ID &lt;&gt; &apos;SYSTEM&apos;
+         AND A.CUSTOMER_ID = &apos;MIBANCO&apos;
+         AND A.ACTION_ID NOT IN (&apos;ENTER TO CSCS&apos;,
+                                 &apos;CHANGE STATE&apos;,
+                                 &apos;IDENTITY CHANGE&apos;,
+                                 &apos;CHANGE STATE&apos;,
+                                 &apos;CHANGE DATA&apos;,
+                                 &apos;CHANGE STRATEGY&apos;,
+                                 &apos;CHANGE USER&apos;,
+                                 &apos;DEMOGRAPHIC CHANGE&apos;)
+-- AND LENGTH(TRIM(TRANSLATE(A.USER_ID, &apos; 0123456789&apos;, &apos; &apos;))) IS NULL
+   AND TO_DATE(TO_CHAR(A.RECORD_DATE,&apos;DD&#47;MM&#47;YYYY&apos;),&apos;DD&#47;MM&#47;YYYY&apos;) = TO_DATE(&apos;${FECHAPROCESOEDY_S}&apos;,&apos;DD&#47;MM&#47;YYYY&apos;)
+   AND IDENTITY_CODE||TO_CHAR(RECORD_DATE,&apos;DD&#47;MM&#47;YYYY HH24:MI:SS.FF3&apos;)  NOT IN (SELECT IDENTITY_CODE||FECHA FROM DUPLICADOS)</sql>
+    <limit>0</limit>
+    <lookup/>
+    <execute_each_row>N</execute_each_row>
+    <variables_active>Y</variables_active>
+    <lazy_conversion_active>N</lazy_conversion_active>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>277</xloc>
+      <yloc>64</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>Leo T_PEOPLE</name>
+    <type>TableInput</type>
+    <description/>
+    <distribute>Y</distribute>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+    <connection>IcsRepDS</connection>
+    <sql>WITH
+T_HISTORY AS
+(SELECT B.RESPONSE_ID, B.CUSTOMER_ID, B.ACTION_ID, B.IDENTITY_CODE
+FROM COBRA.HISTORY B 
+WHERE B.USER_ID &lt;&gt; &apos;SYSTEM&apos;
+         AND B.CUSTOMER_ID = &apos;MIBANCO&apos;
+         AND B.ACTION_ID NOT IN (&apos;ENTER TO CSCS&apos;,
+                                 &apos;CHANGE STATE&apos;,
+                                 &apos;IDENTITY CHANGE&apos;,
+                                 &apos;CHANGE STATE&apos;,
+                                 &apos;CHANGE DATA&apos;,
+                                 &apos;CHANGE STRATEGY&apos;,
+                                 &apos;CHANGE USER&apos;,
+                                 &apos;DEMOGRAPHIC CHANGE&apos;)
+   AND LENGTH(TRIM(TRANSLATE(B.USER_ID, &apos; 0123456789&apos;, &apos; &apos;))) IS NULL
+         AND TRUNC(B.RECORD_DATE) = TO_DATE(&apos;${FECHAPROCESOEDY_S}&apos;,&apos;DD&#47;MM&#47;YYYY&apos;))
+         
+SELECT 
+    IDENTITY_CODE,
+    CUSTOMER_ID,
+    STRATEGY,
+    STRA_ENTRANCE_DATE,
+    STRA_EXPIRE_DATE,
+    STRA_ASIGNMENT,
+    FIRST_SURNAME,
+    FIRST_NAME,
+    SEX,
+    STATE_ID,
+    STATE_ENTRANCE_DATE,
+    NEXT_ACTIVITY_DATE,
+    USER_ID,
+    GROUP_ID,
+    N_ACTIVE_ADDRESSES,
+    N_OK_TELEPHONES,
+    N_ACTIVE_ACCOUNTS,
+    CIVIL_STATUS,
+    BUSY_MAX_PEOPLE AS BUSY_MAX_T_PEOPLE,
+    NO_ANS_MAX_PEOPLE AS NO_ANS_MAX_T_PEOPLE,
+    INCOME_PAYMENT_TYPE,
+    TOTAL_BROKEN_PROMISES,
+    ACTUAL_BROKEN_PROMISES,
+    ACTUAL_NO_COMMITS,
+    LAST_ASIGNATION,
+    USER_ASIGNMENT,
+    FIRST_USER_ASIGNATION_DATE,
+    UPDATE_DATE,
+    INCOME,
+    INCOME_PAYMENT_DAY,
+    PERSONS_IN_CHARGE,
+    BIRTH_DATE,
+    LANGUAGE_ID,
+    LAST_CONTACT_DAY,
+    LAST_CONTACT_GROUP_ID,
+    LAST_CONTACT_USER_ID,
+    SECOND_SURNAME,
+    MIDDLE_NAME,
+    COMPANY,
+    OCUPATION,
+    PROFESSION,
+    WORK_TIMETABLE_START,
+    WORK_TIMETABLE_END,
+    USER_DEFINED1,
+    QUALIFICATION,
+    STATE_ASIGNMENT,
+    LAST_HISTORY_GROUP_ID,
+    LAST_HISTORY_USER_ID,
+    LAST_HISTORY_DATE,
+    N_ACTIVE_DEBTOR,
+    LAST_HISTORY_TRANS,
+    STATE_ENTRANCE_CAUSE,
+    OLD_STATE_ID,
+    VISIT_ASSIGNMENT,
+    VISIT_GROUP,
+    VISIT_USER,
+    VISIT_USER_ASSIGNMENT,
+    POSITIVE_ACTIVITY,
+    NEGATIVE_ACTIVITY,
+    CONTACT_DIREC,
+    CONTACT_INDIREC,
+    TOTAL_BROKEN_VISIT,
+    ACTUAL_BROKEN_VISIT,
+    QUERY_DEFINITION,
+    LAST_COMMIT_STATE_ID,
+    ACTUAL_PENDING_COMMITS,
+    ACTUAL_PENDING_NEGOTIATION,
+	SYSDATE AS FE_ACTU_DIA
+FROM COBRA.PEOPLE B
+WHERE B.CUSTOMER_ID=&apos;MIBANCO&apos;
+AND EXISTS ( SELECT A.IDENTITY_CODE FROM T_HISTORY A WHERE  A.IDENTITY_CODE = B.IDENTITY_CODE )</sql>
+    <limit>0</limit>
+    <lookup/>
+    <execute_each_row>N</execute_each_row>
+    <variables_active>Y</variables_active>
+    <lazy_conversion_active>N</lazy_conversion_active>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>288</xloc>
+      <yloc>505</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>Leo T_RESPONSE</name>
+    <type>TableInput</type>
+    <description/>
+    <distribute>Y</distribute>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+    <connection>IcsRepDS</connection>
+    <sql>WITH
+T_HISTORY AS
+(SELECT B.RESPONSE_ID, B.CUSTOMER_ID, B.ACTION_ID
+FROM COBRA.HISTORY B 
+WHERE B.USER_ID &lt;&gt; &apos;SYSTEM&apos;
+         AND B.CUSTOMER_ID = &apos;MIBANCO&apos;
+         AND B.ACTION_ID NOT IN (&apos;ENTER TO CSCS&apos;,
+                                 &apos;CHANGE STATE&apos;,
+                                 &apos;IDENTITY CHANGE&apos;,
+                                 &apos;CHANGE STATE&apos;,
+                                 &apos;CHANGE DATA&apos;,
+                                 &apos;CHANGE STRATEGY&apos;,
+                                 &apos;CHANGE USER&apos;,
+                                 &apos;DEMOGRAPHIC CHANGE&apos;)
+   AND LENGTH(TRIM(TRANSLATE(B.USER_ID, &apos; 0123456789&apos;, &apos; &apos;))) IS NULL
+         AND TRUNC(B.RECORD_DATE) = TO_DATE(&apos;${FECHAPROCESOEDY_S}&apos;,&apos;DD&#47;MM&#47;YYYY&apos;))
+         
+SELECT
+ A.RESPONSE_ID,
+ A.CUSTOMER_ID,
+ A.LANGUAGE_ID,
+ A.PRIORITY,
+ A.DESCRIPTION,
+ A.REPORT_DESCRIPTION,
+ A.USER_NAME
+FROM COBRA.RESPONSE A
+WHERE A.CUSTOMER_ID = &apos;MIBANCO&apos; AND A.LANGUAGE_ID = &apos;ESPANOL&apos;
+AND EXISTS (SELECT B.RESPONSE_ID
+                FROM T_HISTORY B
+               WHERE A.RESPONSE_ID = B.RESPONSE_ID
+                 AND B.CUSTOMER_ID = A.CUSTOMER_ID)</sql>
+    <limit>0</limit>
+    <lookup/>
+    <execute_each_row>N</execute_each_row>
+    <variables_active>Y</variables_active>
+    <lazy_conversion_active>N</lazy_conversion_active>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>283</xloc>
+      <yloc>208</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>Leo T_USER_CSCS</name>
+    <type>TableInput</type>
+    <description/>
+    <distribute>Y</distribute>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+    <connection>IcsRepDS</connection>
+    <sql>WITH
+T_HISTORY AS
+(SELECT B.RESPONSE_ID, B.CUSTOMER_ID, B.ACTION_ID, B.USER_ID
+FROM COBRA.HISTORY B 
+WHERE B.USER_ID &lt;&gt; &apos;SYSTEM&apos;
+         AND B.CUSTOMER_ID = &apos;MIBANCO&apos;
+         AND B.ACTION_ID NOT IN (&apos;ENTER TO CSCS&apos;,
+                                 &apos;CHANGE STATE&apos;,
+                                 &apos;IDENTITY CHANGE&apos;,
+                                 &apos;CHANGE STATE&apos;,
+                                 &apos;CHANGE DATA&apos;,
+                                 &apos;CHANGE STRATEGY&apos;,
+                                 &apos;CHANGE USER&apos;,
+                                 &apos;DEMOGRAPHIC CHANGE&apos;)
+   AND LENGTH(TRIM(TRANSLATE(B.USER_ID, &apos; 0123456789&apos;, &apos; &apos;))) IS NULL
+         AND TRUNC(B.RECORD_DATE) = TO_DATE(&apos;${FECHAPROCESOEDY_S}&apos;,&apos;DD&#47;MM&#47;YYYY&apos;))
+         
+ SELECT
+       USER_ID,
+       PROFILE_ID,
+       USER_PASSWORD,
+       SYSTEM_USER,
+       ACCEPT_CONTRACT,
+       ACCESS_TYPE,
+       SESSIONS_PER_USER,
+       STATUS,
+       DB_USER,
+       ACCEPT_CONTRACT_IP,
+       USER_NAME1,
+       USER_NAME2,
+       USER_SURNAME1,
+       USER_SURNAME2,
+       USER_EXTENTION,
+       GRADE_ID,
+       LAST_SUCCESFUL_LOGIN,
+       FIRST_LOGIN,
+       MODIFICATION_DATE,
+       ACCEPT_CONTRACT_DATE,
+       USER_ADDRESS,
+       USER_TELEPHONE,
+       CREATION_DATE,
+       AREA_CODE,
+       CITY,
+       PAYMENT_ACCOUNT,
+       CUSTOMER_ACCOUNT,
+       SIGN_PATH,
+       REJECTED_LOGINS,
+       LAST_PWD_CHANGE,
+       SHARE_USER,
+       CONNECT_IP,
+       CONNECT_STATUS,
+       CONNECT_DATE,
+       CONNECT_HOST,
+       BOSS,
+       LANGUAGE_ID,
+       SALARY,
+       LAST_UNSUCCESFUL_LOGIN,
+       USER_NAME
+        FROM COBRA.USER_CSCS A
+       WHERE EXISTS (SELECT B.USER_ID
+                FROM T_HISTORY B
+               WHERE A.USER_ID = B.USER_ID)</sql>
+    <limit>0</limit>
+    <lookup/>
+    <execute_each_row>N</execute_each_row>
+    <variables_active>Y</variables_active>
+    <lazy_conversion_active>N</lazy_conversion_active>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>286</xloc>
+      <yloc>431</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>cargo T_ACTION</name>
+    <type>TableOutput</type>
+    <description/>
+    <distribute>Y</distribute>
+    <copies>2</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+    <connection>OdsStgDS</connection>
+    <schema>STG</schema>
+    <table>T_ACTION</table>
+    <commit>200</commit>
+    <truncate>N</truncate>
+    <ignore_errors>N</ignore_errors>
+    <use_batch>N</use_batch>
+    <specify_fields>N</specify_fields>
+    <partitioning_enabled>N</partitioning_enabled>
+    <partitioning_field/>
+    <partitioning_daily>N</partitioning_daily>
+    <partitioning_monthly>Y</partitioning_monthly>
+    <tablename_in_field>N</tablename_in_field>
+    <tablename_field/>
+    <tablename_in_table>Y</tablename_in_table>
+    <return_keys>N</return_keys>
+    <return_field/>
+    <fields>
+    </fields>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>767</xloc>
+      <yloc>130</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>cargo T_CONTACT</name>
+    <type>TableOutput</type>
+    <description/>
+    <distribute>Y</distribute>
+    <copies>2</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+    <connection>OdsStgDS</connection>
+    <schema>STG</schema>
+    <table>T_CONTACT</table>
+    <commit>5000</commit>
+    <truncate>N</truncate>
+    <ignore_errors>N</ignore_errors>
+    <use_batch>Y</use_batch>
+    <specify_fields>N</specify_fields>
+    <partitioning_enabled>N</partitioning_enabled>
+    <partitioning_field/>
+    <partitioning_daily>N</partitioning_daily>
+    <partitioning_monthly>Y</partitioning_monthly>
+    <tablename_in_field>N</tablename_in_field>
+    <tablename_field/>
+    <tablename_in_table>Y</tablename_in_table>
+    <return_keys>N</return_keys>
+    <return_field/>
+    <fields>
+    </fields>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>775</xloc>
+      <yloc>290</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>cargo T_CUSTOM_PEOPLE</name>
+    <type>TableOutput</type>
+    <description/>
+    <distribute>Y</distribute>
+    <copies>2</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+    <connection>OdsStgDS</connection>
+    <schema>STG</schema>
+    <table>T_CUSTOM_PEOPLE</table>
+    <commit>5000</commit>
+    <truncate>N</truncate>
+    <ignore_errors>N</ignore_errors>
+    <use_batch>Y</use_batch>
+    <specify_fields>N</specify_fields>
+    <partitioning_enabled>N</partitioning_enabled>
+    <partitioning_field/>
+    <partitioning_daily>N</partitioning_daily>
+    <partitioning_monthly>Y</partitioning_monthly>
+    <tablename_in_field>N</tablename_in_field>
+    <tablename_field/>
+    <tablename_in_table>Y</tablename_in_table>
+    <return_keys>N</return_keys>
+    <return_field/>
+    <fields>
+    </fields>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>774</xloc>
+      <yloc>363</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>cargo T_HISTORY</name>
+    <type>TableOutput</type>
+    <description/>
+    <distribute>Y</distribute>
+    <copies>2</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+    <connection>OdsStgDS</connection>
+    <schema>STG</schema>
+    <table>T_HISTORY</table>
+    <commit>5000</commit>
+    <truncate>N</truncate>
+    <ignore_errors>N</ignore_errors>
+    <use_batch>N</use_batch>
+    <specify_fields>N</specify_fields>
+    <partitioning_enabled>N</partitioning_enabled>
+    <partitioning_field/>
+    <partitioning_daily>N</partitioning_daily>
+    <partitioning_monthly>Y</partitioning_monthly>
+    <tablename_in_field>N</tablename_in_field>
+    <tablename_field/>
+    <tablename_in_table>Y</tablename_in_table>
+    <return_keys>N</return_keys>
+    <return_field/>
+    <fields>
+    </fields>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>769</xloc>
+      <yloc>63</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>cargo T_PEOPLE</name>
+    <type>TableOutput</type>
+    <description/>
+    <distribute>Y</distribute>
+    <copies>2</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+    <connection>OdsStgDS</connection>
+    <schema>STG</schema>
+    <table>T_PEOPLE</table>
+    <commit>6000</commit>
+    <truncate>N</truncate>
+    <ignore_errors>N</ignore_errors>
+    <use_batch>Y</use_batch>
+    <specify_fields>N</specify_fields>
+    <partitioning_enabled>N</partitioning_enabled>
+    <partitioning_field/>
+    <partitioning_daily>N</partitioning_daily>
+    <partitioning_monthly>Y</partitioning_monthly>
+    <tablename_in_field>N</tablename_in_field>
+    <tablename_field/>
+    <tablename_in_table>Y</tablename_in_table>
+    <return_keys>N</return_keys>
+    <return_field/>
+    <fields>
+    </fields>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>782</xloc>
+      <yloc>505</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>cargo T_RESPONSE</name>
+    <type>TableOutput</type>
+    <description/>
+    <distribute>Y</distribute>
+    <copies>2</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+    <connection>OdsStgDS</connection>
+    <schema>STG</schema>
+    <table>T_RESPONSE</table>
+    <commit>5000</commit>
+    <truncate>N</truncate>
+    <ignore_errors>N</ignore_errors>
+    <use_batch>N</use_batch>
+    <specify_fields>N</specify_fields>
+    <partitioning_enabled>N</partitioning_enabled>
+    <partitioning_field/>
+    <partitioning_daily>N</partitioning_daily>
+    <partitioning_monthly>Y</partitioning_monthly>
+    <tablename_in_field>N</tablename_in_field>
+    <tablename_field/>
+    <tablename_in_table>Y</tablename_in_table>
+    <return_keys>N</return_keys>
+    <return_field/>
+    <fields>
+    </fields>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>770</xloc>
+      <yloc>208</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>cargo T_USER_CSCS</name>
+    <type>TableOutput</type>
+    <description/>
+    <distribute>Y</distribute>
+    <copies>2</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+    <connection>OdsStgDS</connection>
+    <schema>STG</schema>
+    <table>T_USER_CSCS</table>
+    <commit>5000</commit>
+    <truncate>N</truncate>
+    <ignore_errors>N</ignore_errors>
+    <use_batch>N</use_batch>
+    <specify_fields>N</specify_fields>
+    <partitioning_enabled>N</partitioning_enabled>
+    <partitioning_field/>
+    <partitioning_daily>N</partitioning_daily>
+    <partitioning_monthly>Y</partitioning_monthly>
+    <tablename_in_field>N</tablename_in_field>
+    <tablename_field/>
+    <tablename_in_table>Y</tablename_in_table>
+    <return_keys>N</return_keys>
+    <return_field/>
+    <fields>
+    </fields>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>776</xloc>
+      <yloc>431</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step_error_handling>
+  </step_error_handling>
+   <slave-step-copy-partition-distribution>
+</slave-step-copy-partition-distribution>
+   <slave_transformation>N</slave_transformation>
+</transformation>

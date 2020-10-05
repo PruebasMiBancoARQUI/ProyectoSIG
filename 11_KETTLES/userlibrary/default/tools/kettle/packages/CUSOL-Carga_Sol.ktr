@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<transformation>
+  <info>
+    <name>CUSOL-Carga_Sol</name>
+    <description/>
+    <extended_description/>
+    <trans_version/>
+    <trans_type>Normal</trans_type>
+    <trans_status>0</trans_status>
+    <directory>&#47;</directory>
+    <parameters>
+    </parameters>
+    <log>
+<trans-log-table><connection/>
+<schema/>
+<table/>
+<size_limit_lines/>
+<interval/>
+<timeout_days/>
+<field><id>ID_BATCH</id><enabled>Y</enabled><name>ID_BATCH</name></field><field><id>CHANNEL_ID</id><enabled>Y</enabled><name>CHANNEL_ID</name></field><field><id>TRANSNAME</id><enabled>Y</enabled><name>TRANSNAME</name></field><field><id>STATUS</id><enabled>Y</enabled><name>STATUS</name></field><field><id>LINES_READ</id><enabled>Y</enabled><name>LINES_READ</name><subject/></field><field><id>LINES_WRITTEN</id><enabled>Y</enabled><name>LINES_WRITTEN</name><subject/></field><field><id>LINES_UPDATED</id><enabled>Y</enabled><name>LINES_UPDATED</name><subject/></field><field><id>LINES_INPUT</id><enabled>Y</enabled><name>LINES_INPUT</name><subject/></field><field><id>LINES_OUTPUT</id><enabled>Y</enabled><name>LINES_OUTPUT</name><subject/></field><field><id>LINES_REJECTED</id><enabled>Y</enabled><name>LINES_REJECTED</name><subject/></field><field><id>ERRORS</id><enabled>Y</enabled><name>ERRORS</name></field><field><id>STARTDATE</id><enabled>Y</enabled><name>STARTDATE</name></field><field><id>ENDDATE</id><enabled>Y</enabled><name>ENDDATE</name></field><field><id>LOGDATE</id><enabled>Y</enabled><name>LOGDATE</name></field><field><id>DEPDATE</id><enabled>Y</enabled><name>DEPDATE</name></field><field><id>REPLAYDATE</id><enabled>Y</enabled><name>REPLAYDATE</name></field><field><id>LOG_FIELD</id><enabled>Y</enabled><name>LOG_FIELD</name></field></trans-log-table>
+<perf-log-table><connection/>
+<schema/>
+<table/>
+<interval/>
+<timeout_days/>
+<field><id>ID_BATCH</id><enabled>Y</enabled><name>ID_BATCH</name></field><field><id>SEQ_NR</id><enabled>Y</enabled><name>SEQ_NR</name></field><field><id>LOGDATE</id><enabled>Y</enabled><name>LOGDATE</name></field><field><id>TRANSNAME</id><enabled>Y</enabled><name>TRANSNAME</name></field><field><id>STEPNAME</id><enabled>Y</enabled><name>STEPNAME</name></field><field><id>STEP_COPY</id><enabled>Y</enabled><name>STEP_COPY</name></field><field><id>LINES_READ</id><enabled>Y</enabled><name>LINES_READ</name></field><field><id>LINES_WRITTEN</id><enabled>Y</enabled><name>LINES_WRITTEN</name></field><field><id>LINES_UPDATED</id><enabled>Y</enabled><name>LINES_UPDATED</name></field><field><id>LINES_INPUT</id><enabled>Y</enabled><name>LINES_INPUT</name></field><field><id>LINES_OUTPUT</id><enabled>Y</enabled><name>LINES_OUTPUT</name></field><field><id>LINES_REJECTED</id><enabled>Y</enabled><name>LINES_REJECTED</name></field><field><id>ERRORS</id><enabled>Y</enabled><name>ERRORS</name></field><field><id>INPUT_BUFFER_ROWS</id><enabled>Y</enabled><name>INPUT_BUFFER_ROWS</name></field><field><id>OUTPUT_BUFFER_ROWS</id><enabled>Y</enabled><name>OUTPUT_BUFFER_ROWS</name></field></perf-log-table>
+<channel-log-table><connection/>
+<schema/>
+<table/>
+<timeout_days/>
+<field><id>ID_BATCH</id><enabled>Y</enabled><name>ID_BATCH</name></field><field><id>CHANNEL_ID</id><enabled>Y</enabled><name>CHANNEL_ID</name></field><field><id>LOG_DATE</id><enabled>Y</enabled><name>LOG_DATE</name></field><field><id>LOGGING_OBJECT_TYPE</id><enabled>Y</enabled><name>LOGGING_OBJECT_TYPE</name></field><field><id>OBJECT_NAME</id><enabled>Y</enabled><name>OBJECT_NAME</name></field><field><id>OBJECT_COPY</id><enabled>Y</enabled><name>OBJECT_COPY</name></field><field><id>REPOSITORY_DIRECTORY</id><enabled>Y</enabled><name>REPOSITORY_DIRECTORY</name></field><field><id>FILENAME</id><enabled>Y</enabled><name>FILENAME</name></field><field><id>OBJECT_ID</id><enabled>Y</enabled><name>OBJECT_ID</name></field><field><id>OBJECT_REVISION</id><enabled>Y</enabled><name>OBJECT_REVISION</name></field><field><id>PARENT_CHANNEL_ID</id><enabled>Y</enabled><name>PARENT_CHANNEL_ID</name></field><field><id>ROOT_CHANNEL_ID</id><enabled>Y</enabled><name>ROOT_CHANNEL_ID</name></field></channel-log-table>
+<step-log-table><connection/>
+<schema/>
+<table/>
+<timeout_days/>
+<field><id>ID_BATCH</id><enabled>Y</enabled><name>ID_BATCH</name></field><field><id>CHANNEL_ID</id><enabled>Y</enabled><name>CHANNEL_ID</name></field><field><id>LOG_DATE</id><enabled>Y</enabled><name>LOG_DATE</name></field><field><id>TRANSNAME</id><enabled>Y</enabled><name>TRANSNAME</name></field><field><id>STEPNAME</id><enabled>Y</enabled><name>STEPNAME</name></field><field><id>STEP_COPY</id><enabled>Y</enabled><name>STEP_COPY</name></field><field><id>LINES_READ</id><enabled>Y</enabled><name>LINES_READ</name></field><field><id>LINES_WRITTEN</id><enabled>Y</enabled><name>LINES_WRITTEN</name></field><field><id>LINES_UPDATED</id><enabled>Y</enabled><name>LINES_UPDATED</name></field><field><id>LINES_INPUT</id><enabled>Y</enabled><name>LINES_INPUT</name></field><field><id>LINES_OUTPUT</id><enabled>Y</enabled><name>LINES_OUTPUT</name></field><field><id>LINES_REJECTED</id><enabled>Y</enabled><name>LINES_REJECTED</name></field><field><id>ERRORS</id><enabled>Y</enabled><name>ERRORS</name></field><field><id>LOG_FIELD</id><enabled>N</enabled><name>LOG_FIELD</name></field></step-log-table>
+    </log>
+    <maxdate>
+      <connection/>
+      <table/>
+      <field/>
+      <offset>0.0</offset>
+      <maxdiff>0.0</maxdiff>
+    </maxdate>
+    <size_rowset>10000</size_rowset>
+    <sleep_time_empty>50</sleep_time_empty>
+    <sleep_time_full>50</sleep_time_full>
+    <unique_connections>N</unique_connections>
+    <feedback_shown>Y</feedback_shown>
+    <feedback_size>50000</feedback_size>
+    <using_thread_priorities>Y</using_thread_priorities>
+    <shared_objects_file/>
+    <capture_step_performance>N</capture_step_performance>
+    <step_performance_capturing_delay>1000</step_performance_capturing_delay>
+    <step_performance_capturing_size_limit>100</step_performance_capturing_size_limit>
+    <dependencies>
+    </dependencies>
+    <partitionschemas>
+    </partitionschemas>
+    <slaveservers>
+    </slaveservers>
+    <clusterschemas>
+    </clusterschemas>
+  <created_user>-</created_user>
+  <created_date>2016&#47;01&#47;13 16:16:45.571</created_date>
+  <modified_user>-</modified_user>
+  <modified_date>2016&#47;01&#47;13 16:16:45.571</modified_date>
+  </info>
+  <notepads>
+  </notepads>
+  <connection>
+    <name>OdsStgDS</name>
+    <server/>
+    <type>ORACLE</type>
+    <access>JNDI</access>
+    <database>OdsStgDS</database>
+    <port>1521</port>
+    <username/>
+    <password>Encrypted </password>
+    <servername/>
+    <data_tablespace/>
+    <index_tablespace/>
+    <attributes>
+      <attribute><code>FORCE_IDENTIFIERS_TO_LOWERCASE</code><attribute>N</attribute></attribute>
+      <attribute><code>FORCE_IDENTIFIERS_TO_UPPERCASE</code><attribute>N</attribute></attribute>
+      <attribute><code>IS_CLUSTERED</code><attribute>N</attribute></attribute>
+      <attribute><code>PORT_NUMBER</code><attribute>1521</attribute></attribute>
+      <attribute><code>QUOTE_ALL_FIELDS</code><attribute>N</attribute></attribute>
+      <attribute><code>SUPPORTS_BOOLEAN_DATA_TYPE</code><attribute>N</attribute></attribute>
+      <attribute><code>USE_POOLING</code><attribute>N</attribute></attribute>
+    </attributes>
+  </connection>
+  <connection>
+    <name>TopazRepDS</name>
+    <server/>
+    <type>ORACLE</type>
+    <access>JNDI</access>
+    <database>TopazRepDS</database>
+    <port>1521</port>
+    <username/>
+    <password>Encrypted </password>
+    <servername/>
+    <data_tablespace/>
+    <index_tablespace/>
+    <attributes>
+      <attribute><code>FORCE_IDENTIFIERS_TO_LOWERCASE</code><attribute>N</attribute></attribute>
+      <attribute><code>FORCE_IDENTIFIERS_TO_UPPERCASE</code><attribute>N</attribute></attribute>
+      <attribute><code>IS_CLUSTERED</code><attribute>N</attribute></attribute>
+      <attribute><code>PORT_NUMBER</code><attribute>1521</attribute></attribute>
+      <attribute><code>QUOTE_ALL_FIELDS</code><attribute>N</attribute></attribute>
+      <attribute><code>SUPPORTS_BOOLEAN_DATA_TYPE</code><attribute>N</attribute></attribute>
+      <attribute><code>USE_POOLING</code><attribute>N</attribute></attribute>
+    </attributes>
+  </connection>
+  <order>
+  <hop> <from>Leo EDYFICAR.SL_SOLICITUDCREDITO</from><to>Cargo STG.T_SL_SOLICITUDCREDITO</to><enabled>N</enabled> </hop>  </order>
+  <step>
+    <name>Cargo STG.T_SL_SOLICITUDCREDITO</name>
+    <type>TableOutput</type>
+    <description/>
+    <distribute>Y</distribute>
+    <copies>2</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+    <connection>OdsStgDS</connection>
+    <schema>STG</schema>
+    <table>T_SL_SOLICITUDCREDITO</table>
+    <commit>20000</commit>
+    <truncate>N</truncate>
+    <ignore_errors>N</ignore_errors>
+    <use_batch>Y</use_batch>
+    <specify_fields>N</specify_fields>
+    <partitioning_enabled>N</partitioning_enabled>
+    <partitioning_field/>
+    <partitioning_daily>N</partitioning_daily>
+    <partitioning_monthly>Y</partitioning_monthly>
+    <tablename_in_field>N</tablename_in_field>
+    <tablename_field/>
+    <tablename_in_table>Y</tablename_in_table>
+    <return_keys>N</return_keys>
+    <return_field/>
+    <fields>
+    </fields>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>806</xloc>
+      <yloc>77</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>Leo EDYFICAR.SL_SOLICITUDCREDITO</name>
+    <type>TableInput</type>
+    <description/>
+    <distribute>Y</distribute>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+    <connection>TopazRepDS</connection>
+    <sql>SELECT 
+    s.C5000 AS C5000,
+    s.GRUPO	AS GRUPO,
+    s.C5061 AS C5061,
+    s.C5004 AS C5004,
+    s.C5074 AS C5074,
+    s.C5044 AS C5044,
+    s.C5261 AS C5261,
+    CASE WHEN ( g.C1371 IS NOT NULL ) THEN 1
+   		 ELSE 0
+    END AS IN_GRUPAL,
+	FCREAC1ERET,
+	s.C5062 AS C5062,
+	s.C5036 AS C5036,
+	s.C5035 AS C5035,
+	s.C5008 AS C5008,
+	s.MONEDA AS MONEDA,
+	s.C2320 AS C2320,
+	s.C5001 AS C5001,
+	s.C5006 AS C5006,
+	s.C5187 AS C5187,
+	s.C5063 AS C5063,
+    s.C5002 AS C5002,
+    s.C5053 AS C5053,
+    s.FORMADESEMBOLSO AS FORMADESEMBOLSO,
+    s.MB_DESEMBOLSO_JTS_OID AS MB_DESEMBOLSO_JTS_OID,
+    s.TASA_OPTIMA AS TASA_OPTIMA,
+    s.SEGURO AS SEGURO,
+    s.VALOR_SEGURO AS VALOR_SEGURO,
+    NVL((SELECT sr.COD_INV FROM EDYFICAR.SOL_REL_SUB_CRE sr WHERE sr.NUM_SOL = s.C5000),0) AS COD_INV,
+    s.IDMETODOLOGIA AS IDMETODOLOGIA,
+    s.TIPSOL AS TIPSOL,
+    s.DIA_PAGO AS DIA_PAGO,
+    s.C5229 AS C5229,
+    s.C5054 AS C5054,
+    s.C5023 AS C5023,
+    s.C5223 AS C5223,
+    s.C5024 AS C5024,
+    s.TASA_MINIMA AS TASA_MINIMA,
+    s.TASA_MAXIMA AS TASA_MAXIMA,
+    s.C5281 AS C5281,
+    s.C5039 AS C5039,
+    s.FLG_CON AS FLG_CON,
+    NVL((SELECT c.RESULTADO FROM EDYFICAR.SL_CRITERIOS c WHERE c.SOLICITUD = s.C5000 AND c.CODITEM = 2 AND c.TZ_LOCK = 0),0) AS VL_ENDEUDAMIENTO,
+    DECODE(s.C5063,12,(SELECT a.TIPONOTA FROM EDYFICAR.SL_NOTASPORSOL a WHERE a.ORDINAL = (SELECT MAX(ORDINAL) FROM EDYFICAR.SL_NOTASPORSOL b WHERE b.NROSOLICITUD = a.NROSOLICITUD) AND a.NROSOLICITUD = s.C5000)) AS CO_MOTI_RECH,
+    DECODE(s.C5063,12,(SELECT a.COMENTARIO FROM EDYFICAR.SL_NOTASPORSOL a WHERE a.ORDINAL = (SELECT MAX(ORDINAL) FROM EDYFICAR.SL_NOTASPORSOL b WHERE b.NROSOLICITUD = a.NROSOLICITUD) AND a.NROSOLICITUD = s.C5000),&apos; &apos;) AS DE_COME_RECH,
+    NVL((SELECT sd.COD_CIA_SEG FROM EDYFICAR.SL_SEGURODESGRAVAMEN sd JOIN EDYFICAR.SL_SOLICITUDCREDITOPERSONA sp ON sd.NUM_SOLICITUD = sp.C5080 AND sd.TIPO_DOC = sp.C5081 AND sd.NRO_DOC = sp.C5082 AND sd.PAIS = sp.C5083 WHERE sd.NUM_SOLICITUD = s.C5000 AND sp.C5084 = &apos;T&apos;),0) AS CO_COMP_ASEG,
+    NVL((SELECT sd.SEG_EXT FROM EDYFICAR.SL_SEGURODESGRAVAMEN sd JOIN EDYFICAR.SL_SOLICITUDCREDITOPERSONA sp ON sd.NUM_SOLICITUD = sp.C5080 AND sd.TIPO_DOC = sp.C5081 AND sd.NRO_DOC = sp.C5082 AND sd.PAIS = sp.C5083 WHERE sd.NUM_SOLICITUD = s.C5000 AND sp.C5084 = &apos;T&apos;),&apos; &apos;) AS IN_SEGU_DESG_EXTE,
+    NVL((SELECT ((SELECT nvl(spc.DATO,&apos; &apos;) FROM EDYFICAR.SL_PROP_CREDITO spc WHERE spc.SOLICITUD = s.C5000 AND spc.ITEM = 17 AND spc.TZ_LOCK = 0)||&apos; &apos;||(SELECT nvl(cpc.DES_CRE_APO_CLI,&apos; &apos;) FROM EDYFICAR.CRE_PRO_CRE_RIE cpc WHERE cpc.NUM_SOL = s.C5000 AND cpc.TZ_LOCK = 0)) FROM DUAL),&apos; &apos;) AS DE_PROP_DEST,
+	s.C5060 AS C5060
+FROM EDYFICAR.SL_SOLICITUDCREDITO s
+	 LEFT JOIN EDYFICAR.CL_GRUPOSSOCIALES g
+	 	ON s.GRUPO=g.C1371
+		 	AND g.TZ_LOCK=0
+WHERE 
+		s.TZ_LOCK=0
+		AND s.C5060 &lt;= TO_DATE(&apos;29&#47;06&#47;2017&apos;,&apos;DD&#47;MM&#47;YYYY&apos;)
+		--AND s.C5060 &lt;= SYSDATE-1
+</sql>
+    <limit>0</limit>
+    <lookup/>
+    <execute_each_row>N</execute_each_row>
+    <variables_active>N</variables_active>
+    <lazy_conversion_active>N</lazy_conversion_active>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>238</xloc>
+      <yloc>77</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step_error_handling>
+  </step_error_handling>
+   <slave-step-copy-partition-distribution>
+</slave-step-copy-partition-distribution>
+   <slave_transformation>N</slave_transformation>
+</transformation>

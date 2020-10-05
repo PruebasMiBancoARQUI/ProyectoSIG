@@ -1,0 +1,727 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<transformation>
+  <info>
+    <name>4-2-7-1-Carga_TMP_EGP</name>
+    <description/>
+    <extended_description/>
+    <trans_version/>
+    <trans_type>Normal</trans_type>
+    <trans_status>0</trans_status>
+    <directory>&#47;</directory>
+    <parameters>
+    </parameters>
+    <log>
+<trans-log-table><connection/>
+<schema/>
+<table/>
+<size_limit_lines/>
+<interval/>
+<timeout_days/>
+<field><id>ID_BATCH</id><enabled>Y</enabled><name>ID_BATCH</name></field><field><id>CHANNEL_ID</id><enabled>Y</enabled><name>CHANNEL_ID</name></field><field><id>TRANSNAME</id><enabled>Y</enabled><name>TRANSNAME</name></field><field><id>STATUS</id><enabled>Y</enabled><name>STATUS</name></field><field><id>LINES_READ</id><enabled>Y</enabled><name>LINES_READ</name><subject/></field><field><id>LINES_WRITTEN</id><enabled>Y</enabled><name>LINES_WRITTEN</name><subject/></field><field><id>LINES_UPDATED</id><enabled>Y</enabled><name>LINES_UPDATED</name><subject/></field><field><id>LINES_INPUT</id><enabled>Y</enabled><name>LINES_INPUT</name><subject/></field><field><id>LINES_OUTPUT</id><enabled>Y</enabled><name>LINES_OUTPUT</name><subject/></field><field><id>LINES_REJECTED</id><enabled>Y</enabled><name>LINES_REJECTED</name><subject/></field><field><id>ERRORS</id><enabled>Y</enabled><name>ERRORS</name></field><field><id>STARTDATE</id><enabled>Y</enabled><name>STARTDATE</name></field><field><id>ENDDATE</id><enabled>Y</enabled><name>ENDDATE</name></field><field><id>LOGDATE</id><enabled>Y</enabled><name>LOGDATE</name></field><field><id>DEPDATE</id><enabled>Y</enabled><name>DEPDATE</name></field><field><id>REPLAYDATE</id><enabled>Y</enabled><name>REPLAYDATE</name></field><field><id>LOG_FIELD</id><enabled>Y</enabled><name>LOG_FIELD</name></field></trans-log-table>
+<perf-log-table><connection/>
+<schema/>
+<table/>
+<interval/>
+<timeout_days/>
+<field><id>ID_BATCH</id><enabled>Y</enabled><name>ID_BATCH</name></field><field><id>SEQ_NR</id><enabled>Y</enabled><name>SEQ_NR</name></field><field><id>LOGDATE</id><enabled>Y</enabled><name>LOGDATE</name></field><field><id>TRANSNAME</id><enabled>Y</enabled><name>TRANSNAME</name></field><field><id>STEPNAME</id><enabled>Y</enabled><name>STEPNAME</name></field><field><id>STEP_COPY</id><enabled>Y</enabled><name>STEP_COPY</name></field><field><id>LINES_READ</id><enabled>Y</enabled><name>LINES_READ</name></field><field><id>LINES_WRITTEN</id><enabled>Y</enabled><name>LINES_WRITTEN</name></field><field><id>LINES_UPDATED</id><enabled>Y</enabled><name>LINES_UPDATED</name></field><field><id>LINES_INPUT</id><enabled>Y</enabled><name>LINES_INPUT</name></field><field><id>LINES_OUTPUT</id><enabled>Y</enabled><name>LINES_OUTPUT</name></field><field><id>LINES_REJECTED</id><enabled>Y</enabled><name>LINES_REJECTED</name></field><field><id>ERRORS</id><enabled>Y</enabled><name>ERRORS</name></field><field><id>INPUT_BUFFER_ROWS</id><enabled>Y</enabled><name>INPUT_BUFFER_ROWS</name></field><field><id>OUTPUT_BUFFER_ROWS</id><enabled>Y</enabled><name>OUTPUT_BUFFER_ROWS</name></field></perf-log-table>
+<channel-log-table><connection/>
+<schema/>
+<table/>
+<timeout_days/>
+<field><id>ID_BATCH</id><enabled>Y</enabled><name>ID_BATCH</name></field><field><id>CHANNEL_ID</id><enabled>Y</enabled><name>CHANNEL_ID</name></field><field><id>LOG_DATE</id><enabled>Y</enabled><name>LOG_DATE</name></field><field><id>LOGGING_OBJECT_TYPE</id><enabled>Y</enabled><name>LOGGING_OBJECT_TYPE</name></field><field><id>OBJECT_NAME</id><enabled>Y</enabled><name>OBJECT_NAME</name></field><field><id>OBJECT_COPY</id><enabled>Y</enabled><name>OBJECT_COPY</name></field><field><id>REPOSITORY_DIRECTORY</id><enabled>Y</enabled><name>REPOSITORY_DIRECTORY</name></field><field><id>FILENAME</id><enabled>Y</enabled><name>FILENAME</name></field><field><id>OBJECT_ID</id><enabled>Y</enabled><name>OBJECT_ID</name></field><field><id>OBJECT_REVISION</id><enabled>Y</enabled><name>OBJECT_REVISION</name></field><field><id>PARENT_CHANNEL_ID</id><enabled>Y</enabled><name>PARENT_CHANNEL_ID</name></field><field><id>ROOT_CHANNEL_ID</id><enabled>Y</enabled><name>ROOT_CHANNEL_ID</name></field></channel-log-table>
+<step-log-table><connection/>
+<schema/>
+<table/>
+<timeout_days/>
+<field><id>ID_BATCH</id><enabled>Y</enabled><name>ID_BATCH</name></field><field><id>CHANNEL_ID</id><enabled>Y</enabled><name>CHANNEL_ID</name></field><field><id>LOG_DATE</id><enabled>Y</enabled><name>LOG_DATE</name></field><field><id>TRANSNAME</id><enabled>Y</enabled><name>TRANSNAME</name></field><field><id>STEPNAME</id><enabled>Y</enabled><name>STEPNAME</name></field><field><id>STEP_COPY</id><enabled>Y</enabled><name>STEP_COPY</name></field><field><id>LINES_READ</id><enabled>Y</enabled><name>LINES_READ</name></field><field><id>LINES_WRITTEN</id><enabled>Y</enabled><name>LINES_WRITTEN</name></field><field><id>LINES_UPDATED</id><enabled>Y</enabled><name>LINES_UPDATED</name></field><field><id>LINES_INPUT</id><enabled>Y</enabled><name>LINES_INPUT</name></field><field><id>LINES_OUTPUT</id><enabled>Y</enabled><name>LINES_OUTPUT</name></field><field><id>LINES_REJECTED</id><enabled>Y</enabled><name>LINES_REJECTED</name></field><field><id>ERRORS</id><enabled>Y</enabled><name>ERRORS</name></field><field><id>LOG_FIELD</id><enabled>N</enabled><name>LOG_FIELD</name></field></step-log-table>
+    </log>
+    <maxdate>
+      <connection/>
+      <table/>
+      <field/>
+      <offset>0.0</offset>
+      <maxdiff>0.0</maxdiff>
+    </maxdate>
+    <size_rowset>10000</size_rowset>
+    <sleep_time_empty>50</sleep_time_empty>
+    <sleep_time_full>50</sleep_time_full>
+    <unique_connections>N</unique_connections>
+    <feedback_shown>Y</feedback_shown>
+    <feedback_size>50000</feedback_size>
+    <using_thread_priorities>Y</using_thread_priorities>
+    <shared_objects_file/>
+    <capture_step_performance>N</capture_step_performance>
+    <step_performance_capturing_delay>1000</step_performance_capturing_delay>
+    <step_performance_capturing_size_limit>100</step_performance_capturing_size_limit>
+    <dependencies>
+    </dependencies>
+    <partitionschemas>
+    </partitionschemas>
+    <slaveservers>
+    </slaveservers>
+    <clusterschemas>
+    </clusterschemas>
+  <created_user>-</created_user>
+  <created_date>2016&#47;02&#47;24 12:47:29.125</created_date>
+  <modified_user>-</modified_user>
+  <modified_date>2016&#47;02&#47;24 12:47:29.125</modified_date>
+  </info>
+  <notepads>
+  </notepads>
+  <connection>
+    <name>OdsStgDS</name>
+    <server/>
+    <type>ORACLE</type>
+    <access>JNDI</access>
+    <database>OdsStgDS</database>
+    <port>1521</port>
+    <username/>
+    <password>Encrypted </password>
+    <servername/>
+    <data_tablespace/>
+    <index_tablespace/>
+    <attributes>
+      <attribute><code>FORCE_IDENTIFIERS_TO_LOWERCASE</code><attribute>N</attribute></attribute>
+      <attribute><code>FORCE_IDENTIFIERS_TO_UPPERCASE</code><attribute>N</attribute></attribute>
+      <attribute><code>IS_CLUSTERED</code><attribute>N</attribute></attribute>
+      <attribute><code>PORT_NUMBER</code><attribute>1521</attribute></attribute>
+      <attribute><code>QUOTE_ALL_FIELDS</code><attribute>N</attribute></attribute>
+      <attribute><code>SUPPORTS_BOOLEAN_DATA_TYPE</code><attribute>N</attribute></attribute>
+      <attribute><code>USE_POOLING</code><attribute>N</attribute></attribute>
+    </attributes>
+  </connection>
+  <connection>
+    <name>TopazDS</name>
+    <server/>
+    <type>ORACLE</type>
+    <access>JNDI</access>
+    <database>TopazDS</database>
+    <port>1521</port>
+    <username/>
+    <password>Encrypted </password>
+    <servername/>
+    <data_tablespace/>
+    <index_tablespace/>
+    <attributes>
+      <attribute><code>FORCE_IDENTIFIERS_TO_LOWERCASE</code><attribute>N</attribute></attribute>
+      <attribute><code>FORCE_IDENTIFIERS_TO_UPPERCASE</code><attribute>N</attribute></attribute>
+      <attribute><code>IS_CLUSTERED</code><attribute>N</attribute></attribute>
+      <attribute><code>PORT_NUMBER</code><attribute>1521</attribute></attribute>
+      <attribute><code>QUOTE_ALL_FIELDS</code><attribute>N</attribute></attribute>
+      <attribute><code>SUPPORTS_BOOLEAN_DATA_TYPE</code><attribute>N</attribute></attribute>
+      <attribute><code>USE_POOLING</code><attribute>N</attribute></attribute>
+    </attributes>
+  </connection>
+  <connection>
+    <name>TopazRepDS</name>
+    <server/>
+    <type>ORACLE</type>
+    <access>JNDI</access>
+    <database>TopazRepDS</database>
+    <port>1521</port>
+    <username/>
+    <password>Encrypted </password>
+    <servername/>
+    <data_tablespace/>
+    <index_tablespace/>
+    <attributes>
+      <attribute><code>FORCE_IDENTIFIERS_TO_LOWERCASE</code><attribute>N</attribute></attribute>
+      <attribute><code>FORCE_IDENTIFIERS_TO_UPPERCASE</code><attribute>N</attribute></attribute>
+      <attribute><code>IS_CLUSTERED</code><attribute>N</attribute></attribute>
+      <attribute><code>PORT_NUMBER</code><attribute>1521</attribute></attribute>
+      <attribute><code>QUOTE_ALL_FIELDS</code><attribute>N</attribute></attribute>
+      <attribute><code>SUPPORTS_BOOLEAN_DATA_TYPE</code><attribute>N</attribute></attribute>
+      <attribute><code>USE_POOLING</code><attribute>N</attribute></attribute>
+    </attributes>
+  </connection>
+  <order>
+  <hop> <from>Leo datos TMP_EPG_2</from><to>Cargo TMP_EGP_2</to><enabled>Y</enabled> </hop>  <hop> <from>Leo datos TMP_EGP_4</from><to>Cargo TMP_EGP_4</to><enabled>Y</enabled> </hop>  <hop> <from>Leo datos TMP_EPG_3</from><to>Busco Tasa </to><enabled>Y</enabled> </hop>  <hop> <from>Busco Tasa </from><to>Calculator</to><enabled>Y</enabled> </hop>  <hop> <from>Calculator</from><to>No mapeo datos tasa</to><enabled>Y</enabled> </hop>  <hop> <from>No mapeo datos tasa</from><to>Cargo TMP_EGP_3</to><enabled>Y</enabled> </hop>  <hop> <from>Leo datos TMP_EPG_1</from><to>Cargo TMP_EGP_1</to><enabled>Y</enabled> </hop>  </order>
+  <step>
+    <name>Busco Tasa </name>
+    <type>DBLookup</type>
+    <description/>
+    <distribute>Y</distribute>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+    <connection>OdsStgDS</connection>
+    <cache>N</cache>
+    <cache_load_all>N</cache_load_all>
+    <cache_size>0</cache_size>
+    <lookup>
+      <schema>STG</schema>
+      <table>T_TASAS_SOLICITUD</table>
+      <orderby>IMPORTE DESC , PLAZO DESC , FECHA DESC , HORA DESC</orderby>
+      <fail_on_multiple>N</fail_on_multiple>
+      <eat_row_on_failure>N</eat_row_on_failure>
+      <key>
+        <name>SALDOS_JTS_OID</name>
+        <field>SALDOS_JTS_OID</field>
+        <condition>=</condition>
+        <name2/>
+      </key>
+      <value>
+        <name>TASA_INTERES</name>
+        <rename>TASA_INTERES</rename>
+        <default>0</default>
+        <type>Number</type>
+      </value>
+      <value>
+        <name>VARIACION_INT</name>
+        <rename>VARIACION_INT</rename>
+        <default>0</default>
+        <type>Number</type>
+      </value>
+    </lookup>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>287</xloc>
+      <yloc>260</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>Calculator</name>
+    <type>Calculator</type>
+    <description/>
+    <distribute>Y</distribute>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+       <calculation><field_name>VL_TASA_MINI</field_name>
+<calc_type>SUBTRACT</calc_type>
+<field_a>TASA_INTERES</field_a>
+<field_b>VARIACION_INT</field_b>
+<field_c/>
+<value_type>Number</value_type>
+<value_length>-1</value_length>
+<value_precision>-1</value_precision>
+<remove>N</remove>
+<conversion_mask/>
+<decimal_symbol/>
+<grouping_symbol/>
+<currency_symbol/>
+</calculation>
+       <calculation><field_name>VL_TASA_MAXI</field_name>
+<calc_type>ADD</calc_type>
+<field_a>TASA_INTERES</field_a>
+<field_b>VARIACION_INT</field_b>
+<field_c/>
+<value_type>Number</value_type>
+<value_length>-1</value_length>
+<value_precision>-1</value_precision>
+<remove>N</remove>
+<conversion_mask/>
+<decimal_symbol/>
+<grouping_symbol/>
+<currency_symbol/>
+</calculation>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>421</xloc>
+      <yloc>224</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>Cargo TMP_EGP_1</name>
+    <type>TableOutput</type>
+    <description/>
+    <distribute>Y</distribute>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+    <connection>OdsStgDS</connection>
+    <schema>STG</schema>
+    <table>TMP_EGP_1</table>
+    <commit>10000</commit>
+    <truncate>N</truncate>
+    <ignore_errors>N</ignore_errors>
+    <use_batch>Y</use_batch>
+    <specify_fields>N</specify_fields>
+    <partitioning_enabled>N</partitioning_enabled>
+    <partitioning_field/>
+    <partitioning_daily>N</partitioning_daily>
+    <partitioning_monthly>Y</partitioning_monthly>
+    <tablename_in_field>N</tablename_in_field>
+    <tablename_field/>
+    <tablename_in_table>Y</tablename_in_table>
+    <return_keys>N</return_keys>
+    <return_field/>
+    <fields>
+    </fields>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>599</xloc>
+      <yloc>50</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>Cargo TMP_EGP_2</name>
+    <type>TableOutput</type>
+    <description/>
+    <distribute>Y</distribute>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+    <connection>OdsStgDS</connection>
+    <schema>STG</schema>
+    <table>TMP_EGP_2</table>
+    <commit>10000</commit>
+    <truncate>N</truncate>
+    <ignore_errors>N</ignore_errors>
+    <use_batch>Y</use_batch>
+    <specify_fields>N</specify_fields>
+    <partitioning_enabled>N</partitioning_enabled>
+    <partitioning_field/>
+    <partitioning_daily>N</partitioning_daily>
+    <partitioning_monthly>Y</partitioning_monthly>
+    <tablename_in_field>N</tablename_in_field>
+    <tablename_field/>
+    <tablename_in_table>Y</tablename_in_table>
+    <return_keys>N</return_keys>
+    <return_field/>
+    <fields>
+    </fields>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>600</xloc>
+      <yloc>139</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>Cargo TMP_EGP_3</name>
+    <type>TableOutput</type>
+    <description/>
+    <distribute>Y</distribute>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+    <connection>OdsStgDS</connection>
+    <schema>STG</schema>
+    <table>TMP_EGP_3</table>
+    <commit>10000</commit>
+    <truncate>N</truncate>
+    <ignore_errors>N</ignore_errors>
+    <use_batch>Y</use_batch>
+    <specify_fields>N</specify_fields>
+    <partitioning_enabled>N</partitioning_enabled>
+    <partitioning_field/>
+    <partitioning_daily>N</partitioning_daily>
+    <partitioning_monthly>Y</partitioning_monthly>
+    <tablename_in_field>N</tablename_in_field>
+    <tablename_field/>
+    <tablename_in_table>Y</tablename_in_table>
+    <return_keys>N</return_keys>
+    <return_field/>
+    <fields>
+    </fields>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>674</xloc>
+      <yloc>220</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>Cargo TMP_EGP_4</name>
+    <type>TableOutput</type>
+    <description/>
+    <distribute>Y</distribute>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+    <connection>OdsStgDS</connection>
+    <schema>STG</schema>
+    <table>TMP_EGP_4</table>
+    <commit>10000</commit>
+    <truncate>N</truncate>
+    <ignore_errors>N</ignore_errors>
+    <use_batch>Y</use_batch>
+    <specify_fields>N</specify_fields>
+    <partitioning_enabled>N</partitioning_enabled>
+    <partitioning_field/>
+    <partitioning_daily>N</partitioning_daily>
+    <partitioning_monthly>Y</partitioning_monthly>
+    <tablename_in_field>N</tablename_in_field>
+    <tablename_field/>
+    <tablename_in_table>Y</tablename_in_table>
+    <return_keys>N</return_keys>
+    <return_field/>
+    <fields>
+    </fields>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>606</xloc>
+      <yloc>351</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>Leo datos TMP_EGP_4</name>
+    <type>TableInput</type>
+    <description/>
+    <distribute>Y</distribute>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+    <connection>OdsStgDS</connection>
+    <sql>SELECT
+   SALDOS_SOL_CREDS.JTS_OID AS SALDOS_JTS_OID,
+   (SELECT CLIENTES.C1058 FROM STG.T_CL_CLIENTES_01 CLIENTES WHERE  CLIENTES.C0902=SALDOS_SOL_CREDS.C1803)  AS CO_ACTI_ECON_INTE,
+   (SELECT CLIENTES.C1840 FROM STG.T_CL_CLIENTES_01 CLIENTES WHERE  CLIENTES.C0902=SALDOS_SOL_CREDS.C1803)  AS CO_SECT_ECON_ALTE,
+   (SELECT CLIENTES.C3205 FROM STG.T_CL_CLIENTES_01 CLIENTES WHERE  CLIENTES.C0902=SALDOS_SOL_CREDS.C1803)  AS CO_ACTIVIDAD,
+   (SELECT CLIENTES.C1034 FROM STG.T_CL_CLIENTES_01 CLIENTES WHERE  CLIENTES.C0902=SALDOS_SOL_CREDS.C1803)  AS CO_ACTI_CIIU,
+   (SELECT CLIENTES.C1584 FROM STG.T_CL_CLIENTES_01 CLIENTES WHERE  CLIENTES.C0902=SALDOS_SOL_CREDS.C1803)  AS CO_SECT_ECON_INTE,
+   (SELECT CASE CLIENTES.EMPLEADO WHEN &apos;E&apos; THEN 1
+                           		  ELSE 0
+           END 
+    FROM STG.T_CL_CLIENTES_01 CLIENTES 
+	WHERE  
+		CLIENTES.C0902=SALDOS_SOL_CREDS.C1803)  AS IN_EMPLEADO,
+	NVL((SELECT RCCUERPOTOTAL.NU_CANT_EMPR 
+	 	 FROM 
+	 		STG.T_REL_CLIENTE_SBS CLI 
+	    	LEFT JOIN STG.T_RC_RCC_CUERPO_TOTAL RCCUERPOTOTAL
+	    		ON CLI.CO_CLIE_SBS=RCCUERPOTOTAL.CODCLIENTESBS
+	 	 WHERE 
+	 		CLI.CO_CLIENTE=SALDOS_SOL_CREDS.C1803 )
+	,0) AS NU_EMPR_REPO,
+	NVL((SELECT RCCUERPOTOTAL.MO_SALDO_TOTAL
+	     FROM STG.T_REL_CLIENTE_SBS CLI 
+	      LEFT JOIN STG.T_RC_RCC_CUERPO_TOTAL RCCUERPOTOTAL
+	      ON CLI.CO_CLIE_SBS=RCCUERPOTOTAL.CODCLIENTESBS
+	     WHERE 
+	    CLI.CO_CLIENTE=SALDOS_SOL_CREDS.C1803
+	 	)
+	,0) AS MO_TOTA_SIST_FINA,
+	(SELECT BSHPSUMMARY.FECHAPROCESOMOV FROM STG.T_BS_HISTORIA_PLAZO_SUMMARY BSHPSUMMARY WHERE BSHPSUMMARY.SALDOS_JTS_OID=SALDOS_SOL_CREDS.JTS_OID) AS FE_PROC_ULTI_PAGO
+FROM    
+    STG.T_SALDOS_SL_SOLICITUDCREDITO SALDOS_SOL_CREDS</sql>
+    <limit>0</limit>
+    <lookup/>
+    <execute_each_row>N</execute_each_row>
+    <variables_active>N</variables_active>
+    <lazy_conversion_active>N</lazy_conversion_active>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>171</xloc>
+      <yloc>350</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>Leo datos TMP_EPG_1</name>
+    <type>TableInput</type>
+    <description/>
+    <distribute>Y</distribute>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+    <connection>OdsStgDS</connection>
+    <sql>SELECT
+      SALDOS_SOL_CREDS.JTS_OID AS SALDOS_JTS_OID,
+      EXTRACT(YEAR FROM TO_DATE(&apos;${FECHAPROCESOEDY_S}&apos;,&apos;DD&#47;MM&#47;YYYY&apos;))*100 + EXTRACT(MONTH FROM TO_DATE(&apos;${FECHAPROCESOEDY_S}&apos;,&apos;DD&#47;MM&#47;YYYY&apos;)) AS NU_PERI_MES,
+      TO_DATE(&apos;${FECHAPROCESOEDY_S}&apos;,&apos;DD&#47;MM&#47;YYYY&apos;) AS FE_SALDO,
+      TO_DATE(&apos;${FECHAPROCESOEDY_S}&apos;,&apos;DD&#47;MM&#47;YYYY&apos;) AS FE_PROCESO,
+      SALDOS_SOL_CREDS.CUENTA AS NU_PRESTAMO,
+      SALDOS_SOL_CREDS.C1803 AS CO_CLIENTE,
+      CASE WHEN SALDOS_SOL_CREDS.CUENTA IN (100862267, 100179589, 100205639, 100220139) THEN 1
+          ELSE 0
+      END AS IN_SIN_HIPO_INSC,
+      DECODE(SALDOS_SOL_CREDS.C1642,0,SALDOS_SOL_CREDS.C1627-SALDOS_SOL_CREDS.C1621,SALDOS_SOL_CREDS.C1644*SALDOS_SOL_CREDS.C1642) AS NU_PLAZ_DIAS,
+      (SELECT tea.VL_TEA FROM STG.T_TASAS_TEA tea WHERE tea.SALDOS_JTS_OID= SALDOS_SOL_CREDS.JTS_OID ) AS VL_TEA,
+      SALDOS_SOL_CREDS.C1627 AS FE_VENCIMIENTO,
+      SALDOS_SOL_CREDS.C1621 AS FE_DESEMBOLSO,
+      (SELECT BSHPSUMMARY.FECHAVALOR FROM STG.T_BS_HISTORIA_PLAZO_SUMMARY BSHPSUMMARY WHERE BSHPSUMMARY.SALDOS_JTS_OID=SALDOS_SOL_CREDS.JTS_OID) AS FE_ULTI_PAGO, 
+      (CASE WHEN SALDOS_SOL_CREDS.C4280=&apos;C&apos; THEN
+                                                CASE WHEN (SELECT DEV_VENC.ESTADOATRASO FROM STG.T_DEVENG_POR_CTA_VENC DEV_VENC WHERE DEV_VENC.SALDOS_JTS_OID=SALDOS_SOL_CREDS.JTS_OID)&lt;&gt;&apos;N&apos; THEN (SELECT PV.FECHA_PSJE_VENC FROM STG.T_PSJE_VENC PV WHERE PV.NRO_PRESTAMO=SALDOS_SOL_CREDS.CUENTA)
+                                                END
+            ELSE
+                CASE WHEN SALDOS_SOL_CREDS.C1728&lt;&gt;&apos;N&apos; THEN  ( SELECT FECHAVALOR FROM STG.T_BS_HISTORIA_PLAZO_SUMMARY2 BSHPSUMMARY2 WHERE BSHPSUMMARY2.SALDOS_JTS_OID=SALDOS_SOL_CREDS.JTS_OID)
+                END
+       END)  AS FE_PSJE_VENC,
+      CASE WHEN SALDOS_SOL_CREDS.C1728=&apos;C&apos; THEN SALDOS_SOL_CREDS.FECCAST 
+       END AS FE_CASTIGO,
+      CASE WHEN (TO_DATE(&apos;${FECHAPROCESOEDY_S}&apos;,&apos;DD&#47;MM&#47;YYYY&apos;)-SALDOS_SOL_CREDS.C1628)&lt;0 THEN 0 ELSE (TO_DATE(&apos;${FECHAPROCESOEDY_S}&apos;,&apos;DD&#47;MM&#47;YYYY&apos;)-SALDOS_SOL_CREDS.C1628) END  AS NU_DIAS_ATRA,
+      NVL(SALDOS_SOL_CREDS.C1601,0) AS MO_DESEMBOLSO,
+      NVL((CASE WHEN SALDOS_SOL_CREDS.C4280&lt;&gt;&apos;C&apos; THEN
+                                                                                                CASE WHEN SALDOS_SOL_CREDS.C1728 &lt;&gt; &apos;N&apos; THEN (SALDOS_SOL_CREDS.C1604) * (-1) 
+                                                                                                ELSE 0 
+                                                                                                 END 
+               ELSE (SELECT DEV_VENC.CAPITAL FROM STG.T_DEVENG_POR_CTA_VENC DEV_VENC WHERE DEV_VENC.SALDOS_JTS_OID=SALDOS_SOL_CREDS.JTS_OID)
+       END),0)  AS MO_SALD_VENC,
+       NVL((CASE WHEN SALDOS_SOL_CREDS.C4280&lt;&gt;&apos;C&apos; THEN
+                                                                                                 CASE WHEN SALDOS_SOL_CREDS.C1728 = &apos;N&apos; THEN (SALDOS_SOL_CREDS.C1604) * (-1) 
+                                                                                                      ELSE 0 
+                                                                                                  END 
+                 ELSE
+                             ((SALDOS_SOL_CREDS.C1604)*(-1)) - (SELECT DEV_VENC.CAPITAL FROM STG.T_DEVENG_POR_CTA_VENC DEV_VENC WHERE DEV_VENC.SALDOS_JTS_OID=SALDOS_SOL_CREDS.JTS_OID)
+       END),0) AS MO_SALD_VIGE,
+      NVL((SALDOS_SOL_CREDS.C1604*-1),0) AS MO_SALD_ACTU,
+      NVL((CASE WHEN SALDOS_SOL_CREDS.C4280&lt;&gt;&apos;C&apos; THEN
+                                                                                                           CASE WHEN SALDOS_SOL_CREDS.C1728!=&apos;C&apos; THEN NVL((SELECT VWINTDEVEN.MO_INTE_DEVE_VIGE FROM STG.T_SALDOS_INTERESES_DEVEN VWINTDEVEN WHERE VWINTDEVEN.CUENTA=SALDOS_SOL_CREDS.CUENTA), 0) 
+                                                                                                                       ELSE 0 
+                                                                                                           END
+                   ELSE
+                              0
+        END 
+    ),0) AS MO_INTE_DEVE_VIGE, 
+    NVL((CASE WHEN SALDOS_SOL_CREDS.C4280&lt;&gt;&apos;C&apos; THEN
+                                                                                                  CASE WHEN SALDOS_SOL_CREDS.C1728!=&apos;C&apos; THEN NVL( (SELECT VWINTDEVEN.MO_INTE_DEVE_SUST FROM STG.T_SALDOS_INTERESES_DEVEN VWINTDEVEN WHERE VWINTDEVEN.CUENTA=SALDOS_SOL_CREDS.CUENTA), 0) 
+                                                                                                              ELSE SALDOS_SOL_CREDS.C1608 
+                                                                                                  END
+                ELSE
+                   NVL((SELECT DEV_VENC.INTERES_DEVENGADO FROM STG.T_DEVENG_POR_CTA_VENC DEV_VENC WHERE DEV_VENC.SALDOS_JTS_OID=SALDOS_SOL_CREDS.JTS_OID), 0) + nvl((SELECT IV.INTERES_VIGENTE FROM STG.T_INT_VIGENTE IV WHERE IV.SALDOS_JTS_OID=SALDOS_SOL_CREDS.JTS_OID),0)
+      END ),0) AS MO_INTE_DEVE_SUST,
+      SALDOS_SOL_CREDS.C1645 AS NU_CUOT_PAGA,
+      NVL(SALDOS_SOL_CREDS.SALDOMN * -1 ,0) AS MO_SALD_CAPI_MN,
+      SALDOS_SOL_CREDS.C1661 AS NU_LINE_CRED,
+      NVL((SELECT LINEACRED.MTODISP FROM STG.T_CR_LINEACREDITO LINEACRED WHERE SALDOS_SOL_CREDS.C1661=LINEACRED.NROLINEA),0) AS MO_SALD_DISP_LINE,
+      (SELECT LINEACRED.FECVTO FROM STG.T_CR_LINEACREDITO LINEACRED WHERE SALDOS_SOL_CREDS.C1661=LINEACRED.NROLINEA) AS FE_VENC_LINE,
+     (CASE WHEN SALDOS_SOL_CREDS.REFINANCIACION IN (&apos;R&apos;) THEN 1
+       ELSE 0
+   END) AS IN_REFINANCIADO
+FROM    
+    STG.T_SALDOS_SL_SOLICITUDCREDITO SALDOS_SOL_CREDS</sql>
+    <limit>0</limit>
+    <lookup/>
+    <execute_each_row>N</execute_each_row>
+    <variables_active>Y</variables_active>
+    <lazy_conversion_active>N</lazy_conversion_active>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>167</xloc>
+      <yloc>50</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>Leo datos TMP_EPG_2</name>
+    <type>TableInput</type>
+    <description/>
+    <distribute>Y</distribute>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+    <connection>OdsStgDS</connection>
+    <sql>SELECT
+    SALDOS_SOL_CREDS.JTS_OID AS SALDOS_JTS_OID,
+      (CASE WHEN SALDOS_SOL_CREDS.IN_GRUPAL = 1 THEN &apos;GRUPO SOLIDARIO&apos;
+        ELSE  &apos;INDIVIDUAL&apos;
+    END) AS TI_PRESTAMO,
+    SALDOS_SOL_CREDS.MONEDA AS CO_MONEDA,
+	CASE WHEN SALDOS_SOL_CREDS.C4280 = &apos;C&apos; THEN (SELECT DV.ESTADOATRASO FROM STG.T_DEVENG_POR_CTA_VENC DV WHERE DV.SALDOS_JTS_OID=SALDOS_SOL_CREDS.JTS_OID)
+		 ELSE SALDOS_SOL_CREDS.C1728 
+	END AS CO_ESTA_OPER,
+    SALDOS_SOL_CREDS.SUCURSAL AS CO_SUCURSAL,
+    SALDOS_SOL_CREDS.C1670 AS CO_ANALISTA,
+	SALDOS_SOL_CREDS.USUTOPAZ AS CO_USUA_TOPA,
+    NVL((SELECT ACP.CARGO FROM STG.T_RH_FUNCIONARIO FUNC JOIN STG.T_ADR_CAR_PUE ACP ON ACP.PUESTO=FUNC.PUESTO WHERE FUNC.CODFUNCIONARIO=SALDOS_SOL_CREDS.C1670),0) AS CO_CARG_ANAL,
+    NVL((SELECT FUNC.PUESTO FROM STG.T_RH_FUNCIONARIO FUNC WHERE FUNC.CODFUNCIONARIO=SALDOS_SOL_CREDS.C1670),0) AS CO_PUES_ANAL,
+	NVL((SELECT FUNC.CODAGENCIA FROM STG.T_RH_FUNCIONARIO FUNC WHERE FUNC.CODFUNCIONARIO=SALDOS_SOL_CREDS.C1670),0) AS CO_SUCU_ANAL,
+    SALDOS_SOL_CREDS.PRODUCTO AS CO_PRODUCTO,
+    SALDOS_SOL_CREDS.CRITERIO AS CO_CRITERIO,
+    SALDOS_SOL_CREDS.C1704 AS NU_SOLICITUD,
+    SALDOS_SOL_CREDS.MB_REFERENCIA_GRUPAL AS NU_GRUP_SOLI,
+    SUCUR.C6023 AS CO_SUCU_PADR,
+    (SELECT HIST_CARG_ANAL.CO_ANALISTA FROM ODS.HD_PUESTO_CARGO_ANALISTA HIST_CARG_ANAL WHERE HIST_CARG_ANAL.FE_PROCESO = SALDOS_SOL_CREDS.FECHA_ORIGINAL AND HIST_CARG_ANAL.CO_USUA_TOPA = SALDOS_SOL_CREDS.USU_ORIGINAL) AS CO_ANAL_ORIG,
+	(SELECT HIST_CARG_ANAL.CO_CARGO FROM ODS.HD_PUESTO_CARGO_ANALISTA HIST_CARG_ANAL WHERE HIST_CARG_ANAL.FE_PROCESO = SALDOS_SOL_CREDS.FECHA_ORIGINAL AND HIST_CARG_ANAL.CO_USUA_TOPA = SALDOS_SOL_CREDS.USU_ORIGINAL) AS CO_CARG_ANAL_ORIG,
+	(SELECT HIST_CARG_ANAL.CO_PUESTO FROM ODS.HD_PUESTO_CARGO_ANALISTA HIST_CARG_ANAL WHERE HIST_CARG_ANAL.FE_PROCESO=SALDOS_SOL_CREDS.FECHA_ORIGINAL AND HIST_CARG_ANAL.CO_USUA_TOPA = SALDOS_SOL_CREDS.USU_ORIGINAL) AS CO_PUES_ANAL_ORIG,
+	(SELECT HIST_CARG_ANAL.CO_SUCURSAL FROM ODS.HD_PUESTO_CARGO_ANALISTA HIST_CARG_ANAL WHERE HIST_CARG_ANAL.FE_PROCESO=SALDOS_SOL_CREDS.FECHA_ORIGINAL AND HIST_CARG_ANAL.CO_USUA_TOPA = SALDOS_SOL_CREDS.USU_ORIGINAL) AS CO_SUCU_ANAL_ORIG,
+	SALDOS_SOL_CREDS.C5004 AS TI_CLIENTE,
+    (SELECT RCCUERPO.NU_CANT_EMPR 
+     FROM STG.T_REL_CLIENTE_SBS CLI 
+      LEFT JOIN STG.T_RC_RCC_CUERPO RCCUERPO
+      ON CLI.CO_CLIE_SBS=RCCUERPO.CODCLIENTESBS
+     WHERE 
+    CLI.CO_CLIENTE=SALDOS_SOL_CREDS.C1803 
+    ) AS NU_CANT_EMPR,
+    NVL((SELECT RCCUERPO.MO_SALDO_TOTAL
+     FROM STG.T_REL_CLIENTE_SBS CLI 
+      LEFT JOIN STG.T_RC_RCC_CUERPO RCCUERPO
+      ON CLI.CO_CLIE_SBS=RCCUERPO.CODCLIENTESBS
+     WHERE 
+    CLI.CO_CLIENTE=SALDOS_SOL_CREDS.C1803
+    ),0) AS MO_SALD_SIST_FINA,
+    (SELECT CASE WHEN RCCUERPO.MO_SALDO_TOTAL = 0 THEN 0
+      ELSE RCCUERPO.MO_SALDO_EDYFICAR &#47; RCCUERPO.MO_SALDO_TOTAL
+       END
+     FROM STG.T_REL_CLIENTE_SBS CLI 
+      LEFT JOIN STG.T_RC_RCC_CUERPO RCCUERPO
+      ON CLI.CO_CLIE_SBS=RCCUERPO.CODCLIENTESBS
+     WHERE 
+    CLI.CO_CLIENTE=SALDOS_SOL_CREDS.C1803
+    )AS NU_PORC_EXCL,
+    CASE WHEN SALDOS_SOL_CREDS.C5074 = &apos;N&apos; THEN 0 
+       ELSE SALDOS_SOL_CREDS.C5044 
+    END AS NU_PERI_GRAC,
+    NVL(SALDOS_SOL_CREDS.C5074,&apos;N&apos;) AS CO_TIPO_GRAC,
+    NVL((SELECT TPRESTEXCEP.TIPO_EXCEP FROM STG.T_PRESTAMOS_TIPO_EXCEPCION_2 TPRESTEXCEP WHERE TPRESTEXCEP.SALDOS_JTS_OID=SALDOS_SOL_CREDS.JTS_OID),&apos;NINGUNO&apos;) AS TI_EXCEPCION
+FROM
+    STG.T_SALDOS_SL_SOLICITUDCREDITO SALDOS_SOL_CREDS
+    JOIN STG.T_TC_SUCURSALES SUCUR
+      ON SALDOS_SOL_CREDS.SUCURSAL=SUCUR.C6021</sql>
+    <limit>0</limit>
+    <lookup/>
+    <execute_each_row>N</execute_each_row>
+    <variables_active>Y</variables_active>
+    <lazy_conversion_active>N</lazy_conversion_active>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>169</xloc>
+      <yloc>139</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>Leo datos TMP_EPG_3</name>
+    <type>TableInput</type>
+    <description/>
+    <distribute>Y</distribute>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+    <connection>OdsStgDS</connection>
+    <sql>SELECT
+   SALDOS_SOL_CREDS.JTS_OID AS SALDOS_JTS_OID,
+   (((POWER((1+(SALDOS_SOL_CREDS.C6645&#47;100)),12))-1)*100) AS VL_TCEA,
+    (SELECT DIASATRASOPRES.TOTA_DIAS_ATRASO FROM STG.T_DIAS_ATRASO_PRESTAMOS DIASATRASOPRES WHERE SALDOS_SOL_CREDS.JTS_OID=DIASATRASOPRES.SALDOS_JTS_OID )AS NU_DIAS_TOTA_ATRA,
+    (SELECT DIASATRASOPRES.MAX_DIAS_ATRASO FROM STG.T_DIAS_ATRASO_PRESTAMOS DIASATRASOPRES WHERE SALDOS_SOL_CREDS.JTS_OID=DIASATRASOPRES.SALDOS_JTS_OID )AS NU_MAXI_DIAS_ATRA,
+    SALDOS_SOL_CREDS.C1644 AS NU_CUOT_PACT,
+    SALDOS_SOL_CREDS.C5261 AS CO_USUA_APRO_SOLI,
+    nvl((SELECT CASE WHEN PRESTFOGAPI.FOGAPI&lt;&gt;&apos;FE&apos; AND PRESTFOGAPI.ESTADO IN (&apos;V&apos;,&apos;S&apos;,&apos;H&apos;) THEN 1
+          ELSE 0   
+          END
+     FROM STG.T_PRESTAMOS_FOGAPI PRESTFOGAPI
+     WHERE PRESTFOGAPI.SALDO_JTS_OID=SALDOS_SOL_CREDS.JTS_OID),0
+     ) AS IN_FOGAPI,
+    nvl((SELECT CASE WHEN PRESTFOGAPI.FOGAPI&lt;&gt;&apos;FE&apos; AND PRESTFOGAPI.ESTADO IN (&apos;V&apos;,&apos;S&apos;,&apos;H&apos;) THEN PRESTFOGAPI.ESTADO
+                ELSE &apos;X&apos;   
+        END
+     FROM STG.T_PRESTAMOS_FOGAPI PRESTFOGAPI
+     WHERE PRESTFOGAPI.SALDO_JTS_OID=SALDOS_SOL_CREDS.JTS_OID),&apos;X&apos;
+     )   AS ST_FOGAPI,
+    SALDOS_SOL_CREDS.JTS_OID AS IN_SALD_JTS_OID,
+    NVL((SELECT 1 
+       FROM STG.T_GR_GARANTIAS GARANT 
+       WHERE 
+         GARANT.NROCREDITO=SALDOS_SOL_CREDS.CUENTA 
+         AND GARANT.ESTADO=&apos;V&apos; 
+         AND ROWNUM=1
+     ),0) AS IN_GARA_ACTI,
+     NVL((SELECT PAGOSPARC.FLAG_PAGO_PARCIAL FROM STG.T_PAGOS_PARCIALES PAGOSPARC WHERE PAGOSPARC.SALDOS_JTS_OID=SALDOS_SOL_CREDS.JTS_OID),0) AS IN_PAGO_PARC,
+     NVL((SELECT DEUDA_VENCIDA FROM STG.T_PREST_DEUDA_VENC DEUDAVENC WHERE SALDOS_SOL_CREDS.JTS_OID=DEUDAVENC.SALDOS_JTS_OID),0)+ NVL((SELECT MORATOTAL.TOTAL_MORA FROM STG.T_PREST_MORA_TOTAL MORATOTAL WHERE MORATOTAL.PRCODPRES=SALDOS_SOL_CREDS.CUENTA),0) AS MO_DEUD_VENC,
+     nvl((SELECT DEUDTOT.DEUDA_TOTAL FROM STG.T_PREST_DEUDA_TOTAL DEUDTOT WHERE DEUDTOT.SALDOS_JTS_OID=SALDOS_SOL_CREDS.JTS_OID),0) + NVL((SELECT MORATOTAL.TOTAL_MORA FROM STG.T_PREST_MORA_TOTAL MORATOTAL WHERE MORATOTAL.PRCODPRES=SALDOS_SOL_CREDS.CUENTA),0) AS MO_TOTA_DEUD,
+     (SELECT DIASATRASOPRES.NRO_CUOTAS_VENC FROM STG.T_DIAS_ATRASO_PRESTAMOS DIASATRASOPRES WHERE SALDOS_SOL_CREDS.JTS_OID=DIASATRASOPRES.SALDOS_JTS_OID )AS NU_CUOT_VENC,
+     SALDOS_SOL_CREDS.C1628 AS FE_VENC_CUOT,
+     NVL((SELECT dei.DIA_MOR_INI FROM STG.T_DATOS_EGP_INI dei WHERE dei.SALDOS_JTS_OID = SALDOS_SOL_CREDS.JTS_OID),0) AS NU_DIAS_MORA_MES,
+	 NVL((SELECT SUM(nvl(BSPDM.CAPITALPAGADO,0) + nvl(BSPDM.INTERESPAGADO,0) + nvl(BSPDM.MORAPAGADA,0) + nvl(BSPDM.INTERES_COMP_MORA,0) + nvl(BSPDM.CAPITALADELANTADO,0)) FROM STG.T_BS_PAYS_DETAIL_MES BSPDM WHERE BSPDM.SALDOS_JTS_OID=SALDOS_SOL_CREDS.JTS_OID),0) +nvl((SELECT SUM(nvl(BSCDM.TOTAL_PAGADO,0)) FROM STG.T_BS_CHARGE_DETAIL_MES BSCDM WHERE BSCDM.SALDOS_JTS_OID= SALDOS_SOL_CREDS.JTS_OID),0) AS MO_PAGO_TOTA_MES,
+     NVL((SELECT SUM(NVL(BSPD3.CAPITALPAGADO,0) + NVL(BSPD3.CAPITALADELANTADO,0)) FROM STG.T_BS_PAYS_DETAIL_MES BSPD3 WHERE BSPD3.SALDOS_JTS_OID=SALDOS_SOL_CREDS.JTS_OID),0) AS MO_PAGO_CAPI_MES,
+     NVL((SELECT SUM(CRCART.MONTOCONDONADO) FROM STG.T_CR_RECUPERCARTERA CRCART WHERE CRCART.NROPRESTAMO=SALDOS_SOL_CREDS.CUENTA AND CRCART.TIPOOPER=&apos;C&apos; AND EXTRACT(MONTH FROM CRCART.FECHAOPER) = EXTRACT(MONTH FROM TO_DATE(&apos;${FECHAPROCESOEDY_S}&apos;,&apos;DD&#47;MM&#47;YYYY&apos;)) AND EXTRACT(YEAR FROM CRCART.FECHAOPER) = EXTRACT(YEAR FROM TO_DATE(&apos;${FECHAPROCESOEDY_S}&apos;,&apos;DD&#47;MM&#47;YYYY&apos;))) ,0)AS MO_PAGO_COND_CAPI,
+     NVL((SELECT SUM(CRCART.MONTOCONDONADO+CRCART.INTERCOND+CRCART.MORACOND+CRCART.CARGOSCOND) FROM STG.T_CR_RECUPERCARTERA CRCART WHERE CRCART.NROPRESTAMO=SALDOS_SOL_CREDS.CUENTA AND CRCART.TIPOOPER=&apos;C&apos; AND EXTRACT(MONTH FROM CRCART.FECHAOPER) = EXTRACT(MONTH FROM TO_DATE(&apos;${FECHAPROCESOEDY_S}&apos;,&apos;DD&#47;MM&#47;YYYY&apos;)) AND EXTRACT(YEAR FROM CRCART.FECHAOPER) = EXTRACT(YEAR FROM TO_DATE(&apos;${FECHAPROCESOEDY_S}&apos;,&apos;DD&#47;MM&#47;YYYY&apos;))),0) AS MO_PAGO_COND_TOTA,
+     (CASE WHEN (SELECT COUNT(1) FROM STG.T_CR_RECUPERCARTERA CRCART WHERE CRCART.NROPRESTAMO=SALDOS_SOL_CREDS.CUENTA AND CRCART.TIPOOPER=&apos;C&apos;)&gt;0 THEN 1 
+               ELSE 0 
+      END ) AS IN_CONDONACION,
+      NVL((SELECT HIV.CREDITOS-HIV.DEBITOS FROM STG.T_HISTORIA_VISTA HIV WHERE HIV.CO_PRESTAMO=SALDOS_SOL_CREDS.CUENTA),0) AS MO_SALD_CUEN_INTE,
+      NVL((SELECT 1 
+                FROM STG.T_GR_GARANTIAS GARANT 
+                 WHERE 
+                      GARANT.NROCREDITO=SALDOS_SOL_CREDS.CUENTA 
+                       AND GARANT.CLASGARANTIA=&apos;R&apos; 
+                        AND ROWNUM=1
+       ),0) AS IN_GARA_REAL,
+       NVL((CASE WHEN NOT EXISTS (SELECT 1 FROM STG.T_DATOS_EGP_INI EGP_INI WHERE EGP_INI.SALDOS_JTS_OID=SALDOS_SOL_CREDS.JTS_OID) THEN SALDOS_SOL_CREDS.C1604*(-1)
+                     ELSE
+                       (SELECT DATOS_SAL_RES.SALD_CAP_INI - 
+                                         (CASE WHEN DATOS_SAL_RES.COD_EST_INI=&apos;C&apos; 
+                                                                   OR (DATOS_SAL_RES.COD_EST_INI&lt;&gt;&apos;C&apos; AND DATOS_SAL_RES.COD_EST_FIN=&apos;C&apos;)
+                                                                   OR (FLOOR(((CASE WHEN DATOS_SAL_RES.DIA_MOR_FIN=0 THEN 0 ELSE DATOS_SAL_RES.DIA_MOR_FIN+DATOS_SAL_RES.DIAS_REST END)-1)&#47;30)-FLOOR((DATOS_SAL_RES.DIA_MOR_INI-1)&#47;30)) &gt; 0
+																   THEN CASE WHEN DATOS_SAL_RES.SALD_CAP_FIN&gt; DATOS_SAL_RES.SALD_CAP_INI THEN DATOS_SAL_RES.SALD_CAP_INI
+                                                                                           ELSE NVL(DATOS_SAL_RES.SALD_CAP_FIN,0) 
+                                                                              END 
+                                                                     ELSE 0 
+                                            END)  
+                        FROM STG.T_DATOS_SALDO_RESUELTO DATOS_SAL_RES
+                        WHERE DATOS_SAL_RES.SALDOS_JTS_OID=SALDOS_SOL_CREDS.JTS_OID)
+       END   
+       ),0) AS MO_SALD_RESU, 
+       SALDOS_SOL_CREDS.TASA_ICMORA AS VL_TASA_ICM,
+       SALDOS_SOL_CREDS.C1633 AS VL_TASA_INTE_MOR,
+       NVL((SELECT GASTXCUOTSUMM.MO_TOTA_GAST FROM STG.T_GASTOS_POR_CUOTA_SUMMARY GASTXCUOTSUMM WHERE GASTXCUOTSUMM.SALDOS_JTS_OID=SALDOS_SOL_CREDS.JTS_OID ),0) AS MO_TOTA_GAST, 
+       MON.C6440 AS VL_TIPO_CAMB_OFIC
+FROM    
+    STG.T_SALDOS_SL_SOLICITUDCREDITO SALDOS_SOL_CREDS
+    JOIN STG.T_CO_MONEDAS_01 MON  
+      ON MON.C6399=SALDOS_SOL_CREDS.MONEDA</sql>
+    <limit>0</limit>
+    <lookup/>
+    <execute_each_row>N</execute_each_row>
+    <variables_active>Y</variables_active>
+    <lazy_conversion_active>N</lazy_conversion_active>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>167</xloc>
+      <yloc>228</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>No mapeo datos tasa</name>
+    <type>SelectValues</type>
+    <description/>
+    <distribute>Y</distribute>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+    <fields>        <select_unspecified>N</select_unspecified>
+      <remove>        <name>TASA_INTERES</name>
+      </remove>      <remove>        <name>VARIACION_INT</name>
+      </remove>    </fields>     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>552</xloc>
+      <yloc>268</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step_error_handling>
+  </step_error_handling>
+   <slave-step-copy-partition-distribution>
+</slave-step-copy-partition-distribution>
+   <slave_transformation>N</slave_transformation>
+</transformation>

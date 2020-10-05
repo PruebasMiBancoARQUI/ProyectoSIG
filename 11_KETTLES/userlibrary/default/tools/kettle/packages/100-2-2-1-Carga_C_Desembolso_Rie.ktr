@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<transformation>
+  <info>
+    <name>100-2-2-1-Carga_C_Desembolso_Rie</name>
+    <description/>
+    <extended_description/>
+    <trans_version/>
+    <trans_type>Normal</trans_type>
+    <trans_status>0</trans_status>
+    <directory>&#47;</directory>
+    <parameters>
+    </parameters>
+    <log>
+<trans-log-table><connection/>
+<schema/>
+<table/>
+<size_limit_lines/>
+<interval/>
+<timeout_days/>
+<field><id>ID_BATCH</id><enabled>Y</enabled><name>ID_BATCH</name></field><field><id>CHANNEL_ID</id><enabled>Y</enabled><name>CHANNEL_ID</name></field><field><id>TRANSNAME</id><enabled>Y</enabled><name>TRANSNAME</name></field><field><id>STATUS</id><enabled>Y</enabled><name>STATUS</name></field><field><id>LINES_READ</id><enabled>Y</enabled><name>LINES_READ</name><subject/></field><field><id>LINES_WRITTEN</id><enabled>Y</enabled><name>LINES_WRITTEN</name><subject/></field><field><id>LINES_UPDATED</id><enabled>Y</enabled><name>LINES_UPDATED</name><subject/></field><field><id>LINES_INPUT</id><enabled>Y</enabled><name>LINES_INPUT</name><subject/></field><field><id>LINES_OUTPUT</id><enabled>Y</enabled><name>LINES_OUTPUT</name><subject/></field><field><id>LINES_REJECTED</id><enabled>Y</enabled><name>LINES_REJECTED</name><subject/></field><field><id>ERRORS</id><enabled>Y</enabled><name>ERRORS</name></field><field><id>STARTDATE</id><enabled>Y</enabled><name>STARTDATE</name></field><field><id>ENDDATE</id><enabled>Y</enabled><name>ENDDATE</name></field><field><id>LOGDATE</id><enabled>Y</enabled><name>LOGDATE</name></field><field><id>DEPDATE</id><enabled>Y</enabled><name>DEPDATE</name></field><field><id>REPLAYDATE</id><enabled>Y</enabled><name>REPLAYDATE</name></field><field><id>LOG_FIELD</id><enabled>Y</enabled><name>LOG_FIELD</name></field></trans-log-table>
+<perf-log-table><connection/>
+<schema/>
+<table/>
+<interval/>
+<timeout_days/>
+<field><id>ID_BATCH</id><enabled>Y</enabled><name>ID_BATCH</name></field><field><id>SEQ_NR</id><enabled>Y</enabled><name>SEQ_NR</name></field><field><id>LOGDATE</id><enabled>Y</enabled><name>LOGDATE</name></field><field><id>TRANSNAME</id><enabled>Y</enabled><name>TRANSNAME</name></field><field><id>STEPNAME</id><enabled>Y</enabled><name>STEPNAME</name></field><field><id>STEP_COPY</id><enabled>Y</enabled><name>STEP_COPY</name></field><field><id>LINES_READ</id><enabled>Y</enabled><name>LINES_READ</name></field><field><id>LINES_WRITTEN</id><enabled>Y</enabled><name>LINES_WRITTEN</name></field><field><id>LINES_UPDATED</id><enabled>Y</enabled><name>LINES_UPDATED</name></field><field><id>LINES_INPUT</id><enabled>Y</enabled><name>LINES_INPUT</name></field><field><id>LINES_OUTPUT</id><enabled>Y</enabled><name>LINES_OUTPUT</name></field><field><id>LINES_REJECTED</id><enabled>Y</enabled><name>LINES_REJECTED</name></field><field><id>ERRORS</id><enabled>Y</enabled><name>ERRORS</name></field><field><id>INPUT_BUFFER_ROWS</id><enabled>Y</enabled><name>INPUT_BUFFER_ROWS</name></field><field><id>OUTPUT_BUFFER_ROWS</id><enabled>Y</enabled><name>OUTPUT_BUFFER_ROWS</name></field></perf-log-table>
+<channel-log-table><connection/>
+<schema/>
+<table/>
+<timeout_days/>
+<field><id>ID_BATCH</id><enabled>Y</enabled><name>ID_BATCH</name></field><field><id>CHANNEL_ID</id><enabled>Y</enabled><name>CHANNEL_ID</name></field><field><id>LOG_DATE</id><enabled>Y</enabled><name>LOG_DATE</name></field><field><id>LOGGING_OBJECT_TYPE</id><enabled>Y</enabled><name>LOGGING_OBJECT_TYPE</name></field><field><id>OBJECT_NAME</id><enabled>Y</enabled><name>OBJECT_NAME</name></field><field><id>OBJECT_COPY</id><enabled>Y</enabled><name>OBJECT_COPY</name></field><field><id>REPOSITORY_DIRECTORY</id><enabled>Y</enabled><name>REPOSITORY_DIRECTORY</name></field><field><id>FILENAME</id><enabled>Y</enabled><name>FILENAME</name></field><field><id>OBJECT_ID</id><enabled>Y</enabled><name>OBJECT_ID</name></field><field><id>OBJECT_REVISION</id><enabled>Y</enabled><name>OBJECT_REVISION</name></field><field><id>PARENT_CHANNEL_ID</id><enabled>Y</enabled><name>PARENT_CHANNEL_ID</name></field><field><id>ROOT_CHANNEL_ID</id><enabled>Y</enabled><name>ROOT_CHANNEL_ID</name></field></channel-log-table>
+<step-log-table><connection/>
+<schema/>
+<table/>
+<timeout_days/>
+<field><id>ID_BATCH</id><enabled>Y</enabled><name>ID_BATCH</name></field><field><id>CHANNEL_ID</id><enabled>Y</enabled><name>CHANNEL_ID</name></field><field><id>LOG_DATE</id><enabled>Y</enabled><name>LOG_DATE</name></field><field><id>TRANSNAME</id><enabled>Y</enabled><name>TRANSNAME</name></field><field><id>STEPNAME</id><enabled>Y</enabled><name>STEPNAME</name></field><field><id>STEP_COPY</id><enabled>Y</enabled><name>STEP_COPY</name></field><field><id>LINES_READ</id><enabled>Y</enabled><name>LINES_READ</name></field><field><id>LINES_WRITTEN</id><enabled>Y</enabled><name>LINES_WRITTEN</name></field><field><id>LINES_UPDATED</id><enabled>Y</enabled><name>LINES_UPDATED</name></field><field><id>LINES_INPUT</id><enabled>Y</enabled><name>LINES_INPUT</name></field><field><id>LINES_OUTPUT</id><enabled>Y</enabled><name>LINES_OUTPUT</name></field><field><id>LINES_REJECTED</id><enabled>Y</enabled><name>LINES_REJECTED</name></field><field><id>ERRORS</id><enabled>Y</enabled><name>ERRORS</name></field><field><id>LOG_FIELD</id><enabled>N</enabled><name>LOG_FIELD</name></field></step-log-table>
+    </log>
+    <maxdate>
+      <connection/>
+      <table/>
+      <field/>
+      <offset>0.0</offset>
+      <maxdiff>0.0</maxdiff>
+    </maxdate>
+    <size_rowset>10000</size_rowset>
+    <sleep_time_empty>50</sleep_time_empty>
+    <sleep_time_full>50</sleep_time_full>
+    <unique_connections>N</unique_connections>
+    <feedback_shown>Y</feedback_shown>
+    <feedback_size>50000</feedback_size>
+    <using_thread_priorities>Y</using_thread_priorities>
+    <shared_objects_file/>
+    <capture_step_performance>N</capture_step_performance>
+    <step_performance_capturing_delay>1000</step_performance_capturing_delay>
+    <step_performance_capturing_size_limit>100</step_performance_capturing_size_limit>
+    <dependencies>
+    </dependencies>
+    <partitionschemas>
+    </partitionschemas>
+    <slaveservers>
+    </slaveservers>
+    <clusterschemas>
+    </clusterschemas>
+  <created_user>-</created_user>
+  <created_date>2020&#47;02&#47;12 14:57:12.067</created_date>
+  <modified_user>-</modified_user>
+  <modified_date>2020&#47;02&#47;12 14:57:12.067</modified_date>
+  </info>
+  <notepads>
+  </notepads>
+  <connection>
+    <name>OdsStgDS</name>
+    <server/>
+    <type>ORACLE</type>
+    <access>JNDI</access>
+    <database>OdsStgDS</database>
+    <port>1521</port>
+    <username/>
+    <password>Encrypted </password>
+    <servername/>
+    <data_tablespace/>
+    <index_tablespace/>
+    <attributes>
+      <attribute><code>FORCE_IDENTIFIERS_TO_LOWERCASE</code><attribute>N</attribute></attribute>
+      <attribute><code>FORCE_IDENTIFIERS_TO_UPPERCASE</code><attribute>N</attribute></attribute>
+      <attribute><code>IS_CLUSTERED</code><attribute>N</attribute></attribute>
+      <attribute><code>PORT_NUMBER</code><attribute>1521</attribute></attribute>
+      <attribute><code>QUOTE_ALL_FIELDS</code><attribute>N</attribute></attribute>
+      <attribute><code>SUPPORTS_BOOLEAN_DATA_TYPE</code><attribute>N</attribute></attribute>
+      <attribute><code>USE_POOLING</code><attribute>N</attribute></attribute>
+    </attributes>
+  </connection>
+  <order>
+  <hop> <from>Leo C_RIE_DESEMBOLSO</from><to>Insert C_RIE_DESEMBOLSO</to><enabled>Y</enabled> </hop>  </order>
+  <step>
+    <name>Insert C_RIE_DESEMBOLSO</name>
+    <type>TableOutput</type>
+    <description/>
+    <distribute>Y</distribute>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+    <connection>OdsStgDS</connection>
+    <schema>BDS</schema>
+    <table>C_RIE_DESEMBOLSO</table>
+    <commit>2000</commit>
+    <truncate>N</truncate>
+    <ignore_errors>N</ignore_errors>
+    <use_batch>Y</use_batch>
+    <specify_fields>N</specify_fields>
+    <partitioning_enabled>N</partitioning_enabled>
+    <partitioning_field/>
+    <partitioning_daily>N</partitioning_daily>
+    <partitioning_monthly>Y</partitioning_monthly>
+    <tablename_in_field>N</tablename_in_field>
+    <tablename_field/>
+    <tablename_in_table>Y</tablename_in_table>
+    <return_keys>N</return_keys>
+    <return_field/>
+    <fields>
+    </fields>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>688</xloc>
+      <yloc>73</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>Leo C_RIE_DESEMBOLSO</name>
+    <type>TableInput</type>
+    <description/>
+    <distribute>N</distribute>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+    <connection>OdsStgDS</connection>
+    <sql>-- ==========
+-- DESEMBOLSO
+-- ==========
+
+SELECT TO_DATE(&apos;${FECHAPROCESOEDY_S}&apos;,&apos;DD&#47;MM&#47;YYYY&apos;) AS FE_PROCESO,
+       a.NU_PRESTAMO AS NU_PRESTAMO,
+       a.NU_SOLICITUD AS NU_SOLICITUD,
+       NVL(TO_NUMBER(TO_CHAR(a.FE_DESEMBOLSO,&apos;YYYYMM&apos;)),0) AS NU_PERI_MES,
+       a.CO_CLIENTE AS CO_CLIENTE,
+       b.CO_SEGMENTACION AS CO_SEGM_RIES,
+       NVL(CO_SEGM_NEG,0) AS CO_SEGM_NEGO,
+       &apos;SALARIO: &apos; ||     TO_CHAR(c.MO_SALARIO)   AS DE_SALARIO,
+       &apos;VENTA NETA: &apos; ||  TO_CHAR(c.MO_VENT_NETA) AS DE_VENT_NETA,
+       &apos;UTIL. DISP.: &apos; || TO_CHAR(c.MO_UTIL_DISP) AS DE_UTIL_DISP,
+       TRUNC((TRUNC(a.FE_DESEMBOLSO) -TRUNC(d.FE_NACIMIENTO))&#47;365) AS NU_EDAD,
+       CASE WHEN TI_PERSONA = &apos;J&apos; THEN &apos;P.JURIDICA&apos;
+            WHEN (TRUNC(a.FE_DESEMBOLSO) -TRUNC(d.FE_NACIMIENTO))&#47;365 &lt;= 25 THEN &apos;&lt;0  - 25]&apos;
+            WHEN (TRUNC(a.FE_DESEMBOLSO) -TRUNC(d.FE_NACIMIENTO))&#47;365 &lt;= 35 THEN &apos;&lt;25 - 35]&apos;
+            WHEN (TRUNC(a.FE_DESEMBOLSO) -TRUNC(d.FE_NACIMIENTO))&#47;365 &lt;= 45 THEN &apos;&lt;35 - 45]&apos;
+            WHEN (TRUNC(a.FE_DESEMBOLSO) -TRUNC(d.FE_NACIMIENTO))&#47;365 &gt;  45 THEN &apos;&lt;45 - MÁS&gt;&apos;
+       END AS DE_RANG_EDAD,
+       h.TI_VIVIENDA AS TI_VIVI_DOMI,
+       i.TI_VIVIENDA AS TI_VIVI_CORR,
+       j.TI_VIVIENDA  AS TI_VIVI_NEGO,
+       k.TI_VIVIENDA AS TI_VIVI_GARA,
+       d.TI_PERSONA AS CO_TIPO_PERS,
+       d.CO_CLAS_DEPE AS CO_CLAS_DEPE,
+       d.CO_ESTA_CIVI AS CO_ESTA_CIVI,
+       a.CO_FUNC_DESE_PLAT AS CO_FUNC_DESE,
+       f.NO_ANALISTA AS NO_FUNC_DESE ,
+       f.CO_PUESTO AS CO_PUES_DESE ,
+       f.CO_CARGO AS CO_CARG_DESE,
+       g.CO_SUCURSAL AS CO_AGENCIA,
+       l.DE_SUCURSAL AS DE_AGENCIA,
+       NULL AS CO_TERRITORIO,
+       NULL AS DE_TERRITORIO,
+       NULL AS CO_ZONA,
+       NULL AS DE_ZONA,
+       NULL AS CO_REGION,
+       NULL AS DE_REGION,
+       CASE WHEN (g.MO_DEUD_SOLI+g.MO_APROBADO*DECODE(a.DE_MONEDA,&apos;DOLARES&apos;,m.VL_TIPO_CAMB_OFIC,1)) &lt;= 500 THEN  &apos;A &lt;0 - 500]&apos;
+            WHEN (g.MO_DEUD_SOLI+g.MO_APROBADO*DECODE(a.DE_MONEDA,&apos;DOLARES&apos;,m.VL_TIPO_CAMB_OFIC,1))&lt;=1000   THEN &apos;B &lt;500 - 1,000]&apos;
+            WHEN (g.MO_DEUD_SOLI+g.MO_APROBADO*DECODE(a.DE_MONEDA,&apos;DOLARES&apos;,m.VL_TIPO_CAMB_OFIC,1))&lt;=5000   THEN &apos;C &lt;1,000 - 5,000]&apos;
+            WHEN (g.MO_DEUD_SOLI+g.MO_APROBADO*DECODE(a.DE_MONEDA,&apos;DOLARES&apos;,m.VL_TIPO_CAMB_OFIC,1))&lt;=10000  THEN &apos;D &lt;5,000 - 10,000]&apos;
+            WHEN (g.MO_DEUD_SOLI+g.MO_APROBADO*DECODE(a.DE_MONEDA,&apos;DOLARES&apos;,m.VL_TIPO_CAMB_OFIC,1))&lt;=20000  THEN &apos;E &lt;10,000 - 20,000]&apos;
+            WHEN (g.MO_DEUD_SOLI+g.MO_APROBADO*DECODE(a.DE_MONEDA,&apos;DOLARES&apos;,m.VL_TIPO_CAMB_OFIC,1))&lt;=40000  THEN &apos;F &lt;20,000 - 40,000]&apos;
+            WHEN (g.MO_DEUD_SOLI+g.MO_APROBADO*DECODE(a.DE_MONEDA,&apos;DOLARES&apos;,m.VL_TIPO_CAMB_OFIC,1))&lt;=70000  THEN &apos;G &lt;40,000 - 70,000]&apos;
+            WHEN (g.MO_DEUD_SOLI+g.MO_APROBADO*DECODE(a.DE_MONEDA,&apos;DOLARES&apos;,m.VL_TIPO_CAMB_OFIC,1))&lt;=90000  THEN &apos;H &lt;70,000 - 90,000]&apos;
+            WHEN (g.MO_DEUD_SOLI+g.MO_APROBADO*DECODE(a.DE_MONEDA,&apos;DOLARES&apos;,m.VL_TIPO_CAMB_OFIC,1))&lt;=150000 THEN &apos;I &lt;90,000 - 150,000]&apos;
+            ELSE &apos;J &lt;150,000 - MÁS&gt;&apos;
+       END AS DE_RANG_RIES_TOT,
+       CASE  WHEN g.NU_PLAZ_APROB&#47;30&lt;=6  THEN &apos;&lt;0  -   6]&apos;
+             WHEN g.NU_PLAZ_APROB&#47;30&lt;=12 THEN &apos;&lt;6  -  12]&apos;
+             WHEN g.NU_PLAZ_APROB&#47;30&lt;=18 THEN &apos;&lt;12 -  18]&apos;
+             WHEN g.NU_PLAZ_APROB&#47;30&lt;=24 THEN &apos;&lt;18 -  24]&apos;
+             WHEN g.NU_PLAZ_APROB&#47;30&gt;24  THEN &apos;&lt;24 - MÁS&gt;&apos;
+        END AS DE_RANG_PLAZ_APRO,
+       NULL AS DE_RANG_ENTI_ACRE,
+       NULL AS CO_CALI_RCC_MAXI,
+       d.CO_CATE_PERS AS CO_CATE_PERS,
+       a.CO_USUA_TOPA_DESE AS CO_USUA_TOPA_DESE,
+       CASE 
+          WHEN g.FE_EVAL_SOLI - o.FE_INGRESO&lt;=12  THEN &apos;1   AÑO&apos;
+          WHEN g.FE_EVAL_SOLI - o.FE_INGRESO&lt;=24  THEN &apos;2   AÑOS&apos;
+          WHEN g.FE_EVAL_SOLI - o.FE_INGRESO&lt;=36  THEN &apos;3   AÑOS&apos;
+          WHEN g.FE_EVAL_SOLI - o.FE_INGRESO&lt;=48  THEN &apos;4   AÑOS&apos;
+          WHEN g.FE_EVAL_SOLI - o.FE_INGRESO&lt;=60  THEN &apos;5   AÑOS&apos;
+          WHEN g.FE_EVAL_SOLI - o.FE_INGRESO&lt;=72  THEN &apos;6   AÑOS&apos;
+          WHEN g.FE_EVAL_SOLI - o.FE_INGRESO&lt;=84  THEN &apos;7   AÑOS&apos;
+          WHEN g.FE_EVAL_SOLI - o.FE_INGRESO&lt;=96  THEN &apos;8   AÑOS&apos;
+          WHEN g.FE_EVAL_SOLI - o.FE_INGRESO&lt;=108 THEN &apos;9   AÑOS&apos;
+          WHEN g.FE_EVAL_SOLI - o.FE_INGRESO&lt;=120 THEN &apos;10  AÑOS&apos;
+          WHEN g.FE_EVAL_SOLI - o.FE_INGRESO&gt; 120 THEN &apos;+10 AÑOS&apos;
+       END AS DE_ANTI_LABO_EVAL,
+       CASE 
+          WHEN g.FE_APRO_SOLI - q.FE_INGRESO&lt;=12  THEN &apos;1   AÑO&apos;
+          WHEN g.FE_APRO_SOLI - q.FE_INGRESO&lt;=24  THEN &apos;2   AÑOS&apos;
+          WHEN g.FE_APRO_SOLI - q.FE_INGRESO&lt;=36  THEN &apos;3   AÑOS&apos;
+          WHEN g.FE_APRO_SOLI - q.FE_INGRESO&lt;=48  THEN &apos;4   AÑOS&apos;
+          WHEN g.FE_APRO_SOLI - q.FE_INGRESO&lt;=60  THEN &apos;5   AÑOS&apos;
+          WHEN g.FE_APRO_SOLI - q.FE_INGRESO&lt;=72  THEN &apos;6   AÑOS&apos;
+          WHEN g.FE_APRO_SOLI - q.FE_INGRESO&lt;=84  THEN &apos;7   AÑOS&apos;
+          WHEN g.FE_APRO_SOLI - q.FE_INGRESO&lt;=96  THEN &apos;8   AÑOS&apos;
+          WHEN g.FE_APRO_SOLI - q.FE_INGRESO&lt;=108 THEN &apos;9   AÑOS&apos;
+          WHEN g.FE_APRO_SOLI - q.FE_INGRESO&lt;=120 THEN &apos;10  AÑOS&apos;
+          WHEN g.FE_APRO_SOLI - q.FE_INGRESO&gt; 120 THEN &apos;+10 AÑOS&apos;
+       END AS DE_ANTI_LABO_APRO,
+       SYSDATE AS FE_ACTU_DIA
+FROM  ODS.HD_DESEMBOLSO partition(P_DESEMBOLSO_${FECHAPROCESOEDY_S_P_M}) a 
+      LEFT JOIN ODS.HD_SEGMENTACION_CLIENTE PARTITION (P_HD_SEGMENT_CLIENTE_${FECHAPROCESOEDY_S_P}) b ON a.CO_CLIENTE=b.CO_CLIENTE
+      LEFT JOIN ODS.MD_CLIENTES d ON a.CO_CLIENTE=d.CO_CLIENTE
+      LEFT JOIN ODS.MD_PERDIDAS_GANANCIAS c ON a.NU_SOLICITUD=c.NU_SOLICITUD AND c.NU_DOCUMENTO=d.NU_DOCUMENTO AND c.TI_DOCUMENTO=d.TI_DOCUMENTO AND c.NU_ORDINAL=1
+      LEFT JOIN ODS.MD_ANALISTA f ON a.CO_FUNC_DESE_PLAT=f.CO_ANALISTA
+      LEFT JOIN ODS.MD_SOLICITUDES g ON a.NU_SOLICITUD =g.NU_SOLICITUD 
+      LEFT JOIN ODS.MD_DIRECCIONES_CLIENTE h ON a.CO_CLIENTE=h.CO_CLIENTE
+                                            AND h.CO_FORMATO = &apos;P&apos; AND h.CO_TIPO_DIRE = &apos;R&apos;
+      LEFT JOIN ODS.MD_DIRECCIONES_CLIENTE i ON a.CO_CLIENTE= i.CO_CLIENTE
+                                            AND i.CO_TIPO_DIRE = &apos;C&apos;
+      LEFT JOIN ODS.MD_DIRECCIONES_CLIENTE j ON a.CO_CLIENTE= j.CO_CLIENTE
+                                            AND j.CO_FORMATO = &apos;N&apos; AND j.CO_TIPO_DIRE = &apos;R&apos; AND j.CO_NEGOCIO = 1
+      LEFT JOIN ODS.MD_DIRECCIONES_CLIENTE k ON a.CO_CLIENTE= k.CO_CLIENTE
+                                            AND k.CO_TIPO_DIRE = &apos;G&apos;
+      LEFT JOIN ODS.MD_SUCURSAL l ON g.CO_SUCURSAL=l.CO_SUCURSAL
+      LEFT JOIN ODS.MD_HISTORICO_TIPO_CAMBIO m ON a.FE_DESEMBOLSO = m.FE_COTIZACION 
+                                              AND m.CO_MONEDA = 2
+      LEFT JOIN ODS.HD_PUESTO_CARGO_ANALISTA PARTITION (P_HD_PUES_CARG_ANAL_${FECHAPROCESOEDY_S_P}) n ON n.CO_USUA_TOPA=g.CO_USUA_TOPA_EVAL
+      LEFT JOIN ODS.MD_ANALISTA o ON o.CO_ANALISTA=n.CO_ANALISTA
+      LEFT JOIN ODS.HD_PUESTO_CARGO_ANALISTA PARTITION (P_HD_PUES_CARG_ANAL_${FECHAPROCESOEDY_S_P}) p ON p.CO_USUA_TOPA=g.CO_USUA_TOPA_APRO
+      LEFT JOIN ODS.MD_ANALISTA q ON q.CO_ANALISTA=p.CO_ANALISTA
+WHERE a.FE_DESEMBOLSO = TO_DATE(&apos;${FECHAPROCESOEDY_S}&apos;,&apos;DD&#47;MM&#47;YYYY&apos;)
+</sql>
+    <limit>0</limit>
+    <lookup/>
+    <execute_each_row>N</execute_each_row>
+    <variables_active>Y</variables_active>
+    <lazy_conversion_active>N</lazy_conversion_active>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>327</xloc>
+      <yloc>74</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step_error_handling>
+  </step_error_handling>
+   <slave-step-copy-partition-distribution>
+</slave-step-copy-partition-distribution>
+   <slave_transformation>N</slave_transformation>
+</transformation>

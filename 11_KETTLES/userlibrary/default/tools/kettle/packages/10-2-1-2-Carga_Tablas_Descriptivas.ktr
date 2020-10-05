@@ -1,0 +1,1332 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<transformation>
+  <info>
+    <name>10-2-1-2-Carga_Tablas_Descriptivas</name>
+    <description/>
+    <extended_description/>
+    <trans_version/>
+    <trans_type>Normal</trans_type>
+    <trans_status>0</trans_status>
+    <directory>&#47;</directory>
+    <parameters>
+    </parameters>
+    <log>
+<trans-log-table><connection/>
+<schema/>
+<table/>
+<size_limit_lines/>
+<interval/>
+<timeout_days/>
+<field><id>ID_BATCH</id><enabled>Y</enabled><name>ID_BATCH</name></field><field><id>CHANNEL_ID</id><enabled>Y</enabled><name>CHANNEL_ID</name></field><field><id>TRANSNAME</id><enabled>Y</enabled><name>TRANSNAME</name></field><field><id>STATUS</id><enabled>Y</enabled><name>STATUS</name></field><field><id>LINES_READ</id><enabled>Y</enabled><name>LINES_READ</name><subject/></field><field><id>LINES_WRITTEN</id><enabled>Y</enabled><name>LINES_WRITTEN</name><subject/></field><field><id>LINES_UPDATED</id><enabled>Y</enabled><name>LINES_UPDATED</name><subject/></field><field><id>LINES_INPUT</id><enabled>Y</enabled><name>LINES_INPUT</name><subject/></field><field><id>LINES_OUTPUT</id><enabled>Y</enabled><name>LINES_OUTPUT</name><subject/></field><field><id>LINES_REJECTED</id><enabled>Y</enabled><name>LINES_REJECTED</name><subject/></field><field><id>ERRORS</id><enabled>Y</enabled><name>ERRORS</name></field><field><id>STARTDATE</id><enabled>Y</enabled><name>STARTDATE</name></field><field><id>ENDDATE</id><enabled>Y</enabled><name>ENDDATE</name></field><field><id>LOGDATE</id><enabled>Y</enabled><name>LOGDATE</name></field><field><id>DEPDATE</id><enabled>Y</enabled><name>DEPDATE</name></field><field><id>REPLAYDATE</id><enabled>Y</enabled><name>REPLAYDATE</name></field><field><id>LOG_FIELD</id><enabled>Y</enabled><name>LOG_FIELD</name></field></trans-log-table>
+<perf-log-table><connection/>
+<schema/>
+<table/>
+<interval/>
+<timeout_days/>
+<field><id>ID_BATCH</id><enabled>Y</enabled><name>ID_BATCH</name></field><field><id>SEQ_NR</id><enabled>Y</enabled><name>SEQ_NR</name></field><field><id>LOGDATE</id><enabled>Y</enabled><name>LOGDATE</name></field><field><id>TRANSNAME</id><enabled>Y</enabled><name>TRANSNAME</name></field><field><id>STEPNAME</id><enabled>Y</enabled><name>STEPNAME</name></field><field><id>STEP_COPY</id><enabled>Y</enabled><name>STEP_COPY</name></field><field><id>LINES_READ</id><enabled>Y</enabled><name>LINES_READ</name></field><field><id>LINES_WRITTEN</id><enabled>Y</enabled><name>LINES_WRITTEN</name></field><field><id>LINES_UPDATED</id><enabled>Y</enabled><name>LINES_UPDATED</name></field><field><id>LINES_INPUT</id><enabled>Y</enabled><name>LINES_INPUT</name></field><field><id>LINES_OUTPUT</id><enabled>Y</enabled><name>LINES_OUTPUT</name></field><field><id>LINES_REJECTED</id><enabled>Y</enabled><name>LINES_REJECTED</name></field><field><id>ERRORS</id><enabled>Y</enabled><name>ERRORS</name></field><field><id>INPUT_BUFFER_ROWS</id><enabled>Y</enabled><name>INPUT_BUFFER_ROWS</name></field><field><id>OUTPUT_BUFFER_ROWS</id><enabled>Y</enabled><name>OUTPUT_BUFFER_ROWS</name></field></perf-log-table>
+<channel-log-table><connection/>
+<schema/>
+<table/>
+<timeout_days/>
+<field><id>ID_BATCH</id><enabled>Y</enabled><name>ID_BATCH</name></field><field><id>CHANNEL_ID</id><enabled>Y</enabled><name>CHANNEL_ID</name></field><field><id>LOG_DATE</id><enabled>Y</enabled><name>LOG_DATE</name></field><field><id>LOGGING_OBJECT_TYPE</id><enabled>Y</enabled><name>LOGGING_OBJECT_TYPE</name></field><field><id>OBJECT_NAME</id><enabled>Y</enabled><name>OBJECT_NAME</name></field><field><id>OBJECT_COPY</id><enabled>Y</enabled><name>OBJECT_COPY</name></field><field><id>REPOSITORY_DIRECTORY</id><enabled>Y</enabled><name>REPOSITORY_DIRECTORY</name></field><field><id>FILENAME</id><enabled>Y</enabled><name>FILENAME</name></field><field><id>OBJECT_ID</id><enabled>Y</enabled><name>OBJECT_ID</name></field><field><id>OBJECT_REVISION</id><enabled>Y</enabled><name>OBJECT_REVISION</name></field><field><id>PARENT_CHANNEL_ID</id><enabled>Y</enabled><name>PARENT_CHANNEL_ID</name></field><field><id>ROOT_CHANNEL_ID</id><enabled>Y</enabled><name>ROOT_CHANNEL_ID</name></field></channel-log-table>
+<step-log-table><connection/>
+<schema/>
+<table/>
+<timeout_days/>
+<field><id>ID_BATCH</id><enabled>Y</enabled><name>ID_BATCH</name></field><field><id>CHANNEL_ID</id><enabled>Y</enabled><name>CHANNEL_ID</name></field><field><id>LOG_DATE</id><enabled>Y</enabled><name>LOG_DATE</name></field><field><id>TRANSNAME</id><enabled>Y</enabled><name>TRANSNAME</name></field><field><id>STEPNAME</id><enabled>Y</enabled><name>STEPNAME</name></field><field><id>STEP_COPY</id><enabled>Y</enabled><name>STEP_COPY</name></field><field><id>LINES_READ</id><enabled>Y</enabled><name>LINES_READ</name></field><field><id>LINES_WRITTEN</id><enabled>Y</enabled><name>LINES_WRITTEN</name></field><field><id>LINES_UPDATED</id><enabled>Y</enabled><name>LINES_UPDATED</name></field><field><id>LINES_INPUT</id><enabled>Y</enabled><name>LINES_INPUT</name></field><field><id>LINES_OUTPUT</id><enabled>Y</enabled><name>LINES_OUTPUT</name></field><field><id>LINES_REJECTED</id><enabled>Y</enabled><name>LINES_REJECTED</name></field><field><id>ERRORS</id><enabled>Y</enabled><name>ERRORS</name></field><field><id>LOG_FIELD</id><enabled>N</enabled><name>LOG_FIELD</name></field></step-log-table>
+    </log>
+    <maxdate>
+      <connection/>
+      <table/>
+      <field/>
+      <offset>0.0</offset>
+      <maxdiff>0.0</maxdiff>
+    </maxdate>
+    <size_rowset>10000</size_rowset>
+    <sleep_time_empty>50</sleep_time_empty>
+    <sleep_time_full>50</sleep_time_full>
+    <unique_connections>N</unique_connections>
+    <feedback_shown>Y</feedback_shown>
+    <feedback_size>50000</feedback_size>
+    <using_thread_priorities>Y</using_thread_priorities>
+    <shared_objects_file/>
+    <capture_step_performance>N</capture_step_performance>
+    <step_performance_capturing_delay>1000</step_performance_capturing_delay>
+    <step_performance_capturing_size_limit>100</step_performance_capturing_size_limit>
+    <dependencies>
+    </dependencies>
+    <partitionschemas>
+    </partitionschemas>
+    <slaveservers>
+    </slaveservers>
+    <clusterschemas>
+    </clusterschemas>
+  <created_user>-</created_user>
+  <created_date>2016&#47;01&#47;14 17:01:34.307</created_date>
+  <modified_user>-</modified_user>
+  <modified_date>2016&#47;01&#47;14 17:01:34.307</modified_date>
+  </info>
+  <notepads>
+  </notepads>
+  <connection>
+    <name>OdsStgDS</name>
+    <server/>
+    <type>ORACLE</type>
+    <access>JNDI</access>
+    <database>OdsStgDS</database>
+    <port>1521</port>
+    <username/>
+    <password>Encrypted </password>
+    <servername/>
+    <data_tablespace/>
+    <index_tablespace/>
+    <attributes>
+      <attribute><code>FORCE_IDENTIFIERS_TO_LOWERCASE</code><attribute>N</attribute></attribute>
+      <attribute><code>FORCE_IDENTIFIERS_TO_UPPERCASE</code><attribute>N</attribute></attribute>
+      <attribute><code>IS_CLUSTERED</code><attribute>N</attribute></attribute>
+      <attribute><code>PORT_NUMBER</code><attribute>1521</attribute></attribute>
+      <attribute><code>QUOTE_ALL_FIELDS</code><attribute>N</attribute></attribute>
+      <attribute><code>SUPPORTS_BOOLEAN_DATA_TYPE</code><attribute>N</attribute></attribute>
+      <attribute><code>USE_POOLING</code><attribute>N</attribute></attribute>
+    </attributes>
+  </connection>
+  <order>
+  <hop> <from>Leo T_CAM_CAMPANAS</from><to>Actualizo MD_CAMPANA</to><enabled>Y</enabled> </hop>  <hop> <from>Leo T_GR_COMPANIASEGURO</from><to>Actualizo MD_COMPANIA_SEGURO</to><enabled>Y</enabled> </hop>  <hop> <from>Leo T_TC_TABLADETABLAS de 422</from><to>Actualizo MD_CONDICION_SEGUIMIENTO</to><enabled>Y</enabled> </hop>  <hop> <from>Leo T_SL_MEDIOSORIGEN</from><to>Actualizo MD_MEDIOS_ORIGEN</to><enabled>Y</enabled> </hop>  <hop> <from>Leo T_TJD_MOTIVOS</from><to>Actualizo MD_MOTIVO_BLOQUEO_TARJETA</to><enabled>Y</enabled> </hop>  <hop> <from>Leo T_CL_NATJURIDICA</from><to>Actualizo MD_NATURALEZA_JURIDICA</to><enabled>Y</enabled> </hop>  <hop> <from>Leo T_TC_TIPOZONA</from><to>Actualizo MD_NUCLEO_URBANO</to><enabled>Y</enabled> </hop>  <hop> <from>Leo T_OPERACIONES_01</from><to>Actualizo MD_OPERATIVAS_TOPAZ</to><enabled>Y</enabled> </hop>  <hop> <from>Leo T_SL_ORIGENLLEGADA</from><to>Actualizo MD_ORIGEN_LLEGADA</to><enabled>Y</enabled> </hop>  <hop> <from>Leo T_MS_MICROSEG_PRODUCTOS</from><to>Actualizo MD_PRODUCTO_MICROSEGURO</to><enabled>Y</enabled> </hop>  <hop> <from>Leo T_CL_SEGMENTACION</from><to>Actualizo MD_SEGMENTACION</to><enabled>Y</enabled> </hop>  <hop> <from>Leo T_SL_TIPONOTAS</from><to>Actualizo MD_TIPO_NOTAS</to><enabled>Y</enabled> </hop>  <hop> <from>Leo T_MS_MICROSEG_TIPOS</from><to>Actualizo MD_TIPO_SEGURO</to><enabled>Y</enabled> </hop>  <hop> <from>Leo T_TJD_TIPO_TARJETA</from><to>Actualizo MD_TIPO_TARJETA</to><enabled>Y</enabled> </hop>  <hop> <from>Leo T_TC_TABLADETABLAS de 522</from><to>Actualizo MD_TIPOS_INVERSION</to><enabled>Y</enabled> </hop>  <hop> <from>Leo T_SL_DESTINOSPRESTAMOS</from><to>Actualizo MD_DESTINOS_CREDITO</to><enabled>Y</enabled> </hop>  </order>
+  <step>
+    <name>Actualizo MD_CAMPANA</name>
+    <type>InsertUpdate</type>
+    <description/>
+    <distribute>Y</distribute>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+    <connection>OdsStgDS</connection>
+    <commit>1000</commit>
+    <update_bypassed>N</update_bypassed>
+    <lookup>
+      <schema>ODS</schema>
+      <table>MD_CAMPANA</table>
+      <key>
+        <name>CO_CAMPANA</name>
+        <field>CO_CAMPANA</field>
+        <condition>=</condition>
+        <name2/>
+      </key>
+      <value>
+        <name>CO_CAMPANA</name>
+        <rename>CO_CAMPANA</rename>
+        <update>N</update>
+      </value>
+      <value>
+        <name>DE_CAMPANA</name>
+        <rename>DE_CAMPANA</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>FE_INICIO</name>
+        <rename>FE_INICIO</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>FE_TERMINO</name>
+        <rename>FE_TERMINO</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>FE_ACTU_DIA</name>
+        <rename>FE_ACTU_DIA</rename>
+        <update>Y</update>
+      </value>
+    </lookup>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>564</xloc>
+      <yloc>14</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>Actualizo MD_COMPANIA_SEGURO</name>
+    <type>InsertUpdate</type>
+    <description/>
+    <distribute>Y</distribute>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+    <connection>OdsStgDS</connection>
+    <commit>1000</commit>
+    <update_bypassed>N</update_bypassed>
+    <lookup>
+      <schema>ODS</schema>
+      <table>MD_COMPANIA_SEGURO</table>
+      <key>
+        <name>CO_COMP_SEGU</name>
+        <field>CO_COMP_SEGU</field>
+        <condition>=</condition>
+        <name2/>
+      </key>
+      <value>
+        <name>CO_COMP_SEGU</name>
+        <rename>CO_COMP_SEGU</rename>
+        <update>N</update>
+      </value>
+      <value>
+        <name>DE_COMP_SEGU</name>
+        <rename>DE_COMP_SEGU</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>CO_COMP_SEGU_SBS</name>
+        <rename>CO_COMP_SEGU_SBS</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>FE_ACTU_DIA</name>
+        <rename>FE_ACTU_DIA</rename>
+        <update>Y</update>
+      </value>
+    </lookup>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>568</xloc>
+      <yloc>77</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>Actualizo MD_CONDICION_SEGUIMIENTO</name>
+    <type>InsertUpdate</type>
+    <description/>
+    <distribute>Y</distribute>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+    <connection>OdsStgDS</connection>
+    <commit>1000</commit>
+    <update_bypassed>N</update_bypassed>
+    <lookup>
+      <schema>ODS</schema>
+      <table>MD_CONDICION_SEGUIMIENTO</table>
+      <key>
+        <name>CO_COND_SEGU</name>
+        <field>CO_COND_SEGU</field>
+        <condition>=</condition>
+        <name2/>
+      </key>
+      <value>
+        <name>CO_COND_SEGU</name>
+        <rename>CO_COND_SEGU</rename>
+        <update>N</update>
+      </value>
+      <value>
+        <name>DE_COND_SEGU</name>
+        <rename>DE_COND_SEGU</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>FE_ACTU_DIA</name>
+        <rename>FE_ACTU_DIA</rename>
+        <update>Y</update>
+      </value>
+    </lookup>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>569</xloc>
+      <yloc>140</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>Actualizo MD_DESTINOS_CREDITO</name>
+    <type>InsertUpdate</type>
+    <description/>
+    <distribute>Y</distribute>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+    <connection>OdsStgDS</connection>
+    <commit>1000</commit>
+    <update_bypassed>N</update_bypassed>
+    <lookup>
+      <schema>ODS</schema>
+      <table>MD_DESTINOS_CREDITO</table>
+      <key>
+        <name>CO_DESTINO</name>
+        <field>CO_DESTINO</field>
+        <condition>=</condition>
+        <name2/>
+      </key>
+      <value>
+        <name>CO_DESTINO</name>
+        <rename>CO_DESTINO</rename>
+        <update>N</update>
+      </value>
+      <value>
+        <name>DE_DESTINO</name>
+        <rename>DE_DESTINO</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>FE_ACTU_DIA</name>
+        <rename>FE_ACTU_DIA</rename>
+        <update>Y</update>
+      </value>
+    </lookup>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>569</xloc>
+      <yloc>977</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>Actualizo MD_MEDIOS_ORIGEN</name>
+    <type>InsertUpdate</type>
+    <description/>
+    <distribute>Y</distribute>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+    <connection>OdsStgDS</connection>
+    <commit>1000</commit>
+    <update_bypassed>N</update_bypassed>
+    <lookup>
+      <schema>ODS</schema>
+      <table>MD_MEDIOS_ORIGEN</table>
+      <key>
+        <name>CO_MEDI_ORIG</name>
+        <field>CO_MEDI_ORIG</field>
+        <condition>=</condition>
+        <name2/>
+      </key>
+      <value>
+        <name>CO_MEDI_ORIG</name>
+        <rename>CO_MEDI_ORIG</rename>
+        <update>N</update>
+      </value>
+      <value>
+        <name>DE_MEDI_ORIG</name>
+        <rename>DE_MEDI_ORIG</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>FE_ACTU_DIA</name>
+        <rename>FE_ACTU_DIA</rename>
+        <update>Y</update>
+      </value>
+    </lookup>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>569</xloc>
+      <yloc>202</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>Actualizo MD_MOTIVO_BLOQUEO_TARJETA</name>
+    <type>InsertUpdate</type>
+    <description/>
+    <distribute>Y</distribute>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+    <connection>OdsStgDS</connection>
+    <commit>1000</commit>
+    <update_bypassed>N</update_bypassed>
+    <lookup>
+      <schema>ODS</schema>
+      <table>MD_MOTIVO_BLOQUEO_TARJETA</table>
+      <key>
+        <name>CO_MOTI_BLOQ</name>
+        <field>CO_MOTI_BLOQ</field>
+        <condition>=</condition>
+        <name2/>
+      </key>
+      <value>
+        <name>CO_MOTI_BLOQ</name>
+        <rename>CO_MOTI_BLOQ</rename>
+        <update>N</update>
+      </value>
+      <value>
+        <name>DE_MOTI_BLOQ</name>
+        <rename>DE_MOTI_BLOQ</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>FE_ACTU_DIA</name>
+        <rename>FE_ACTU_DIA</rename>
+        <update>Y</update>
+      </value>
+    </lookup>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>571</xloc>
+      <yloc>261</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>Actualizo MD_NATURALEZA_JURIDICA</name>
+    <type>InsertUpdate</type>
+    <description/>
+    <distribute>Y</distribute>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+    <connection>OdsStgDS</connection>
+    <commit>1000</commit>
+    <update_bypassed>N</update_bypassed>
+    <lookup>
+      <schema>ODS</schema>
+      <table>MD_NATURALEZA_JURIDICA</table>
+      <key>
+        <name>CO_NATU_JURI</name>
+        <field>CO_NATU_JURI</field>
+        <condition>=</condition>
+        <name2/>
+      </key>
+      <value>
+        <name>CO_NATU_JURI</name>
+        <rename>CO_NATU_JURI</rename>
+        <update>N</update>
+      </value>
+      <value>
+        <name>DE_NATU_JURI</name>
+        <rename>DE_NATU_JURI</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>FE_ACTU_DIA</name>
+        <rename>FE_ACTU_DIA</rename>
+        <update>Y</update>
+      </value>
+    </lookup>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>570</xloc>
+      <yloc>327</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>Actualizo MD_NUCLEO_URBANO</name>
+    <type>InsertUpdate</type>
+    <description/>
+    <distribute>Y</distribute>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+    <connection>OdsStgDS</connection>
+    <commit>1000</commit>
+    <update_bypassed>N</update_bypassed>
+    <lookup>
+      <schema>ODS</schema>
+      <table>MD_NUCLEO_URBANO</table>
+      <key>
+        <name>CO_TIPO_NUCL_URBA</name>
+        <field>CO_TIPO_NUCL_URBA</field>
+        <condition>=</condition>
+        <name2/>
+      </key>
+      <value>
+        <name>CO_TIPO_NUCL_URBA</name>
+        <rename>CO_TIPO_NUCL_URBA</rename>
+        <update>N</update>
+      </value>
+      <value>
+        <name>DE_TIPO_NUCL_URBA</name>
+        <rename>DE_TIPO_NUCL_URBA</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>FE_ACTU_DIA</name>
+        <rename>FE_ACTU_DIA</rename>
+        <update>Y</update>
+      </value>
+    </lookup>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>570</xloc>
+      <yloc>391</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>Actualizo MD_OPERATIVAS_TOPAZ</name>
+    <type>InsertUpdate</type>
+    <description/>
+    <distribute>Y</distribute>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+    <connection>OdsStgDS</connection>
+    <commit>1000</commit>
+    <update_bypassed>N</update_bypassed>
+    <lookup>
+      <schema>ODS</schema>
+      <table>MD_OPERATIVAS_TOPAZ</table>
+      <key>
+        <name>CO_OPERATIVA</name>
+        <field>CO_OPERATIVA</field>
+        <condition>=</condition>
+        <name2/>
+      </key>
+      <value>
+        <name>CO_OPERATIVA</name>
+        <rename>CO_OPERATIVA</rename>
+        <update>N</update>
+      </value>
+      <value>
+        <name>DE_OPERATIVA</name>
+        <rename>DE_OPERATIVA</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>FE_ACTU_DIA</name>
+        <rename>FE_ACTU_DIA</rename>
+        <update>Y</update>
+      </value>
+    </lookup>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>570</xloc>
+      <yloc>456</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>Actualizo MD_ORIGEN_LLEGADA</name>
+    <type>InsertUpdate</type>
+    <description/>
+    <distribute>Y</distribute>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+    <connection>OdsStgDS</connection>
+    <commit>1000</commit>
+    <update_bypassed>N</update_bypassed>
+    <lookup>
+      <schema>ODS</schema>
+      <table>MD_ORIGEN_LLEGADA</table>
+      <key>
+        <name>CO_ORIG_LLEG</name>
+        <field>CO_ORIG_LLEG</field>
+        <condition>=</condition>
+        <name2/>
+      </key>
+      <value>
+        <name>CO_ORIG_LLEG</name>
+        <rename>CO_ORIG_LLEG</rename>
+        <update>N</update>
+      </value>
+      <value>
+        <name>DE_ORIG_LLEG</name>
+        <rename>DE_ORIG_LLEG</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>FE_ACTU_DIA</name>
+        <rename>FE_ACTU_DIA</rename>
+        <update>Y</update>
+      </value>
+    </lookup>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>571</xloc>
+      <yloc>520</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>Actualizo MD_PRODUCTO_MICROSEGURO</name>
+    <type>InsertUpdate</type>
+    <description/>
+    <distribute>Y</distribute>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+    <connection>OdsStgDS</connection>
+    <commit>1000</commit>
+    <update_bypassed>N</update_bypassed>
+    <lookup>
+      <schema>ODS</schema>
+      <table>MD_PRODUCTO_MICROSEGURO</table>
+      <key>
+        <name>CO_PROD_MICR</name>
+        <field>CO_PROD_MICR</field>
+        <condition>=</condition>
+        <name2/>
+      </key>
+      <value>
+        <name>CO_PROD_MICR</name>
+        <rename>CO_PROD_MICR</rename>
+        <update>N</update>
+      </value>
+      <value>
+        <name>DE_PROD_MICR</name>
+        <rename>DE_PROD_MICR</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>FE_ACTU_DIA</name>
+        <rename>FE_ACTU_DIA</rename>
+        <update>Y</update>
+      </value>
+    </lookup>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>571</xloc>
+      <yloc>590</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>Actualizo MD_SEGMENTACION</name>
+    <type>InsertUpdate</type>
+    <description/>
+    <distribute>Y</distribute>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+    <connection>OdsStgDS</connection>
+    <commit>1000</commit>
+    <update_bypassed>N</update_bypassed>
+    <lookup>
+      <schema>ODS</schema>
+      <table>MD_SEGMENTACION</table>
+      <key>
+        <name>CO_SEGMENTACION</name>
+        <field>CO_SEGMENTACION</field>
+        <condition>=</condition>
+        <name2/>
+      </key>
+      <value>
+        <name>CO_SEGMENTACION</name>
+        <rename>CO_SEGMENTACION</rename>
+        <update>N</update>
+      </value>
+      <value>
+        <name>DE_SEGMENTACION</name>
+        <rename>DE_SEGMENTACION</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>FE_ACTU_DIA</name>
+        <rename>FE_ACTU_DIA</rename>
+        <update>Y</update>
+      </value>
+    </lookup>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>571</xloc>
+      <yloc>654</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>Actualizo MD_TIPOS_INVERSION</name>
+    <type>InsertUpdate</type>
+    <description/>
+    <distribute>Y</distribute>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+    <connection>OdsStgDS</connection>
+    <commit>1000</commit>
+    <update_bypassed>N</update_bypassed>
+    <lookup>
+      <schema>ODS</schema>
+      <table>MD_TIPOS_INVERSION</table>
+      <key>
+        <name>CO_INVERSION</name>
+        <field>CO_INVERSION</field>
+        <condition>=</condition>
+        <name2/>
+      </key>
+      <value>
+        <name>CO_INVERSION</name>
+        <rename>CO_INVERSION</rename>
+        <update>N</update>
+      </value>
+      <value>
+        <name>DE_INVERSION</name>
+        <rename>DE_INVERSION</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>FE_ACTU_DIA</name>
+        <rename>FE_ACTU_DIA</rename>
+        <update>Y</update>
+      </value>
+    </lookup>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>570</xloc>
+      <yloc>915</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>Actualizo MD_TIPO_NOTAS</name>
+    <type>InsertUpdate</type>
+    <description/>
+    <distribute>Y</distribute>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+    <connection>OdsStgDS</connection>
+    <commit>1000</commit>
+    <update_bypassed>N</update_bypassed>
+    <lookup>
+      <schema>ODS</schema>
+      <table>MD_TIPO_NOTAS</table>
+      <key>
+        <name>CO_MOTIVOS</name>
+        <field>CO_MOTIVOS</field>
+        <condition>=</condition>
+        <name2/>
+      </key>
+      <value>
+        <name>CO_MOTIVOS</name>
+        <rename>CO_MOTIVOS</rename>
+        <update>N</update>
+      </value>
+      <value>
+        <name>DE_MOTIVOS</name>
+        <rename>DE_MOTIVOS</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>FE_ACTU_DIA</name>
+        <rename>FE_ACTU_DIA</rename>
+        <update>Y</update>
+      </value>
+    </lookup>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>570</xloc>
+      <yloc>718</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>Actualizo MD_TIPO_SEGURO</name>
+    <type>InsertUpdate</type>
+    <description/>
+    <distribute>Y</distribute>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+    <connection>OdsStgDS</connection>
+    <commit>1000</commit>
+    <update_bypassed>N</update_bypassed>
+    <lookup>
+      <schema>ODS</schema>
+      <table>MD_TIPO_SEGURO</table>
+      <key>
+        <name>CO_TIPO_SEGU</name>
+        <field>CO_TIPO_SEGU</field>
+        <condition>=</condition>
+        <name2/>
+      </key>
+      <value>
+        <name>CO_TIPO_SEGU</name>
+        <rename>CO_TIPO_SEGU</rename>
+        <update>N</update>
+      </value>
+      <value>
+        <name>DE_TIPO_SEGU</name>
+        <rename>DE_TIPO_SEGU</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>FE_ACTU_DIA</name>
+        <rename>FE_ACTU_DIA</rename>
+        <update>Y</update>
+      </value>
+    </lookup>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>570</xloc>
+      <yloc>782</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>Actualizo MD_TIPO_TARJETA</name>
+    <type>InsertUpdate</type>
+    <description/>
+    <distribute>Y</distribute>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+    <connection>OdsStgDS</connection>
+    <commit>1000</commit>
+    <update_bypassed>N</update_bypassed>
+    <lookup>
+      <schema>ODS</schema>
+      <table>MD_TIPO_TARJETA</table>
+      <key>
+        <name>CO_TIPO_TARJ</name>
+        <field>CO_TIPO_TARJ</field>
+        <condition>=</condition>
+        <name2/>
+      </key>
+      <value>
+        <name>CO_TIPO_TARJ</name>
+        <rename>CO_TIPO_TARJ</rename>
+        <update>N</update>
+      </value>
+      <value>
+        <name>DE_TIPO_TARJE</name>
+        <rename>DE_TIPO_TARJE</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>FE_ACTU_DIA</name>
+        <rename>FE_ACTU_DIA</rename>
+        <update>Y</update>
+      </value>
+    </lookup>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>570</xloc>
+      <yloc>849</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>Leo T_CAM_CAMPANAS</name>
+    <type>TableInput</type>
+    <description/>
+    <distribute>Y</distribute>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+    <connection>OdsStgDS</connection>
+    <sql>SELECT 
+     c.COD_CAM AS CO_CAMPANA,
+     UPPER(c.NOM_CAM) AS DE_CAMPANA,
+     c.FEC_INI AS FE_INICIO,
+     c.FEC_FIN AS FE_TERMINO,
+     SYSDATE AS FE_ACTU_DIA
+FROM STG.T_CAM_CAMPANAS c
+</sql>
+    <limit>0</limit>
+    <lookup/>
+    <execute_each_row>N</execute_each_row>
+    <variables_active>N</variables_active>
+    <lazy_conversion_active>N</lazy_conversion_active>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>159</xloc>
+      <yloc>14</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>Leo T_CL_NATJURIDICA</name>
+    <type>TableInput</type>
+    <description/>
+    <distribute>Y</distribute>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+    <connection>OdsStgDS</connection>
+    <sql>SELECT 
+     c.CODNATJURIDICA AS CO_NATU_JURI,
+     UPPER(c.DESCRIPCION) AS DE_NATU_JURI,
+     SYSDATE AS FE_ACTU_DIA
+FROM STG.T_CL_NATJURIDICA c
+</sql>
+    <limit>0</limit>
+    <lookup/>
+    <execute_each_row>N</execute_each_row>
+    <variables_active>N</variables_active>
+    <lazy_conversion_active>N</lazy_conversion_active>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>156</xloc>
+      <yloc>327</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>Leo T_CL_SEGMENTACION</name>
+    <type>TableInput</type>
+    <description/>
+    <distribute>Y</distribute>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+    <connection>OdsStgDS</connection>
+    <sql>SELECT 
+     s.CODSEG AS CO_SEGMENTACION,
+     s.DESCRIPCION AS DE_SEGMENTACION,
+     SYSDATE AS FE_ACTU_DIA
+FROM STG.T_CL_SEGMENTACION s</sql>
+    <limit>0</limit>
+    <lookup/>
+    <execute_each_row>N</execute_each_row>
+    <variables_active>N</variables_active>
+    <lazy_conversion_active>N</lazy_conversion_active>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>157</xloc>
+      <yloc>654</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>Leo T_GR_COMPANIASEGURO</name>
+    <type>TableInput</type>
+    <description/>
+    <distribute>Y</distribute>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+    <connection>OdsStgDS</connection>
+    <sql>SELECT 
+     g.CODIGO AS CO_COMP_SEGU,
+     g.COMPANIASEGURO AS DE_COMP_SEGU,
+     g.CODIGO_ASEGURADORA_SBS AS CO_COMP_SEGU_SBS,
+     SYSDATE AS FE_ACTU_DIA
+FROM STG.T_GR_COMPANIASEGURO g</sql>
+    <limit>0</limit>
+    <lookup/>
+    <execute_each_row>N</execute_each_row>
+    <variables_active>N</variables_active>
+    <lazy_conversion_active>N</lazy_conversion_active>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>157</xloc>
+      <yloc>77</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>Leo T_MS_MICROSEG_PRODUCTOS</name>
+    <type>TableInput</type>
+    <description/>
+    <distribute>Y</distribute>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+    <connection>OdsStgDS</connection>
+    <sql>SELECT 
+     ms.NROPRODUCTO AS CO_PROD_MICR,
+     ms.DESCRIPCION AS DE_PROD_MICR,
+     SYSDATE AS FE_ACTU_DIA
+FROM STG.T_MS_MICROSEG_PRODUCTOS ms</sql>
+    <limit>0</limit>
+    <lookup/>
+    <execute_each_row>N</execute_each_row>
+    <variables_active>N</variables_active>
+    <lazy_conversion_active>N</lazy_conversion_active>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>158</xloc>
+      <yloc>590</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>Leo T_MS_MICROSEG_TIPOS</name>
+    <type>TableInput</type>
+    <description/>
+    <distribute>Y</distribute>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+    <connection>OdsStgDS</connection>
+    <sql>SELECT 
+     ms.TIPO_MICROSEGURO AS CO_TIPO_SEGU,
+     UPPER(ms.DESCRIPCION) AS DE_TIPO_SEGU,
+     SYSDATE AS FE_ACTU_DIA
+FROM STG.T_MS_MICROSEG_TIPOS ms
+</sql>
+    <limit>0</limit>
+    <lookup/>
+    <execute_each_row>N</execute_each_row>
+    <variables_active>N</variables_active>
+    <lazy_conversion_active>N</lazy_conversion_active>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>156</xloc>
+      <yloc>782</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>Leo T_OPERACIONES_01</name>
+    <type>TableInput</type>
+    <description/>
+    <distribute>Y</distribute>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+    <connection>OdsStgDS</connection>
+    <sql>SELECT 
+      o.IDENTIFICACION AS CO_OPERATIVA,
+      o.NOMBRE AS DE_OPERATIVA,
+      SYSDATE AS FE_ACTU_DIA
+FROM STG.T_OPERACIONES_01 o</sql>
+    <limit>0</limit>
+    <lookup/>
+    <execute_each_row>N</execute_each_row>
+    <variables_active>N</variables_active>
+    <lazy_conversion_active>N</lazy_conversion_active>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>156</xloc>
+      <yloc>456</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>Leo T_SL_DESTINOSPRESTAMOS</name>
+    <type>TableInput</type>
+    <description/>
+    <distribute>Y</distribute>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+    <connection>OdsStgDS</connection>
+    <sql>SELECT 
+     s.CODDESTINO AS CO_DESTINO,
+     s.DESCRIPCION AS DE_DESTINO,
+     SYSDATE AS FE_ACTU_DIA
+FROM STG.T_SL_DESTINOSPRESTAMOS s
+</sql>
+    <limit>0</limit>
+    <lookup/>
+    <execute_each_row>N</execute_each_row>
+    <variables_active>N</variables_active>
+    <lazy_conversion_active>N</lazy_conversion_active>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>156</xloc>
+      <yloc>977</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>Leo T_SL_MEDIOSORIGEN</name>
+    <type>TableInput</type>
+    <description/>
+    <distribute>Y</distribute>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+    <connection>OdsStgDS</connection>
+    <sql>SELECT 
+     m.CODMEDIOORIGEN AS CO_MEDI_ORIG,
+     m.DESCRIPCION AS DE_MEDI_ORIG,
+     SYSDATE AS FE_ACTU_DIA
+FROM STG.T_SL_MEDIOSORIGEN m
+</sql>
+    <limit>0</limit>
+    <lookup/>
+    <execute_each_row>N</execute_each_row>
+    <variables_active>N</variables_active>
+    <lazy_conversion_active>N</lazy_conversion_active>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>158</xloc>
+      <yloc>202</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>Leo T_SL_ORIGENLLEGADA</name>
+    <type>TableInput</type>
+    <description/>
+    <distribute>Y</distribute>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+    <connection>OdsStgDS</connection>
+    <sql>SELECT s.CODIGOFUNCIONARIO AS CO_ORIG_LLEG,
+       s.DESCRIPCION AS DE_ORIG_LLEG,
+       SYSDATE AS FE_ACTU_DIA
+FROM STG.T_SL_ORIGENLLEGADA s</sql>
+    <limit>0</limit>
+    <lookup/>
+    <execute_each_row>N</execute_each_row>
+    <variables_active>N</variables_active>
+    <lazy_conversion_active>N</lazy_conversion_active>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>157</xloc>
+      <yloc>520</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>Leo T_SL_TIPONOTAS</name>
+    <type>TableInput</type>
+    <description/>
+    <distribute>Y</distribute>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+    <connection>OdsStgDS</connection>
+    <sql>SELECT 
+     tn.TIPONOTA AS CO_MOTIVOS,
+     tn.NOTAPREDEF AS DE_MOTIVOS,
+     SYSDATE AS FE_ACTU_DIA
+FROM STG.T_SL_TIPONOTAS tn
+WHERE tn.TIPONOTA&lt;&gt;0</sql>
+    <limit>0</limit>
+    <lookup/>
+    <execute_each_row>N</execute_each_row>
+    <variables_active>N</variables_active>
+    <lazy_conversion_active>N</lazy_conversion_active>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>156</xloc>
+      <yloc>718</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>Leo T_TC_TABLADETABLAS de 422</name>
+    <type>TableInput</type>
+    <description/>
+    <distribute>Y</distribute>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+    <connection>OdsStgDS</connection>
+    <sql>SELECT 
+     tdt.ORDINAL AS CO_COND_SEGU,
+     UPPER(tdt.DESCRIPCION) AS DE_COND_SEGU,
+     SYSDATE AS FE_ACTU_DIA
+FROM STG.T_TC_TABLADETABLAS tdt
+WHERE tdt.IDTABLA=422
+      AND tdt.ORDINAL&lt;&gt;0</sql>
+    <limit>0</limit>
+    <lookup/>
+    <execute_each_row>N</execute_each_row>
+    <variables_active>N</variables_active>
+    <lazy_conversion_active>N</lazy_conversion_active>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>158</xloc>
+      <yloc>140</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>Leo T_TC_TABLADETABLAS de 522</name>
+    <type>TableInput</type>
+    <description/>
+    <distribute>Y</distribute>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+    <connection>OdsStgDS</connection>
+    <sql>SELECT 
+     tdt.ORDINAL AS CO_INVERSION,
+     UPPER(tdt.DESCRIPCION) AS DE_INVERSION,
+     SYSDATE AS FE_ACTU_DIA
+FROM STG.T_TC_TABLADETABLAS tdt
+WHERE tdt.IDTABLA=522
+	  AND tdt.ORDINAL&lt;&gt;0
+</sql>
+    <limit>0</limit>
+    <lookup/>
+    <execute_each_row>N</execute_each_row>
+    <variables_active>N</variables_active>
+    <lazy_conversion_active>N</lazy_conversion_active>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>156</xloc>
+      <yloc>915</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>Leo T_TC_TIPOZONA</name>
+    <type>TableInput</type>
+    <description/>
+    <distribute>Y</distribute>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+    <connection>OdsStgDS</connection>
+    <sql>SELECT 
+     t.C3707 AS CO_TIPO_NUCL_URBA,
+     t.C3708 AS DE_TIPO_NUCL_URBA,
+     SYSDATE AS FE_ACTU_DIA
+FROM STG.T_TC_TIPOZONA t
+
+</sql>
+    <limit>0</limit>
+    <lookup/>
+    <execute_each_row>N</execute_each_row>
+    <variables_active>N</variables_active>
+    <lazy_conversion_active>N</lazy_conversion_active>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>156</xloc>
+      <yloc>391</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>Leo T_TJD_MOTIVOS</name>
+    <type>TableInput</type>
+    <description/>
+    <distribute>Y</distribute>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+    <connection>OdsStgDS</connection>
+    <sql>SELECT 
+     t.CODIGO_MOTIVO AS CO_MOTI_BLOQ,
+     t.DESCRIPCION AS DE_MOTI_BLOQ,
+     SYSDATE AS FE_ACTU_DIA
+FROM STG.T_TJD_MOTIVOS t
+</sql>
+    <limit>0</limit>
+    <lookup/>
+    <execute_each_row>N</execute_each_row>
+    <variables_active>N</variables_active>
+    <lazy_conversion_active>N</lazy_conversion_active>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>157</xloc>
+      <yloc>261</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>Leo T_TJD_TIPO_TARJETA</name>
+    <type>TableInput</type>
+    <description/>
+    <distribute>Y</distribute>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+    <connection>OdsStgDS</connection>
+    <sql>SELECT 
+     t.TIPO_TARJETA AS CO_TIPO_TARJ,
+     UPPER(t.DESCRIPCION)  AS DE_TIPO_TARJE,
+     SYSDATE AS FE_ACTU_DIA
+FROM STG.T_TJD_TIPO_TARJETA t
+</sql>
+    <limit>0</limit>
+    <lookup/>
+    <execute_each_row>N</execute_each_row>
+    <variables_active>N</variables_active>
+    <lazy_conversion_active>N</lazy_conversion_active>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>157</xloc>
+      <yloc>849</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step_error_handling>
+  </step_error_handling>
+   <slave-step-copy-partition-distribution>
+</slave-step-copy-partition-distribution>
+   <slave_transformation>N</slave_transformation>
+</transformation>
